@@ -1,0 +1,51 @@
+# HabitForge
+
+> HabitForge is a habit-tracking workspace with visual streaks, integrated wellness trackers (water, weight, sleep, calories, workout, reading, expenses, mood), focus timers (Pomodoro, focus, meditation, breathing), journals (daily, gratitude, affirmations), goal setting, and a wellness dashboard. It runs on the web, on iOS and Android (via Capacitor), and as a browser extension.
+
+This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI agents an at-a-glance overview of the documentation.
+
+## What HabitForge does
+
+- Habit tracking with a forgiving streak engine and a visual habit-strength meter
+- Integrated trackers for water, weight, sleep, calories, workouts, reading, expenses, and mood
+- Focus timers: Pomodoro, focus sessions, meditation, breathing exercises
+- Journals: daily journal, gratitude journal, daily affirmations, goal setting
+- A unified wellness dashboard and a habit-calendar heatmap
+- Web app, native iOS / Android via Capacitor, and a Chromium browser extension
+- Optional Google Drive backup for journal entries (writes to the user's own Drive folder)
+
+## What it doesn't do
+
+- It does not have a public REST or GraphQL API. There are no programmatic integrations.
+- It does not load third-party analytics or ad scripts in the browser extension.
+- It does not provide health-care advice. Trackers are for personal awareness, not diagnosis.
+
+## Key URLs
+
+- Live app: https://habitforge.aoneahsan.com
+- Documentation home: https://habitforge-docs.aoneahsan.com/
+- Getting started: https://habitforge-docs.aoneahsan.com/getting-started
+- Habits: https://habitforge-docs.aoneahsan.com/habits
+- Trackers: https://habitforge-docs.aoneahsan.com/trackers
+- Timers: https://habitforge-docs.aoneahsan.com/timers
+- Journals & mindset: https://habitforge-docs.aoneahsan.com/journals
+- Browser extension: https://habitforge-docs.aoneahsan.com/extension
+- Mobile (iOS & Android): https://habitforge-docs.aoneahsan.com/mobile
+- Privacy policy: https://habitforge-docs.aoneahsan.com/legal/privacy
+- Terms: https://habitforge-docs.aoneahsan.com/legal/terms
+- About the author: https://habitforge-docs.aoneahsan.com/about/author
+- Sitemap: https://habitforge-docs.aoneahsan.com/sitemap.xml
+
+## Author
+
+Built and maintained by Ahsan Mahmood — senior full-stack and mobile engineer.
+
+- Portfolio: https://aoneahsan.com
+- GitHub: https://github.com/aoneahsan
+- LinkedIn: https://linkedin.com/in/aoneahsan
+- NPM: https://npmjs.com/~aoneahsan
+- Email: aoneahsan@gmail.com
+
+## License
+
+Documentation source is MIT-licensed. The HabitForge app source is private; this docs site is public so the product is discoverable in search and AI assistants.

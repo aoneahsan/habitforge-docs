@@ -1,0 +1,52 @@
+name: Deploy to Firebase Hosting
+
+# Required repo secrets:
+#   FIREBASE_SERVICE_ACCOUNT  — JSON of a service account with the
+#                               "Firebase Hosting Admin" role on the
+#                               docs Firebase project.
+#   FIREBASE_PROJECT_ID       — the Firebase project id (e.g. habitforge-docs).
+#
+# To generate FIREBASE_SERVICE_ACCOUNT:
+#   1. Create a new Firebase project (or reuse one) for the docs site.
+#   2. In Google Cloud Console → IAM → Service Accounts, create a
+#      service account with role "Firebase Hosting Admin".
+#   3. Create a JSON key, copy its contents into the GitHub secret.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+
+      - name: Enable Corepack (Yarn 4)
+        run: corepack enable
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Build site
+        run: yarn build
+        env:
+          DOCS_SITE_URL: https://habitforge-docs.aoneahsan.com
+          DOCS_BASE_URL: /
+
+      - name: Deploy to Firebase Hosting (live)
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: ${{ secrets.FIREBASE_PROJECT_ID }}
+          channelId: live

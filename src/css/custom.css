@@ -1,0 +1,112 @@
+/**
+ * HabitForge brand theme for Docusaurus.
+ *
+ * Brand palette comes from the main app's Radix theme + portfolio info file:
+ *   primary  : #F97316 (orange-500)
+ *   primary-2: #EA580C (orange-600)
+ *   accent-2 : #DC2626 (red-600)  — used in habit "fire" gradient
+ *   ink      : #0F172A (slate-900) for light text on dark headers
+ *
+ * Light mode keeps neutrals warm; dark mode keeps the brand accents legible.
+ */
+
+:root {
+  --ifm-color-primary: #ea580c;
+  --ifm-color-primary-dark: #c2410c;
+  --ifm-color-primary-darker: #9a3412;
+  --ifm-color-primary-darkest: #7c2d12;
+  --ifm-color-primary-light: #f97316;
+  --ifm-color-primary-lighter: #fb923c;
+  --ifm-color-primary-lightest: #fdba74;
+
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base:
+    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-heading-font-weight: 700;
+
+  --docusaurus-highlighted-code-line-bg: rgba(249, 115, 22, 0.12);
+
+  --hf-gradient-fire: linear-gradient(135deg, #f97316 0%, #dc2626 100%);
+  --hf-gradient-soft: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #fb923c;
+  --ifm-color-primary-dark: #f97316;
+  --ifm-color-primary-darker: #ea580c;
+  --ifm-color-primary-darkest: #c2410c;
+  --ifm-color-primary-light: #fdba74;
+  --ifm-color-primary-lighter: #fed7aa;
+  --ifm-color-primary-lightest: #ffedd5;
+
+  --ifm-background-color: #0b1220;
+  --ifm-background-surface-color: #111a2e;
+
+  --docusaurus-highlighted-code-line-bg: rgba(251, 146, 60, 0.18);
+}
+
+/* Subtle entrance animation that respects reduced-motion users. */
+@media (prefers-reduced-motion: no-preference) {
+  .markdown > h1,
+  .markdown > h2,
+  .markdown > section > h2,
+  .markdown > p:first-of-type {
+    animation: hf-fade-up 480ms ease-out both;
+  }
+  .markdown > h2 { animation-delay: 60ms; }
+  .markdown > section > h2 { animation-delay: 60ms; }
+  .markdown > p:first-of-type { animation-delay: 120ms; }
+}
+
+@keyframes hf-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer: lift the "Built by Ahsan" column visually. */
+.footer__col h4 {
+  letter-spacing: 0.01em;
+}
+.footer__col:last-child .footer__link-item {
+  font-weight: 500;
+}
+
+/* Card-y look for the auto-generated category index pages. */
+.theme-doc-version-current .pagination-nav__link {
+  border-radius: 12px;
+}
+
+/* Inline call-out style for "What this does NOT do" blocks. */
+.hf-not-this {
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  background: rgba(220, 38, 38, 0.06);
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+[data-theme='dark'] .hf-not-this {
+  border-color: rgba(248, 113, 113, 0.35);
+  background: rgba(248, 113, 113, 0.08);
+}
+
+/* Author byline on every doc page (rendered by a swizzled component
+   in a later batch — placeholder styling here so it doesn't shift). */
+.hf-author-byline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1.5rem;
+}
+.hf-author-byline strong {
+  color: var(--ifm-color-emphasis-900);
+}

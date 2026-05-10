@@ -1,0 +1,74 @@
+# HabitForge documentation — robots.txt
+# Allows traditional search engines and AI crawlers explicitly so the docs
+# get indexed in Google, Bing, Yahoo, DuckDuckGo, ChatGPT, Claude, Perplexity,
+# Gemini, and similar AI search systems.
+#
+# Last updated: 2026-05-10. Final version generated in Batch 12 of the
+# documentation plan; this is a placeholder that already covers the basics.
+
+# --- Traditional search engines --------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# --- AI crawlers (allowed) -------------------------------------------------
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# --- SEO scrapers (no traffic value, blocked) ------------------------------
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# --- Default ---------------------------------------------------------------
+
+User-agent: *
+Allow: /
+
+Sitemap: https://habitforge-docs.aoneahsan.com/sitemap.xml

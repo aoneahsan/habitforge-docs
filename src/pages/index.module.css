@@ -1,0 +1,59 @@
+.heroBanner {
+  padding: 4.5rem 0 3rem;
+  text-align: center;
+  background: var(--hf-gradient-fire);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme='dark'] .heroBanner {
+  background: linear-gradient(135deg, #7c2d12 0%, #991b1b 100%);
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle {
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  opacity: 0.92;
+  max-width: 720px;
+  margin: 0 auto 1.75rem;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.heroDecor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.18;
+}
+
+.builtBy {
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+  opacity: 0.92;
+}
+.builtBy a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    padding: 3rem 1rem 2.25rem;
+  }
+}
