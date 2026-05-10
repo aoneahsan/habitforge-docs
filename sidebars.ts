@@ -52,14 +52,14 @@ const sidebars: SidebarsConfig = {
       label: 'Trackers',
       link: { type: 'generated-index', slug: '/trackers' },
       items: [
-        // 'trackers/water',
-        // 'trackers/weight',
-        // 'trackers/sleep',
-        // 'trackers/calories',
-        // 'trackers/workout',
-        // 'trackers/reading',
-        // 'trackers/expenses',
-        // 'trackers/mood',
+        'trackers/water',
+        'trackers/weight',
+        'trackers/sleep',
+        'trackers/calories',
+        // 'trackers/workout',     // Batch 5
+        // 'trackers/reading',     // Batch 5
+        // 'trackers/expenses',    // Batch 5
+        // 'trackers/mood',        // Batch 5
       ],
     },
     {
