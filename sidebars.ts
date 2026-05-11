@@ -56,10 +56,10 @@ const sidebars: SidebarsConfig = {
         'trackers/weight',
         'trackers/sleep',
         'trackers/calories',
-        // 'trackers/workout',     // Batch 5
-        // 'trackers/reading',     // Batch 5
-        // 'trackers/expenses',    // Batch 5
-        // 'trackers/mood',        // Batch 5
+        'trackers/workout',
+        'trackers/reading',
+        'trackers/expenses',
+        'trackers/mood',
       ],
     },
     {
