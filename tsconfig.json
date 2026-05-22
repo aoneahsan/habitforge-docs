@@ -1,7 +1,11 @@
 {
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    // @docusaurus/tsconfig (the extended base) still requires baseUrl for
+    // @site/* path resolution, which TS6 deprecates. Until Docusaurus migrates,
+    // silence the deprecation rather than break framework path resolution.
+    "ignoreDeprecations": "6.0"
   },
   "exclude": [".docusaurus", "build"]
 }
