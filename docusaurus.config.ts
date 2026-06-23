@@ -30,12 +30,11 @@ const config: Config = {
   projectName: 'habitforge-docs',
   deploymentBranch: 'gh-pages',
 
-  // NOTE: onBrokenLinks is intentionally `warn` during the scaffold phase —
-  // the navbar, footer, and homepage already link to category pages that
-  // will exist once their respective batches land (Batches 2–11). Batch 12
-  // (SEO + AEO infrastructure) flips this back to `throw` once all targets
-  // are in. See docs/docusaurus-docs-plan/00-MASTER-PLAN.md in the main repo.
-  onBrokenLinks: 'warn',
+  // All content batches have landed (2026-06-23) — every navbar/footer/homepage
+  // target now exists, so broken links fail the build to catch regressions.
+  // Cross-page heading anchors stay `warn` (they are fragile and not worth
+  // failing CI over).
+  onBrokenLinks: 'throw',
   onBrokenAnchors: 'warn',
   onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'warn',
@@ -108,6 +107,21 @@ const config: Config = {
             url: AUTHOR.url,
             sameAs: [AUTHOR.linkedin, AUTHOR.github, AUTHOR.npm],
             jobTitle: 'Senior Full-Stack & Mobile Engineer',
+          },
+          {
+            '@type': 'SoftwareApplication',
+            '@id': `${APP_URL}/#app`,
+            name: 'HabitForge',
+            url: APP_URL,
+            description:
+              'HabitForge is a free habit-tracking app with a forgiving streak engine, a visual habit-strength meter, integrated wellness, fitness, finance, and productivity trackers, focus timers, and journals. It runs on the web, Android, iOS (via Capacitor), and as a browser extension.',
+            applicationCategory: 'LifestyleApplication',
+            operatingSystem: 'Web, Android, iOS',
+            offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+            author: { '@id': `${SITE_URL}/#author` },
+            publisher: { '@id': `${SITE_URL}/#organization` },
+            isAccessibleForFree: true,
+            softwareHelp: SITE_URL,
           },
         ],
       }),

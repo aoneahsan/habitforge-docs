@@ -154,7 +154,7 @@ The wellness dashboard cross-plots trackers and habits. If you also use the [Sle
 
 ### Can I export my water log?
 
-Yes. **Profile → Export my data** includes every `WaterLog` record across your full history. See [Privacy basics → Export your data](../getting-started/privacy-basics#export-your-data).
+Your water history is stored with your account and syncs across your devices. The built-in **Export my data** download currently covers your habits and their completion history (JSON + CSV); per-tracker logs such as water entries are not yet part of that export file — including them is on the [roadmap](../reference/roadmap). See [Account → Export your data](../account/export) for exactly what the export contains today.
 
 ### Does the reminder fire if I close the browser?
 

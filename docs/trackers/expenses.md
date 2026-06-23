@@ -156,7 +156,7 @@ Because automatic conversion needs a remote FX feed, which means a remote API de
 
 ### Can I export my expense data?
 
-Yes. **Profile → Export my data** includes every `Expense` record. See [Privacy basics → Export your data](../getting-started/privacy-basics#export-your-data) — useful for tax season or for importing into a dedicated accounting tool.
+Your expense entries are stored with your account and sync across devices. The built-in **Export my data** download currently covers your habits and their completion history (JSON + CSV); per-tracker logs such as expenses are not yet part of that export file — including them is on the [roadmap](../reference/roadmap). See [Account → Export your data](../account/export) for what the export contains today.
 
 ### Will HabitForge ever add accounts and reconciliation?
 

@@ -1,6 +1,6 @@
 # HabitForge Docs — Project Guide (CLAUDE.md)
 
-**Last Updated**: 2026-05-29
+**Last Updated**: 2026-06-23
 
 Public documentation / knowledge-base site for **HabitForge** (the habit-tracking + wellness app). This repo is **public**; the HabitForge app source is **private**. The docs exist so users, contributors, and search/AI engines (Google, Bing, ChatGPT, Perplexity, Claude, Gemini) can discover and learn about HabitForge.
 
@@ -20,8 +20,8 @@ Finish the real task fast + correctly FIRST; docs/trackers/sync are a footnote (
 
 - **Framework**: Docusaurus 3 (`@docusaurus/core` ^3.10.1), React 19, TypeScript ~6.0.
 - **Search**: `@easyops-cn/docusaurus-search-local` (offline local search — no Algolia signup).
-- **Content**: 24 Markdown doc pages today (getting-started ×8, habits ×7, trackers ×8, plus `intro.md`). Categories `timers`, `journals`, `extension`, `mobile`, `about`, `legal`, `reference` are scaffolded in nav/footer and land in later content batches (see the in-config note on `onBrokenLinks`).
-- **AEO/SEO**: `robots.txt` (AI-bot allowlist + sitemap directive), `llms.txt` (llmstxt.org format), `pricing.md` (machine-readable, "free" tier), site-wide JSON-LD (`WebSite` + `Organization` + `Person`), Docusaurus sitemap plugin.
+- **Content**: 66 Markdown doc pages (2026-06-23 — all batches landed): `intro` + getting-started ×8, habits ×7, trackers ×8, timers ×4, journals ×4, productivity ×4, theme & accessibility ×8, extension ×5, mobile ×4, account ×3, reference ×3 (faq/roadmap/changelog), legal ×4, about ×3. All sidebar categories are now fully wired (no commented-out items).
+- **AEO/SEO**: `robots.txt` (AI-bot allowlist + sitemap directive), `llms.txt` (llmstxt.org format, `/docs/*` URLs), `pricing.md` (machine-readable, "free" tier), site-wide JSON-LD (`WebSite` + `Organization` + `Person` + `SoftwareApplication`), Docusaurus sitemap plugin. Every page carries distinct `title`/`description`/`keywords` + `last_update` front-matter.
 - **Deploy target**: Firebase Hosting (free tier) — `firebase.json` ready; CI in `.github/workflows/`. Docusaurus `organizationName/projectName` also set for optional gh-pages deploy.
 - **Brand**: orange→red "fire" gradient (`#F97316` → `#DC2626`), light + dark mode.
 
@@ -35,7 +35,7 @@ yarn typecheck      # tsc --noEmit
 yarn build          # docusaurus build (writes ./build)
 ```
 
-- `yarn build` currently emits **expected** broken-link *warnings* for not-yet-written category pages (config sets `onBrokenLinks: 'warn'` on purpose during the scaffold phase). The build still reports `[SUCCESS]`. Do **not** "fix" these by deleting the nav/footer links — they resolve when the remaining content batches land. Flip `onBrokenLinks` back to `throw` only once all targets exist.
+- `yarn build` is **clean** (`[SUCCESS]`, 0 broken-link warnings). As of 2026-06-23 all content batches landed, so `onBrokenLinks` is now `'throw'` (regressions fail the build). `onBrokenAnchors` stays `'warn'` (cross-page heading anchors are fragile). The only remaining build warning is the harmless Docusaurus-v4 `onBrokenMarkdownLinks` deprecation notice.
 - Per workspace policy the dev server (`yarn start`) is **not** auto-run by tooling — run it yourself to preview.
 
 ---

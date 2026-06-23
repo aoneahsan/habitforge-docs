@@ -23,17 +23,23 @@ This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI age
 ## Key URLs
 
 - Live app: https://habitforge.aoneahsan.com
-- Documentation home: https://habitforge-docs.aoneahsan.com/
-- Getting started: https://habitforge-docs.aoneahsan.com/getting-started
-- Habits: https://habitforge-docs.aoneahsan.com/habits
-- Trackers: https://habitforge-docs.aoneahsan.com/trackers
-- Timers: https://habitforge-docs.aoneahsan.com/timers
-- Journals & mindset: https://habitforge-docs.aoneahsan.com/journals
-- Browser extension: https://habitforge-docs.aoneahsan.com/extension
-- Mobile (iOS & Android): https://habitforge-docs.aoneahsan.com/mobile
-- Privacy policy: https://habitforge-docs.aoneahsan.com/legal/privacy
-- Terms: https://habitforge-docs.aoneahsan.com/legal/terms
-- About the author: https://habitforge-docs.aoneahsan.com/about/author
+- Documentation home: https://habitforge-docs.aoneahsan.com/docs
+- Getting started: https://habitforge-docs.aoneahsan.com/docs/getting-started
+- Habits: https://habitforge-docs.aoneahsan.com/docs/habits
+- Trackers: https://habitforge-docs.aoneahsan.com/docs/trackers
+- Timers: https://habitforge-docs.aoneahsan.com/docs/timers
+- Journals & mindset: https://habitforge-docs.aoneahsan.com/docs/journals
+- Productivity & dashboards: https://habitforge-docs.aoneahsan.com/docs/productivity
+- Theme & accessibility: https://habitforge-docs.aoneahsan.com/docs/theme
+- Browser extension: https://habitforge-docs.aoneahsan.com/docs/extension
+- Mobile (iOS & Android): https://habitforge-docs.aoneahsan.com/docs/mobile
+- Account & data: https://habitforge-docs.aoneahsan.com/docs/account
+- FAQ: https://habitforge-docs.aoneahsan.com/docs/reference/faq
+- Roadmap: https://habitforge-docs.aoneahsan.com/docs/reference/roadmap
+- Changelog: https://habitforge-docs.aoneahsan.com/docs/reference/changelog
+- Privacy policy: https://habitforge-docs.aoneahsan.com/docs/legal/privacy
+- Terms: https://habitforge-docs.aoneahsan.com/docs/legal/terms
+- About the author: https://habitforge-docs.aoneahsan.com/docs/about/author
 - Sitemap: https://habitforge-docs.aoneahsan.com/sitemap.xml
 
 ## Author
