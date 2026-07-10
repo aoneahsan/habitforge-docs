@@ -85,3 +85,12 @@ Gitignore Last Verified: 2026-06-24
 - Identifiers for app stores / Capacitor app id / npm: **N/A** for this docs site (those belong to the parent HabitForge app, not the docs).
 - Sitemap is regenerated on every `yarn build` (29 URLs as of 2026-05-29).
 - Editing docs: every page needs `title`, `description`, and `last_update.date` front-matter; feature pages target ~1000 words (definition-first intro, use cases, numbered how-it-works, examples, FAQ, tips, 6–8 internal links).
+
+
+## Sub-agents & Skills — Main-Context-First (IRON-SOLID)
+Default/built-in sub-agents (`general-purpose`, `Explore`, `Plan`, `claude`, `fork`, …) do NOT have
+access to `/skills`, so delegating to them silently SKIPS the skills RULE #0 requires. Do all
+skill-relevant work in the **MAIN context**; use a sub-agent ONLY when a **custom** agent exists in
+`.claude/agents/` for that job; a default `Explore`/`Plan` agent is allowed ONLY for read-only,
+no-skill search/exploration. When a relevant skill is missing, **install/enable it** rather than
+proceeding skill-less. (Owner directive 2026-07-11; full text in `~/.claude/CLAUDE.md`.)
