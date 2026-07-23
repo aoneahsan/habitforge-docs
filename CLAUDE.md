@@ -1,8 +1,8 @@
 # HabitForge Docs — Project Guide (CLAUDE.md)
 
-**Last Updated**: 2026-06-23
+**Last Updated**: 2026-07-23
 
-Public documentation / knowledge-base site for **HabitForge** (the habit-tracking + wellness app). This repo is **public**; the HabitForge app source is **private**. The docs exist so users, contributors, and search/AI engines (Google, Bing, ChatGPT, Perplexity, Claude, Gemini) can discover and learn about HabitForge.
+Public documentation / knowledge-base site for **HabitForge** (a habit tracker that shows your consistency as a rope — web app + Android; no iOS, no browser extension). This repo is **public**; the HabitForge app source is **private**. The docs exist so users, contributors, and search/AI engines (Google, Bing, ChatGPT, Perplexity, Claude, Gemini) can discover and learn about HabitForge.
 
 - **Live docs**: https://habitforge-docs.aoneahsan.com
 - **Parent app**: https://habitforge.aoneahsan.com
@@ -18,11 +18,11 @@ Finish the real task fast + correctly FIRST; docs/trackers/sync are a footnote (
 
 ## What this is
 
-- **Framework**: Docusaurus 3 (`@docusaurus/core` ^3.10.1), React 19, TypeScript ~6.0.
+- **Framework**: Docusaurus 3 (`@docusaurus/core` ^3.10.1), React 19, TypeScript ~6.0, Yarn 4.
 - **Search**: `@easyops-cn/docusaurus-search-local` (offline local search — no Algolia signup).
-- **Content**: 66 Markdown doc pages (2026-06-23 — all batches landed): `intro` + getting-started ×8, habits ×7, trackers ×8, timers ×4, journals ×4, productivity ×4, theme & accessibility ×8, extension ×5, mobile ×4, account ×3, reference ×3 (faq/roadmap/changelog), legal ×4, about ×3. All sidebar categories are now fully wired (no commented-out items).
-- **AEO/SEO**: `robots.txt` (AI-bot allowlist + sitemap directive), `llms.txt` (llmstxt.org format, `/docs/*` URLs), `pricing.md` (machine-readable, "free" tier), site-wide JSON-LD (`WebSite` + `Organization` + `Person` + `SoftwareApplication`), Docusaurus sitemap plugin. Every page carries distinct `title`/`description`/`keywords` + `last_update` front-matter.
-- **Deploy target**: Firebase Hosting (free tier) — `firebase.json` ready; CI in `.github/workflows/`. Docusaurus `organizationName/projectName` also set for optional gh-pages deploy.
+- **Content**: 16 Markdown doc pages describing the REAL app (rewritten 2026-07-23): `intro` + `getting-started`, `habits/` ×5 (create, check-ins-and-streaks, rope-strength, levels-and-points, manage), `features/` ×4 (analytics, achievements, community, themes), `apps/` ×2 (install-and-offline, android), `reference/` ×3 (changelog, privacy-and-terms, support), plus 4 generated-index category pages. **HabitForge has NO trackers/timers/journals/browser-extension/iOS** — the old generic-template content (extension, timers, trackers, journals, productivity, mobile-iOS, etc.) was deleted 2026-07-23.
+- **AEO/SEO**: `robots.txt` (AI-bot allowlist + sitemap directive), `llms.txt` (llmstxt.org format), `pricing.md` (machine-readable, costs-nothing), site-wide JSON-LD (`WebSite` + `Organization` + `Person` + `SoftwareApplication`), Docusaurus sitemap plugin. Every page carries distinct `title`/`description` + `last_update` front-matter.
+- **Deploy target**: **GitHub Pages** (public repo) on the custom domain `habitforge-docs.aoneahsan.com` via `static/CNAME` + `.github/workflows/deploy.yml` (build on push to `main`). `firebase.json` is kept only as an alternative host config.
 - **Brand**: orange→red "fire" gradient (`#F97316` → `#DC2626`), light + dark mode.
 
 ---
@@ -30,12 +30,12 @@ Finish the real task fast + correctly FIRST; docs/trackers/sync are a footnote (
 ## Build & verify (one-shot only — NEVER run dev/preview servers)
 
 ```bash
-yarn install        # Yarn 4 / Berry (packageManager: yarn@4.14.1)
+yarn install        # Yarn 4 / Berry (packageManager: yarn@4.17.1)
 yarn typecheck      # tsc --noEmit
 yarn build          # docusaurus build (writes ./build)
 ```
 
-- `yarn build` is **clean** (`[SUCCESS]`, 0 broken-link warnings). As of 2026-06-23 all content batches landed, so `onBrokenLinks` is now `'throw'` (regressions fail the build). `onBrokenAnchors` stays `'warn'` (cross-page heading anchors are fragile). The only remaining build warning is the harmless Docusaurus-v4 `onBrokenMarkdownLinks` deprecation notice.
+- `yarn build` is **clean** (`[SUCCESS]`, zero warnings, zero broken links). `onBrokenLinks` is `'throw'` and `onBrokenMarkdownLinks` is `'throw'` (via `markdown.hooks`) so any broken internal link fails the build. `onBrokenAnchors` stays `'warn'` (cross-page heading anchors are fragile).
 - Per workspace policy the dev server (`yarn start`) is **not** auto-run by tooling — run it yourself to preview.
 
 ---
@@ -83,8 +83,8 @@ Gitignore Last Verified: 2026-06-24
 ## Notes
 
 - Identifiers for app stores / Capacitor app id / npm: **N/A** for this docs site (those belong to the parent HabitForge app, not the docs).
-- Sitemap is regenerated on every `yarn build` (29 URLs as of 2026-05-29).
-- Editing docs: every page needs `title`, `description`, and `last_update.date` front-matter; feature pages target ~1000 words (definition-first intro, use cases, numbered how-it-works, examples, FAQ, tips, 6–8 internal links).
+- Sitemap is regenerated on every `yarn build` (46 URLs as of 2026-07-23).
+- Editing docs: every page needs `title`, `description`, and `last_update.date` front-matter. Keep pages **brief and honest** (definition-first opening sentence, a few internal links) — the docs-are-a-footnote rule applies; do not pad to a fixed word count.
 
 
 ## Sub-agents & Skills — Main-Context-First (IRON-SOLID)

@@ -15,11 +15,14 @@ const AUTHOR = {
 } as const;
 
 const APP_URL = 'https://habitforge.aoneahsan.com';
+const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge';
+const SUPPORT_URL =
+  'https://aoneahsan.com/payment?project-id=habitforge&project-identifier=com.aoneahsan.habitforge';
 const DOCS_GITHUB = 'https://github.com/aoneahsan/habitforge-docs';
 
 const config: Config = {
   title: 'HabitForge Docs',
-  tagline: 'Build better habits — visual streaks, science-backed scheduling, and a full wellness toolbox in one app.',
+  tagline: 'A habit tracker that turns your consistency into a rope you can watch grow stronger.',
   favicon: 'img/favicon.svg',
 
   url: SITE_URL,
@@ -30,14 +33,18 @@ const config: Config = {
   projectName: 'habitforge-docs',
   deploymentBranch: 'gh-pages',
 
-  // All content batches have landed (2026-06-23) — every navbar/footer/homepage
-  // target now exists, so broken links fail the build to catch regressions.
-  // Cross-page heading anchors stay `warn` (they are fragile and not worth
-  // failing CI over).
+  // The build IS the link checker: broken doc links fail the build so a
+  // regression can't ship. Cross-page heading anchors stay `warn` (fragile,
+  // not worth failing CI over).
   onBrokenLinks: 'throw',
   onBrokenAnchors: 'warn',
-  onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',
@@ -50,9 +57,8 @@ const config: Config = {
     docsGitHub: DOCS_GITHUB,
   },
 
-  // Inject site-wide JSON-LD (WebSite + Organization + Person/author).
-  // Per-page Article / FAQPage / HowTo schemas are injected via the
-  // `Layout` swizzle in src/theme (added in Batch 12).
+  // Site-wide JSON-LD: WebSite + Organization + Person (author) + the
+  // HabitForge SoftwareApplication.
   headTags: [
     {
       tagName: 'link',
@@ -86,7 +92,7 @@ const config: Config = {
             url: SITE_URL,
             name: 'HabitForge Docs',
             description:
-              'Official documentation for HabitForge — habit tracking with visual streaks, integrated wellness trackers, focus timers, journals, and a browser extension.',
+              'Official documentation for HabitForge — a habit tracker that shows your consistency as a rope, with check-in streaks, points and levels, analytics, achievements, an optional community, and themes. Web and Android.',
             inLanguage: 'en',
             publisher: { '@id': `${SITE_URL}/#organization` },
           },
@@ -114,9 +120,9 @@ const config: Config = {
             name: 'HabitForge',
             url: APP_URL,
             description:
-              'HabitForge is a free habit-tracking app with a forgiving streak engine, a visual habit-strength meter, integrated wellness, fitness, finance, and productivity trackers, focus timers, and journals. It runs on the web, Android, iOS (via Capacitor), and as a browser extension.',
+              'HabitForge is a habit tracker that turns your consistency into a visual rope. It uses the cue-routine-reward habit loop, daily check-ins that build streaks, points and a ten-tier level, weekly analytics, achievements, an optional community, and light/dark themes. It runs on the web and on Android. It costs nothing to use.',
             applicationCategory: 'LifestyleApplication',
-            operatingSystem: 'Web, Android, iOS',
+            operatingSystem: 'Web, Android',
             offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
             author: { '@id': `${SITE_URL}/#author` },
             publisher: { '@id': `${SITE_URL}/#organization` },
@@ -177,7 +183,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     metadata: [
-      { name: 'keywords', content: 'habit tracker, streak, productivity, pomodoro, water tracker, mood tracker, journal, wellness, capacitor, android, ios, browser extension' },
+      { name: 'keywords', content: 'habit tracker, habit streak, habit loop, rope visualization, check-in, points, levels, achievements, habit community, android habit app, pwa' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@aoneahsan' },
       { name: 'twitter:creator', content: '@aoneahsan' },
@@ -192,10 +198,11 @@ const config: Config = {
       },
       items: [
         { to: '/docs', label: 'Docs', position: 'left' },
-        { to: '/docs/getting-started', label: 'Getting started', position: 'left' },
+        { to: '/docs/getting-started', label: 'Get started', position: 'left' },
         { to: '/docs/habits', label: 'Habits', position: 'left' },
-        { to: '/docs/about', label: 'About', position: 'left' },
+        { to: '/docs/features/community', label: 'Community', position: 'left' },
         { href: APP_URL, label: 'Open the app ↗', position: 'right' },
+        { href: PLAY_URL, label: 'Google Play ↗', position: 'right' },
         { href: DOCS_GITHUB, label: 'GitHub', position: 'right' },
       ],
     },
@@ -205,22 +212,21 @@ const config: Config = {
         {
           title: 'Documentation',
           items: [
-            { label: 'Getting started', to: '/docs/getting-started' },
+            { label: 'Get started', to: '/docs/getting-started' },
             { label: 'Habits', to: '/docs/habits' },
-            { label: 'Trackers', to: '/docs/trackers' },
-            { label: 'Timers', to: '/docs/timers' },
-            { label: 'FAQ', to: '/docs/reference' },
+            { label: 'Features', to: '/docs/features' },
+            { label: 'Apps & offline', to: '/docs/apps' },
+            { label: 'Changelog', to: '/docs/reference/changelog' },
           ],
         },
         {
-          title: 'Project',
+          title: 'HabitForge',
           items: [
-            { label: 'Open the app', href: APP_URL },
-            { label: 'Source on GitHub', href: DOCS_GITHUB },
-            { label: 'Roadmap', to: '/docs/reference' },
-            { label: 'Changelog', to: '/docs/reference' },
-            { label: 'Privacy', to: '/docs/legal' },
-            { label: 'Terms', to: '/docs/legal' },
+            { label: 'Open the web app', href: APP_URL },
+            { label: 'Get it on Google Play', href: PLAY_URL },
+            { label: 'Privacy & terms', to: '/docs/reference/privacy-and-terms' },
+            { label: 'Support', to: '/docs/reference/support' },
+            { label: 'Docs source on GitHub', href: DOCS_GITHUB },
           ],
         },
         {
@@ -231,10 +237,7 @@ const config: Config = {
             { label: 'GitHub', href: AUTHOR.github },
             { label: 'NPM packages', href: AUTHOR.npm },
             { label: 'Email', href: `mailto:${AUTHOR.email}` },
-            {
-              label: 'Support the project',
-              href: 'https://aoneahsan.com/payment?project-id=habitforge-docs&project-identifier=habitforge-docs',
-            },
+            { label: 'Support the project', href: SUPPORT_URL },
           ],
         },
       ],

@@ -1,50 +1,55 @@
 # HabitForge
 
-> HabitForge is a habit-tracking workspace with visual streaks, integrated wellness trackers (water, weight, sleep, calories, workout, reading, expenses, mood), focus timers (Pomodoro, focus, meditation, breathing), journals (daily, gratitude, affirmations), goal setting, and a wellness dashboard. It runs on the web, on iOS and Android (via Capacitor), and as a browser extension.
+> HabitForge is a habit tracker that turns your consistency into a rope you can see — a thin thread when a habit is new, an unbreakable cable once you have shown up day after day, and a fraying line when you slip. It runs as a web app and as an Android app on Google Play. There is no iOS app and no browser extension. Sign-in is Google-only, and the app costs nothing to use.
 
 This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI agents an at-a-glance overview of the documentation.
 
 ## What HabitForge does
 
-- Habit tracking with a forgiving streak engine and a visual habit-strength meter
-- Integrated trackers for water, weight, sleep, calories, workouts, reading, expenses, and mood
-- Focus timers: Pomodoro, focus sessions, meditation, breathing exercises
-- Journals: daily journal, gratitude journal, daily affirmations, goal setting
-- A unified wellness dashboard and a habit-calendar heatmap
-- Web app, native iOS / Android via Capacitor, and a Chromium browser extension
-- Optional Google Drive backup for journal entries (writes to the user's own Drive folder)
+- Habit tracking with the cue → routine → reward loop (plus craving and investment) from *The Power of Habit*
+- Daily check-ins that build streaks and points
+- A rope visualization (D3) showing each habit's strength from streak, consistency, and total check-ins — a deterministic calculation, not a machine-learning model
+- A ten-tier forge level (Spark → Forge Master) driven by points
+- Weekly analytics and charts
+- Achievements with a celebration moment and bonus points
+- An optional, opt-in community: feed, comments, challenges, friends, and a leaderboard, with report and block moderation
+- Light and dark themes plus a full theme customizer
+- Offline support as a Progressive Web App; check-ins made offline sync on reconnect
+- Automatic in-app updates on the Android app
 
 ## What it doesn't do
 
-- It does not have a public REST or GraphQL API. There are no programmatic integrations.
-- It does not load third-party analytics or ad scripts in the browser extension.
-- It does not provide health-care advice. Trackers are for personal awareness, not diagnosis.
+- No iOS app (there is no Apple Developer account); iPhone/iPad users run the web app
+- No browser extension
+- No public REST or GraphQL API and no programmatic integrations
+- No email/password or Apple sign-in — Google sign-in only
+- It does not provide health-care advice
 
 ## Key URLs
 
 - Live app: https://habitforge.aoneahsan.com
+- Google Play: https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge
 - Documentation home: https://habitforge-docs.aoneahsan.com/docs
-- Getting started: https://habitforge-docs.aoneahsan.com/docs/getting-started
+- Get started: https://habitforge-docs.aoneahsan.com/docs/getting-started
 - Habits: https://habitforge-docs.aoneahsan.com/docs/habits
-- Trackers: https://habitforge-docs.aoneahsan.com/docs/trackers
-- Timers: https://habitforge-docs.aoneahsan.com/docs/timers
-- Journals & mindset: https://habitforge-docs.aoneahsan.com/docs/journals
-- Productivity & dashboards: https://habitforge-docs.aoneahsan.com/docs/productivity
-- Theme & accessibility: https://habitforge-docs.aoneahsan.com/docs/theme
-- Browser extension: https://habitforge-docs.aoneahsan.com/docs/extension
-- Mobile (iOS & Android): https://habitforge-docs.aoneahsan.com/docs/mobile
-- Account & data: https://habitforge-docs.aoneahsan.com/docs/account
-- FAQ: https://habitforge-docs.aoneahsan.com/docs/reference/faq
-- Roadmap: https://habitforge-docs.aoneahsan.com/docs/reference/roadmap
+- Create a habit: https://habitforge-docs.aoneahsan.com/docs/habits/create
+- Check-ins and streaks: https://habitforge-docs.aoneahsan.com/docs/habits/check-ins-and-streaks
+- Rope strength: https://habitforge-docs.aoneahsan.com/docs/habits/rope-strength
+- Levels and points: https://habitforge-docs.aoneahsan.com/docs/habits/levels-and-points
+- Analytics: https://habitforge-docs.aoneahsan.com/docs/features/analytics
+- Achievements: https://habitforge-docs.aoneahsan.com/docs/features/achievements
+- Community: https://habitforge-docs.aoneahsan.com/docs/features/community
+- Themes and customizer: https://habitforge-docs.aoneahsan.com/docs/features/themes
+- Install and offline: https://habitforge-docs.aoneahsan.com/docs/apps/install-and-offline
+- The Android app: https://habitforge-docs.aoneahsan.com/docs/apps/android
 - Changelog: https://habitforge-docs.aoneahsan.com/docs/reference/changelog
-- Privacy policy: https://habitforge-docs.aoneahsan.com/docs/legal/privacy
-- Terms: https://habitforge-docs.aoneahsan.com/docs/legal/terms
-- About the author: https://habitforge-docs.aoneahsan.com/docs/about/author
+- Privacy and terms: https://habitforge-docs.aoneahsan.com/docs/reference/privacy-and-terms
+- Support: https://habitforge-docs.aoneahsan.com/docs/reference/support
 - Sitemap: https://habitforge-docs.aoneahsan.com/sitemap.xml
 
 ## Author
 
-Built and maintained by Ahsan Mahmood — senior full-stack and mobile engineer.
+Built and maintained by Ahsan Mahmood — full-stack and mobile engineer.
 
 - Portfolio: https://aoneahsan.com
 - GitHub: https://github.com/aoneahsan

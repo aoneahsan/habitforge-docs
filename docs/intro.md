@@ -1,45 +1,49 @@
 ---
 id: intro
 title: HabitForge documentation
-description: Official documentation for HabitForge — a habit-tracking workspace with visual streaks, integrated wellness trackers, focus timers, journals, and a browser extension. Web, iOS, Android, Chrome.
+description: Official documentation for HabitForge — a habit tracker that shows your consistency as a rope you can watch grow stronger. Web app and Android.
 sidebar_position: 1
 slug: /
 last_update:
-  date: 2026-05-10
+  date: 2026-07-23
   author: Ahsan Mahmood
+tags:
+  - habit tracker
+  - streaks
+  - habitforge
+keywords:
+  - habitforge
+  - habit tracker
+  - habit streak app
+  - documentation
 ---
 
 # HabitForge documentation
 
-**HabitForge** is a habit-tracking workspace that combines a streak engine, a visual habit-strength meter, and a full set of wellness trackers and focus timers in a single app. It runs in the browser, on iOS and Android (via Capacitor), and as a companion browser extension. This site is the official documentation.
+**HabitForge is a habit tracker that turns your consistency into a rope you can see** — a thin thread when a habit is new, an unbreakable cable once you have shown up day after day, and a fraying line when you slip. This site is the official documentation.
 
-> 🚧 **This site is being built page by page.** The structure is in place; content is being added in 14 planned batches. Categories without pages yet are placeholders — they will fill in as each batch lands.
+It runs as a web app and as an Android app on Google Play. There is no iOS build and no browser extension.
 
 ## Where to start
 
-- **New here?** Getting started will walk through sign-up and your first habit.
-- **Tracking something specific?** Jump to Habits, Trackers, Timers, or Journals once those sections fill in.
-- **Using the browser extension?** Browser extension covers install and sync.
-- **On mobile?** Mobile (iOS & Android) covers install and native features.
+- **New here?** [Get started](./getting-started.md) covers opening the app, installing on Android, and signing in.
+- **Building your first habit?** [Create a habit](./habits/create.md) walks through the form, then [check-ins and streaks](./habits/check-ins-and-streaks.md).
+- **Curious about the rope?** [Rope strength](./habits/rope-strength.md) explains what the meter shows.
 
-## Why HabitForge
+## What HabitForge does
 
-HabitForge is built around three opinions:
-
-1. **Streaks should be honest.** The streak engine is forgiving of timezones and travel, but does not silently inflate your numbers.
-2. **Visualisation beats notification.** The habit-strength meter shows progress at a glance; reminders are optional.
-3. **Your data stays yours.** Journals can be backed up to your own Google Drive folder; account deletion removes everything.
-
-The tradeoff: HabitForge is opinionated about scheduling and prefers fewer, well-tuned features over a sprawling integrations catalogue.
+- **Track habits** with the cue → routine → reward loop (plus craving and investment) from *The Power of Habit*.
+- **Check in daily** to build streaks and points, and climb a ten-tier forge [level](./habits/levels-and-points.md).
+- **Watch the rope** — a live picture of each habit's strength, drawn from streak, consistency, and total check-ins.
+- **Read your week** in [analytics](./features/analytics.md), unlock [achievements](./features/achievements.md), and join an optional [community](./features/community.md).
+- **Make it yours** with light/dark [themes and a customizer](./features/themes.md).
+- **Keep tracking offline** — HabitForge is a PWA that queues check-ins without a connection.
 
 ## About this site
 
-- **Live app**: [habitforge.aoneahsan.com](https://habitforge.aoneahsan.com)
-- **Source for these docs**: [github.com/aoneahsan/habitforge-docs](https://github.com/aoneahsan/habitforge-docs)
-- **Built by**: [Ahsan Mahmood](https://aoneahsan.com) — senior full-stack & mobile engineer
+- **Live app:** [habitforge.aoneahsan.com](https://habitforge.aoneahsan.com)
+- **Android (Google Play):** [play.google.com/store/apps/…habitforge](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge)
+- **Docs source:** [github.com/aoneahsan/habitforge-docs](https://github.com/aoneahsan/habitforge-docs)
+- **Built by:** [Ahsan Mahmood](https://aoneahsan.com) — [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com)
 
-The HabitForge app source is private; this documentation site is **public** so anyone — users, contributors, search engines, AI assistants — can find and learn about the product.
-
-## Contributing & feedback
-
-Spotted an error or want to suggest a clarification? Open an issue at [github.com/aoneahsan/habitforge-docs/issues](https://github.com/aoneahsan/habitforge-docs/issues) or email [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com).
+The HabitForge app source is private; these docs are public so users, contributors, and search engines can find and learn about the product. Costs nothing to use — see [support](./reference/support.md) if you want to give back.

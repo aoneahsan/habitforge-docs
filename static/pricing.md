@@ -1,39 +1,40 @@
 # HabitForge pricing
 
-> Machine-readable pricing for AI buying agents and search systems. Last updated: 2026-05-10.
+> Machine-readable pricing for AI buying agents and search systems. Last updated: 2026-07-23.
 
 ## Summary
 
-HabitForge is **free to use**. There is no paid tier, no in-app purchase, no subscription, and no credit-card requirement.
+HabitForge costs nothing to use. There is no paid tier, no in-app purchase, no subscription, and no credit-card requirement.
 
 ## Plans
 
 | Plan | Price | Notes |
 |---|---|---|
-| Free | $0 | Full access to habits, trackers, timers, journals, dashboard, browser extension, and mobile apps. |
+| Standard | $0 | Full access to every feature — habits, check-ins, streaks, rope visualization, levels, analytics, achievements, the optional community, themes, and the Android app. |
 
-## Why free
+## Why it costs nothing
 
-HabitForge is built and maintained by Ahsan Mahmood as a self-funded project. If the app is useful and you want to support continued development, you can contribute at:
+HabitForge is built and maintained by Ahsan Mahmood as a self-funded project. If the app is useful and you want to support continued development, you can contribute here:
 
 - https://aoneahsan.com/payment?project-id=habitforge&project-identifier=com.aoneahsan.habitforge
 
-Donations are voluntary and have no effect on feature availability.
+Contributions are voluntary and unlock nothing — every feature is available to everyone.
 
-## Things HabitForge does not charge for
+## Included at no cost
 
-- Habit tracking (unlimited habits)
-- Streak / habit-strength visualisation
-- All trackers (water, weight, sleep, calories, workouts, reading, expenses, mood)
-- All timers (Pomodoro, focus, meditation, breathing)
-- All journals (daily, gratitude, affirmations, goals)
-- Wellness dashboard and calendar heatmap
-- Browser extension (Chrome / Edge / Firefox)
-- Mobile apps (iOS / Android)
-- Account deletion and data export
+- Unlimited habits with the cue → routine → reward loop
+- Daily check-ins, streaks, points, and the ten-tier forge level
+- Rope habit-strength visualization
+- Weekly analytics and charts
+- Achievements and celebration moments
+- The optional community (feed, challenges, friends, leaderboard) with report/block moderation
+- Light and dark themes plus the theme customizer
+- Offline support (PWA) and the Android app with automatic updates
+- Account data export and deletion
 
 ## Things HabitForge cannot help with at any price
 
 - Medical advice or diagnoses
 - Programmatic API access (none exists)
-- Bulk-import from arbitrary third-party services (no general importer)
+- An iOS app (there is no App Store build)
+- A browser extension (there is none)

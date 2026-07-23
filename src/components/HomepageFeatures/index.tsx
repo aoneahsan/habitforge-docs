@@ -64,70 +64,71 @@ const ShieldIcon = (
 
 const FEATURES: FeatureItem[] = [
   {
-    title: 'Visual streaks that stay honest',
+    title: 'See your habits as a rope',
     icon: FlameIcon,
-    href: '/docs/habits',
+    href: '/docs/habits/rope-strength',
     description: (
       <>
-        A habit-strength meter shows progress at a glance. The streak engine handles
-        timezones, travel, and skipped days without silently inflating your numbers.
+        Each habit is drawn as a rope that thickens from a thin thread to a cable as
+        you stay consistent, and frays when you slip. A deterministic picture — not a
+        prediction.
       </>
     ),
   },
   {
-    title: 'A wellness toolbox in one place',
-    icon: ChartIcon,
-    href: '/docs/trackers',
-    description: (
-      <>
-        Water, weight, sleep, calories, workouts, reading, expenses, mood — all
-        tracked alongside habits, with D3-powered charts you can actually read.
-      </>
-    ),
-  },
-  {
-    title: 'Focus timers built for deep work',
+    title: 'Check in, build streaks',
     icon: TimerIcon,
-    href: '/docs/timers',
+    href: '/docs/habits/check-ins-and-streaks',
     description: (
       <>
-        Pomodoro, focus sessions, meditation, and breathing exercises — with audio
-        cues, background-friendly counters, and session history that ties back to
-        your habits.
+        Mark a habit done each day it's due. Consecutive check-ins build a streak and
+        earn points, using the cue → routine → reward loop from <em>The Power of
+        Habit</em>.
       </>
     ),
   },
   {
-    title: 'Journals that stay yours',
+    title: 'Points, levels, and achievements',
     icon: NotebookIcon,
-    href: '/docs/journals',
+    href: '/docs/habits/levels-and-points',
     description: (
       <>
-        Daily journal, gratitude, affirmations, mood tracker, goal setting. Optional
-        Google Drive backup writes to <em>your</em> Drive folder — not ours.
+        Points climb a ten-tier forge level from Spark to Forge Master, and
+        milestones unlock achievements with a celebration moment and bonus points.
       </>
     ),
   },
   {
-    title: 'Web, mobile, and a browser extension',
-    icon: LayersIcon,
-    href: '/docs/extension',
+    title: 'Read your week',
+    icon: ChartIcon,
+    href: '/docs/features/analytics',
     description: (
       <>
-        Same data, every surface. The Capacitor mobile build keeps things native; the
-        browser extension adds quick-add and a popup view of today.
+        Weekly analytics turn your check-in history into D3 charts, so you can see
+        which habits are holding and where consistency is slipping.
       </>
     ),
   },
   {
-    title: 'Privacy-respecting by default',
+    title: 'An optional community',
     icon: ShieldIcon,
-    href: '/docs/legal',
+    href: '/docs/features/community',
     description: (
       <>
-        No third-party analytics scripts loaded into the extension. Account deletion
-        removes Firestore data. Read the privacy page for the exact list of what we
-        store and why.
+        Opt in to a feed, challenges, friends, and a leaderboard — with report and
+        block tools you control. Track alone or together; it's your choice.
+      </>
+    ),
+  },
+  {
+    title: 'Web and Android, online or off',
+    icon: LayersIcon,
+    href: '/docs/apps/android',
+    description: (
+      <>
+        Use it in any browser or install the Android app from Google Play, with
+        automatic updates. As a PWA it keeps working offline and syncs when you
+        reconnect.
       </>
     ),
   },

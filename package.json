@@ -2,8 +2,9 @@
   "name": "habitforge-docs",
   "version": "1.0.0",
   "private": true,
-  "description": "Public documentation site for HabitForge — habit tracking, streaks, and behaviour-design workflows. Built with Docusaurus 3.",
+  "description": "Public documentation site for HabitForge — a habit tracker that shows your consistency as a rope. Built with Docusaurus 3.",
   "homepage": "https://habitforge-docs.aoneahsan.com",
+  "packageManager": "yarn@4.17.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/aoneahsan/habitforge-docs.git"

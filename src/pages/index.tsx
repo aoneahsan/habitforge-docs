@@ -60,8 +60,8 @@ export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} — habit tracking, streaks, and wellness in one app`}
-      description="Official documentation for HabitForge: habit tracker with visual streaks, integrated water/weight/sleep/calorie/workout/reading/expense trackers, Pomodoro and meditation timers, daily journals, and a browser extension. Web, iOS, Android."
+      title={`${siteConfig.title} — habit tracking with visual streaks`}
+      description="Official documentation for HabitForge: a habit tracker that shows your consistency as a rope, with check-in streaks, points and levels, weekly analytics, achievements, an optional community, and themes. Web and Android."
     >
       <HomepageHero />
       <main>
