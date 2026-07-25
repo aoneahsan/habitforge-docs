@@ -8,7 +8,7 @@ const BASE_URL = process.env.DOCS_BASE_URL ?? '/';
 const AUTHOR = {
   name: 'Ahsan Mahmood',
   email: 'aoneahsan@gmail.com',
-  url: 'https://aoneahsan.com',
+  url: SITE_URL,
   linkedin: 'https://linkedin.com/in/aoneahsan',
   github: 'https://github.com/aoneahsan',
   npm: 'https://npmjs.com/~aoneahsan',
@@ -141,6 +141,17 @@ const config: Config = {
         docs: {
           routeBasePath: '/docs',
           sidebarPath: './sidebars.ts',
+          // `docs/` is BOTH the published content dir and the home of the
+          // fixed-path internal file docs/MANUAL-TASKS.md. Keep the path (the
+          // global rule fixes it) but never publish it — this repo is public.
+          // NOTE: `exclude` REPLACES the plugin defaults, so they are restated.
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+            'MANUAL-TASKS.md',
+          ],
           editUrl: `${DOCS_GITHUB}/tree/main/`,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
