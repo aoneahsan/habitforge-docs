@@ -46,4 +46,4 @@ It runs as a web app and as an Android app on Google Play. There is no iOS build
 - **Docs source:** [github.com/aoneahsan/habitforge-docs](https://github.com/aoneahsan/habitforge-docs)
 - **Built by:** [Ahsan Mahmood](https://aoneahsan.com) — [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com)
 
-The HabitForge app source is private; these docs are public so users, contributors, and search engines can find and learn about the product. Costs nothing to use — see [support](./reference/support.md) if you want to give back.
+The HabitForge app source is private; these docs are public so users, contributors, and search engines can find and learn about the product. There is a free tier plus Pro and Family plans — see [pricing](pathname:///pricing.md), or [support](./reference/support.md) if you want to give back.

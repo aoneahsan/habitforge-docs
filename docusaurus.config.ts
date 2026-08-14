@@ -120,9 +120,14 @@ const config: Config = {
             name: 'HabitForge',
             url: APP_URL,
             description:
-              'HabitForge is a habit tracker that turns your consistency into a visual rope. It uses the cue-routine-reward habit loop, daily check-ins that build streaks, points and a ten-tier level, weekly analytics, achievements, an optional community, and light/dark themes. It runs on the web and on Android. It costs nothing to use.',
+              'HabitForge is a habit tracker that turns your consistency into a visual rope. It uses the cue-routine-reward habit loop, daily check-ins that build streaks, points and a ten-tier level, weekly analytics, achievements, an optional community, and light/dark themes. It runs on the web and on Android. There is a free tier plus Pro and Family plans; the app currently ships the free tier and the paid plans are not yet available for purchase.',
             applicationCategory: 'LifestyleApplication',
             operatingSystem: 'Web, Android',
+            /* 🔴 The offer describes what can be ACQUIRED today, which is the free tier —
+               so it stays at 0 until Pro and Family are purchasable. Listing an offer for
+               a plan nobody can buy is the mirror image of the claim this change removed:
+               a machine-readable price that does not match reality. Update this and
+               `static/pricing.md` in the SAME change when purchase goes live. */
             offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
             author: { '@id': `${SITE_URL}/#author` },
             publisher: { '@id': `${SITE_URL}/#organization` },
