@@ -1,7 +1,7 @@
 ---
 id: support
 title: Support
-description: How to get help with HabitForge — use the in-app contact form, email the author, or open a docs issue. HabitForge costs nothing; contributions are voluntary.
+description: How to get help with HabitForge — use the in-app contact form, email the author, or open a docs issue. HabitForge has a free tier plus Pro and Family plans; contributions are voluntary.
 sidebar_label: Support
 sidebar_position: 3
 last_update:
@@ -29,11 +29,13 @@ keywords:
 
 ## Support the project
 
-HabitForge is built and maintained by [Ahsan Mahmood](https://aoneahsan.com) and costs nothing to use. If it helps you and you want to give back, you can contribute here:
+HabitForge is built and maintained by [Ahsan Mahmood](https://aoneahsan.com). It has a free tier that is a
+real product rather than a trial, plus Pro and Family plans that lift its limits — see
+[pricing](pathname:///pricing.md). If it helps you and you want to give back, you can contribute here:
 
 - [aoneahsan.com/payment — support HabitForge](https://aoneahsan.com/payment?project-id=habitforge&project-identifier=com.aoneahsan.habitforge)
 
-Contributions are voluntary and don't unlock anything — every feature is available to everyone.
+A contribution is voluntary and separate from a plan; it unlocks nothing on its own.
 
 ## About the author
 

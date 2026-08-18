@@ -1,6 +1,6 @@
 # HabitForge
 
-> HabitForge is a habit tracker that turns your consistency into a rope you can see — a thin thread when a habit is new, an unbreakable cable once you have shown up day after day, and a fraying line when you slip. It runs as a web app and as an Android app on Google Play. There is no iOS app and no browser extension. Sign-in is Google-only, and the app costs nothing to use.
+> HabitForge is a habit tracker that turns your consistency into a rope you can see — a thin thread when a habit is new, an unbreakable cable once you have shown up day after day, and a fraying line when you slip. It runs as a web app and as an Android app on Google Play. There is no iOS app and no browser extension. Sign-in is Google-only. There is a free tier plus two paid plans, Pro and Family; the app currently ships the free tier and the paid plans are not yet available for purchase — see /pricing.md.
 
 This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI agents an at-a-glance overview of the documentation.
 
