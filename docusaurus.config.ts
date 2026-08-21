@@ -15,7 +15,9 @@ const AUTHOR = {
 } as const;
 
 const APP_URL = 'https://habitforge.aoneahsan.com';
-const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge';
+/* The Play listing does not exist yet — the Android build is finished but unpublished
+   (rebuild decision OD-02). Nothing here may link to it: a navbar and footer entry put a
+   dead store link on EVERY page of the site. Restore both when the listing goes live. */
 const SUPPORT_URL =
   'https://aoneahsan.com/payment?project-id=habitforge&project-identifier=com.aoneahsan.habitforge';
 const DOCS_GITHUB = 'https://github.com/aoneahsan/habitforge-docs';
@@ -218,7 +220,6 @@ const config: Config = {
         { to: '/docs/habits', label: 'Habits', position: 'left' },
         { to: '/docs/features/community', label: 'Community', position: 'left' },
         { href: APP_URL, label: 'Open the app ↗', position: 'right' },
-        { href: PLAY_URL, label: 'Google Play ↗', position: 'right' },
         { href: DOCS_GITHUB, label: 'GitHub', position: 'right' },
       ],
     },
@@ -239,7 +240,6 @@ const config: Config = {
           title: 'HabitForge',
           items: [
             { label: 'Open the web app', href: APP_URL },
-            { label: 'Get it on Google Play', href: PLAY_URL },
             { label: 'Privacy & terms', to: '/docs/reference/privacy-and-terms' },
             { label: 'Support', to: '/docs/reference/support' },
             { label: 'Docs source on GitHub', href: DOCS_GITHUB },

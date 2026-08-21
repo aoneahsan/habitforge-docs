@@ -28,7 +28,7 @@ This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI age
 ## Key URLs
 
 - Live app: https://habitforge.aoneahsan.com
-- Google Play: https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge
+- Google Play: not listed yet. The Android app is built but not published; the web app installs to the home screen as a PWA.
 - Documentation home: https://habitforge-docs.aoneahsan.com/docs
 - Get started: https://habitforge-docs.aoneahsan.com/docs/getting-started
 - Habits: https://habitforge-docs.aoneahsan.com/docs/habits
