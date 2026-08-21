@@ -24,7 +24,7 @@ keywords:
 ## Open the app
 
 - **On the web:** go to [habitforge.aoneahsan.com](https://habitforge.aoneahsan.com) in any modern browser. It works on desktop and mobile.
-- **On Android:** install from [Google Play](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge). See [The Android app](./apps/android.md) for what the native build adds.
+- **On Android:** the native app is not on Google Play yet. Until it is, open the web app in Chrome and [add it to your home screen](./apps/install-and-offline.md) — it installs and works offline. See [The Android app](./apps/android.md) for what the native build will add.
 
 There is no iOS app yet — on an iPhone or iPad, use the web app in Safari and [add it to your home screen](./apps/install-and-offline.md).
 

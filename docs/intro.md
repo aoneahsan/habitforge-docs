@@ -22,7 +22,7 @@ keywords:
 
 **HabitForge is a habit tracker that turns your consistency into a rope you can see** — a thin thread when a habit is new, an unbreakable cable once you have shown up day after day, and a fraying line when you slip. This site is the official documentation.
 
-It runs as a web app and as an Android app on Google Play. There is no iOS build and no browser extension.
+It runs as a web app today. An Android app is built and going through Google Play review; it is not on the store yet, so the links below point at the web app. There is no iOS build and no browser extension.
 
 ## Where to start
 
@@ -36,13 +36,12 @@ It runs as a web app and as an Android app on Google Play. There is no iOS build
 - **Check in daily** to build streaks and points, and climb a ten-tier forge [level](./habits/levels-and-points.md).
 - **Watch the rope** — a live picture of each habit's strength, drawn from streak, consistency, and total check-ins.
 - **Read your week** in [analytics](./features/analytics.md), unlock [achievements](./features/achievements.md), and join an optional [community](./features/community.md).
-- **Make it yours** with light/dark [themes and a customizer](./features/themes.md).
+- **Make it yours** with [ten appearance settings](./features/themes.md) — light and dark among them — that follow your account.
 - **Keep tracking offline** — HabitForge is a PWA that queues check-ins without a connection.
 
 ## About this site
 
 - **Live app:** [habitforge.aoneahsan.com](https://habitforge.aoneahsan.com)
-- **Android (Google Play):** [play.google.com/store/apps/…habitforge](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge)
 - **Docs source:** [github.com/aoneahsan/habitforge-docs](https://github.com/aoneahsan/habitforge-docs)
 - **Built by:** [Ahsan Mahmood](https://aoneahsan.com) — [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com)
 

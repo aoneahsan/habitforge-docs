@@ -23,9 +23,20 @@ keywords:
 ## What's inside
 
 - **Feed** — post updates, like and comment, and delete your own posts.
-- **Challenges** — create or join a shared goal, and see live participation.
+- **Challenges** — create or join a shared goal over a set window. Every participant's check-ins are
+  scored against the target, standings update as people check in, and when the window closes the
+  challenge names a winner. **If several people tie, they all win** — no tie-breaker invents a
+  difference the challenge never measured.
 - **Friends** — send and accept friend requests to build your circle.
-- **Leaderboard** — see where you stand by points, with your [level](../habits/levels-and-points.md) badge.
+- **Leaderboard** — see where you stand by points, with your [level](../habits/levels-and-points.md)
+  badge. Opting out hides you from everyone else's board, and you can still see your own rank.
+
+### Challenges bound to a habit
+
+Some challenges are tied to a habit rather than to check-ins in general. When you join one of those you pick
+**which of your own habits** it scores — so the same challenge can measure a run for one person and a page of
+reading for another. If you later delete the habit you picked, your score freezes where it was rather than
+quietly reopening.
 
 ## Staying safe
 

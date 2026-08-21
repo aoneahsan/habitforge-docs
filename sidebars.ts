@@ -36,6 +36,7 @@ const sidebars: SidebarsConfig = {
         'features/achievements',
         'features/community',
         'features/themes',
+        'features/reminders-and-notifications',
       ],
     },
     {

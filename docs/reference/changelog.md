@@ -1,7 +1,7 @@
 ---
 id: changelog
 title: Changelog
-description: What's new in HabitForge, latest first — profile photos and automatic updates in 1.2.0, sharing and in-app legal pages in 1.1.0, and the 1.0 launch.
+description: What's new in HabitForge, latest first — the 2.0 rebuild with offline check-ins, scored challenges, plans and a ten-setting theme customizer, and the 1.x releases before it.
 sidebar_label: Changelog
 sidebar_position: 1
 last_update:
@@ -19,6 +19,28 @@ keywords:
 # Changelog
 
 **What's new in HabitForge, latest first.** These notes mirror the app's release notes, so what you read here matches what shipped.
+
+## 2.0.0 — 2026-08-21
+
+**HabitForge was rebuilt from the ground up.** Same idea, same rope, new foundations — a new stack, a new
+backend, and a lot of things the 1.x app could not do.
+
+- **Feature** — Habits gain real schedules, and **pauses that hold your streak** instead of breaking it.
+- **Feature** — **Check-ins work offline.** They queue on your device and sync when you reconnect.
+- **Feature** — **Challenges are scored.** Participants are ranked against the target, ties are joint wins, and
+  a challenge can be bound to a habit each person chooses for themselves.
+- **Feature** — **Plans.** A free tier that is a real product, plus Pro and a Family household whose members
+  inherit the plan. See [pricing](pathname:///pricing.md).
+- **Feature** — **A notification bell** for what happened while you were away.
+- **Feature** — **A daily reminder raised by your own device**, at a time you choose.
+- **Feature** — **Export everything you have, or delete your account**, from inside the app.
+- **Improvement** — The theme customizer grows from a handful of options to **ten settings**, applied before
+  the first paint so there is no flash of the wrong theme.
+- **Improvement** — Every screen was rebuilt for keyboard and screen-reader use.
+- **Removed** — Profile photos. Profiles now carry a handle and a display name.
+
+**Android:** the native app is built and is not yet on Google Play. The web app installs to your home screen
+in the meantime.
 
 ## 1.2.0 — 2026-07-23
 

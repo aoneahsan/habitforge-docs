@@ -19,9 +19,9 @@ keywords:
 
 # The Android app
 
-**HabitForge on Android is a native app you install from Google Play.** It's the same HabitForge as the web app — habits, streaks, the rope, analytics, achievements, community, and themes — packaged for your phone.
+**The HabitForge Android app is built, but it is not on Google Play yet.** This page describes what the native build adds; it will gain an install link when the listing goes live.
 
-Get it here: [play.google.com/store/apps/…habitforge](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge).
+Until then, Android users get the full product through the web app, which installs to the home screen and works offline — see [Install and offline](./install-and-offline.md).
 
 There is no iOS app yet, because it needs an Apple Developer account. On iPhone or iPad, use the web app and [add it to your home screen](./install-and-offline.md).
 
@@ -39,7 +39,7 @@ Sign-in on Android is **Google-only**, using the device's native account picker.
 
 ## Tips
 
-- **Install from Google Play** for the native experience and automatic updates.
+- **Use the web app on your phone in the meantime** — [add it to your home screen](./install-and-offline.md) and it behaves like an installed app.
 - **Enable notifications only if you want them** — the rope works fine as a silent cue.
 - **Your data follows your Google account**, so the Android app and the web app stay in sync.
 

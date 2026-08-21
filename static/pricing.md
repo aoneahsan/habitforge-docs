@@ -5,8 +5,10 @@
 ## Summary
 
 HabitForge has a free tier and two paid plans, Pro and Family. The free tier is a real product rather than a
-trial: habits, check-ins, streaks, the rope visualization, levels, analytics, achievements, the community and
-the Android app are all included at no cost. Pro and Family lift the free tier's limits.
+trial: habits, check-ins, streaks, the rope visualization, levels, analytics, achievements and the community
+are all included at no cost. Pro and Family lift the free tier's limits.
+
+**Platforms:** HabitForge runs on the web today. An Android app is built and not yet listed on Google Play.
 
 **Availability:** the app currently ships the free tier. Pro and Family are published below as the plan set
 and are **not yet available for purchase** — this page will say so plainly when that changes.
@@ -26,7 +28,8 @@ page, after which the plan is granted to the account:
 
 - https://aoneahsan.com/payment?project-id=habitforge&project-identifier=com.aoneahsan.habitforge
 
-The Android app shows plan status and gates features; it never sells and never links out to a payment page.
+The Android app will show plan status and gate features; it never sells and never links out to a payment page,
+because Google Play requires Play Billing for digital goods and this product takes payment on the web.
 
 ## Included on every plan, including free
 

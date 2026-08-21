@@ -19,13 +19,22 @@ keywords:
 
 # Themes and customizer
 
-**HabitForge lets you shape how the app looks, from a light/dark switch to a full theme customizer.** Open the customizer from the palette icon in the header — it's available whether or not you're signed in.
+**HabitForge lets you shape how the app looks across ten separate settings, from a light/dark switch to the shape of a corner.** Open the customizer from the palette icon in the header — it's on every page, at every width, and it works whether or not you're signed in.
 
-## What you can change
+## The ten settings
 
-- **Appearance** — light, dark, or follow your system setting.
-- **Accent colour** — pick the accent used across buttons, highlights, and the active navigation.
-- **Border radius, UI scaling, and font size** — tune the density and readability to your taste.
+| Setting | What it changes |
+|---|---|
+| **Appearance** | Light, Dark, or follow your system. |
+| **Colour** | Ember, Quench, or Indigo — the accent used by buttons, highlights, and the active navigation. |
+| **Corners** | Square, Soft, Rounded, or Full. |
+| **Density** | How much breathing room sits between things. |
+| **Text size** | Scales the type without breaking the layout. |
+| **Typeface** | The font the app is set in. |
+| **Panels** | How cards and panels are treated. |
+| **Cursor** | The pointer style on devices that have one. |
+| **Motion** | Animation, including turning it off. Your system's "reduce motion" setting is respected on its own. |
+| **Sound** | Short cues on a few actions, off by default. |
 
 Selections use visual card previews rather than dropdowns, so you can see each option before you choose it. A **Reset to defaults** option restores the original look.
 
@@ -34,16 +43,9 @@ Selections use visual card previews rather than dropdowns, so you can see each o
 - **Signed out:** preferences save on your device, so the app reopens the way you left it.
 - **Signed in:** preferences also sync to your account, so the same look follows you to another device.
 
-The app applies your theme before the first paint, so you won't see a flash of the wrong colours on load.
-
-## Tips
-
-- **Follow the system** if you switch between light and dark during the day.
-- **Match the accent to your habits' colours** for a consistent dashboard.
-- **Bump the font size** if you check in one-handed on a phone.
+Your choice is applied before the first paint, so you never see a flash of the wrong theme while the page loads.
 
 ## Where to next
 
-- [Get started](../getting-started.md) — the app the customizer restyles.
-- [Install and offline](../apps/install-and-offline.md) — keep your look on a home-screen install.
-- [The Android app](../apps/android.md) — the same themes on Android.
+- [Analytics](./analytics.md) — read your week.
+- [Install and offline](../apps/install-and-offline.md) — keep your look on an installed copy.

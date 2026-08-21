@@ -24,7 +24,7 @@ keywords:
 ## Install from the browser
 
 - **Desktop (Chrome, Edge):** use the install icon in the address bar, or the browser menu's "Install HabitForge".
-- **Android:** the browser offers "Add to Home screen"; for the full native app, use [Google Play](./android.md) instead.
+- **Android:** the browser offers "Add to Home screen". This is the way to run HabitForge on Android today — [the native app](./android.md) is not on Google Play yet.
 - **iPhone / iPad:** in Safari, tap Share → **Add to Home Screen**. This is how iOS users run HabitForge, since there is no App Store build.
 
 Once installed, HabitForge opens in its own window like any other app.
@@ -47,6 +47,6 @@ Because sync is automatic, you rarely have to think about it — track as usual 
 
 ## Where to next
 
-- [The Android app](./android.md) — the native build and automatic updates.
+- [The Android app](./android.md) — what the native build adds, once it ships.
 - [Get started](../getting-started.md) — open the app and sign in.
 - [Themes and customizer](../features/themes.md) — set your look once, keep it everywhere.
