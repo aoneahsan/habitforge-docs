@@ -5,7 +5,7 @@ description: What's new in HabitForge, latest first — the 2.0 rebuild with off
 sidebar_label: Changelog
 sidebar_position: 1
 last_update:
-  date: 2026-07-23
+  date: 2026-08-29
   author: Ahsan Mahmood
 tags:
   - changelog
@@ -32,15 +32,28 @@ backend, and a lot of things the 1.x app could not do.
 - **Feature** — **Plans.** A free tier that is a real product, plus Pro and a Family household whose members
   inherit the plan. See [pricing](pathname:///pricing.md).
 - **Feature** — **A notification bell** for what happened while you were away.
-- **Feature** — **A daily reminder raised by your own device**, at a time you choose.
+- **Feature** — **Reminders raised by your own device.** A daily one at a time you choose, and **a reminder
+  per habit**, on the days that habit is actually due. Both are scheduled on your phone rather than sent from
+  a server, so they are right across a time-zone change and work with no connection at all.
+- **Feature** — **A third kind of habit: Maintain**, beside Build and Break — for the things you are keeping
+  up rather than starting or stopping.
+- **Feature** — **Your longest streak ever**, on the dashboard and on the leaderboard, kept separately from
+  the one you are running now so a broken streak no longer erases what you did.
+- **Feature** — **A line on your dashboard about the people you know** — who kept what today.
 - **Feature** — **Export everything you have, or delete your account**, from inside the app.
 - **Improvement** — The theme customizer grows from a handful of options to **ten settings**, applied before
   the first paint so there is no flash of the wrong theme.
 - **Improvement** — Every screen was rebuilt for keyboard and screen-reader use.
+- **Improvement** — **The household screens.** If you own a Family plan you get a roster, a seat meter, an
+  invitation list and a way to hand the household over; if you are a member you get a plain account of what
+  you inherit and one way out.
+- **Improvement** — **Deleting your account now tells you it worked** before signing you out, instead of the
+  app simply disappearing.
+- **Improvement** — Every link that leaves HabitForge opens in a new tab.
 - **Removed** — Profile photos. Profiles now carry a handle and a display name.
 
-**Android:** the native app is built and is not yet on Google Play. The web app installs to your home screen
-in the meantime.
+**Android:** the native app is built and signed and is not yet on Google Play. The web app installs to your
+home screen in the meantime.
 
 ## 1.2.0 — 2026-07-23
 

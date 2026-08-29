@@ -1,11 +1,11 @@
 ---
 id: check-ins-and-streaks
 title: Check-ins and streaks
-description: A check-in is how you tell HabitForge you did a habit today. Consecutive check-ins build a streak and earn points that raise your forge level.
+description: A check-in is how you tell HabitForge you did a habit today. Consecutive check-ins build a streak and earn points that raise your forge level, and your longest streak ever is kept even when a run breaks.
 sidebar_label: Check-ins & streaks
 sidebar_position: 2
 last_update:
-  date: 2026-07-23
+  date: 2026-08-29
   author: Ahsan Mahmood
 tags:
   - habits
@@ -29,6 +29,14 @@ keywords:
 4. Miss a due day and the streak resets — the rope starts to fray.
 
 Streaks count consecutive on-schedule days, so a habit scheduled for weekdays isn't broken by skipping a weekend it wasn't due.
+
+## Your longest streak is kept
+
+A broken streak resets the one you are running. It does **not** erase the longest one you have ever reached —
+that is kept separately and shown on your dashboard and on the leaderboard.
+
+It only ever goes up. Missing a day costs you the current run and nothing else, which is the point: the
+number that says what you are capable of should not be deleted by one bad week.
 
 ## Points and level
 
