@@ -1,11 +1,11 @@
 ---
 id: changelog
 title: Changelog
-description: What's new in HabitForge, latest first — the 2.0 rebuild with offline check-ins, scored challenges, plans and a ten-setting theme customizer, and the 1.x releases before it.
+description: What's new in HabitForge, latest first — the 1.0 rebuild with offline check-ins, scored challenges, a generous free tier and a ten-setting theme customizer, and the pre-release history before it.
 sidebar_label: Changelog
 sidebar_position: 1
 last_update:
-  date: 2026-08-29
+  date: 2026-08-31
   author: Ahsan Mahmood
 tags:
   - changelog
@@ -20,7 +20,13 @@ keywords:
 
 **What's new in HabitForge, latest first.** These notes mirror the app's release notes, so what you read here matches what shipped.
 
-## 2.0.0 — 2026-08-21
+## 1.0.0 — 2026-08-31 — the first public release
+
+:::note About the numbering
+The versions listed below this one — 1.2.0, 1.1.0 and 1.0 — are the development history of the **earlier
+app** this one replaced. **None of them was ever published**, so no one is being asked to move backwards:
+this is the first HabitForge release to reach a store, and it starts the version line at 1.0.0.
+:::
 
 **HabitForge was rebuilt from the ground up.** Same idea, same rope, new foundations — a new stack, a new
 backend, and a lot of things the 1.x app could not do.
@@ -29,8 +35,11 @@ backend, and a lot of things the 1.x app could not do.
 - **Feature** — **Check-ins work offline.** They queue on your device and sync when you reconnect.
 - **Feature** — **Challenges are scored.** Participants are ranked against the target, ties are joint wins, and
   a challenge can be bound to a habit each person chooses for themselves.
-- **Feature** — **Plans.** A free tier that is a real product, plus Pro and a Family household whose members
-  inherit the plan. See [pricing](pathname:///pricing.md).
+- **Feature** — **Plans, and a free tier that is genuinely generous.** Free carries **30 habits, 30
+  challenges a month and up to 500 friends** — the things that cost nothing to run are not the things worth
+  rationing. Pro and a Family household whose members inherit the plan sit above it. See
+  [pricing](pathname:///pricing.md), which reads its numbers from the live plan table rather than from a
+  page somebody has to remember to update.
 - **Feature** — **A notification bell** for what happened while you were away.
 - **Feature** — **Reminders raised by your own device.** A daily one at a time you choose, and **a reminder
   per habit**, on the days that habit is actually due. Both are scheduled on your phone rather than sent from
@@ -52,8 +61,8 @@ backend, and a lot of things the 1.x app could not do.
 - **Improvement** — Every link that leaves HabitForge opens in a new tab.
 - **Removed** — Profile photos. Profiles now carry a handle and a display name.
 
-**Android:** the native app is built and signed and is not yet on Google Play. The web app installs to your
-home screen in the meantime.
+**Android:** the native app is built, signed and **uploaded to Google Play internal testing**; it reaches
+the public track after its on-device pass. The web app installs to your home screen in the meantime.
 
 ## 1.2.0 — 2026-07-23
 
