@@ -7,8 +7,12 @@
   overflow: hidden;
 }
 
+/* Ember 800 -> 950. One hue darkening, like the light-mode gradient above.
+   White on both stops measures 9.32 and 16.61 against white, so the hero text
+   clears AA across the whole sweep. The values it replaced (#7c2d12 orange-900
+   -> #991b1b red-800) were two different hues from the retired Radix theme. */
 [data-theme='dark'] .heroBanner {
-  background: linear-gradient(135deg, #7c2d12 0%, #991b1b 100%);
+  background: linear-gradient(135deg, #822718 0%, #3b1009 100%);
 }
 
 .heroTitle {

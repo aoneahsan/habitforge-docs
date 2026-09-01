@@ -5,10 +5,17 @@
   width: 100%;
 }
 
+/* 🔴 The icons paint with `currentColor`, and the colour is set HERE, once.
+   They used to hardcode `stroke="#ea580c"` and a `#fb923c -> #dc2626` gradient
+   inline in the TSX, which meant the theme could not reach them: changing the
+   palette in custom.css left six orange icons on an ember page. A hardcoded
+   colour is invisible to the theme, which is the whole reason this rule
+   exists. Never put a hex back in the markup. */
 .featureSvg {
   height: 56px;
   width: 56px;
   display: inline-block;
+  color: var(--ifm-color-primary);
 }
 
 .featureCard {
@@ -22,7 +29,8 @@
 
 .featureCard:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px -12px rgba(249, 115, 22, 0.35);
+  /* ember-500 #ef4f35, was orange-500 rgba(249,115,22,…) */
+  box-shadow: 0 8px 24px -12px rgba(239, 79, 53, 0.35);
 }
 
 .featureCard h3 {

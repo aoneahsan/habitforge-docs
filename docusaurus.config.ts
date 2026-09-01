@@ -80,7 +80,10 @@ const config: Config = {
     },
     {
       tagName: 'meta',
-      attributes: { name: 'theme-color', content: '#F97316' },
+      /* ember-600, matching --ifm-color-primary in src/css/custom.css. This was
+         #F97316 (orange-500) until 2026-09-01 and would have painted the mobile
+         browser chrome a different colour from the page under it. */
+      attributes: { name: 'theme-color', content: '#d03b23' },
     },
     {
       tagName: 'script',

@@ -1,13 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="HabitForge">
-  <defs>
-    <linearGradient id="hf-logo" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F97316"/>
-      <stop offset="100%" stop-color="#DC2626"/>
-    </linearGradient>
-  </defs>
-  <rect x="2" y="2" width="92" height="92" rx="20" fill="url(#hf-logo)"/>
-  <path
-    fill="#fff"
-    d="M48 18c4.8 9.6 12.6 15.6 12.6 25.5a12.6 12.6 0 0 1-25.2 0c0-3 1.5-6 3-9-6 3-12 9-12 18a21.6 21.6 0 0 0 43.2 0c0-15.6-12.6-25.2-21.6-34.5Z"
-  />
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  HabitForge Docs — navbar logo.
+
+  🔴 The APP's own mark, not a second one: `public/icon.svg` from the habitforge
+  repo, scaled from its 512 canvas to 96 (÷5.333). The struck ember tick, then
+  three ruled entries shortening down the page — a day-book, which is what the
+  product is.
+
+  It replaced a FLAME in a #F97316 -> #DC2626 gradient on 2026-09-01, for the
+  reasons recorded in favicon.svg beside it and in DECISIONS-LOG.md OD-141.
+
+  Resolved token values only:
+    #120c0a  iron-950
+    #ef4f35  ember-500, the claimed hue (32)
+    #ebe3e1  iron-200, at 0.55 opacity
+
+  This one is also referenced as the Organization logo in the site's JSON-LD
+  (`docusaurus.config.ts`), so it is a public identity asset — keep it in step
+  with the app icon rather than styling it for the docs alone.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96"
+     role="img" aria-label="HabitForge">
+  <rect width="96" height="96" fill="#120c0a" />
+
+  <!-- The tick. -->
+  <rect x="21" y="21" width="9" height="54" fill="#ef4f35" />
+
+  <!-- Three ruled entries, shortening. -->
+  <g stroke="#ebe3e1" stroke-opacity="0.55" stroke-width="4.125" stroke-linecap="square">
+    <path d="M38.25 28.5H75" />
+    <path d="M38.25 48H69.75" />
+    <path d="M38.25 67.5H60" />
+  </g>
 </svg>

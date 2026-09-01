@@ -1,6 +1,6 @@
 # HabitForge
 
-> HabitForge is a habit tracker that turns your consistency into a rope you can see — a thin thread when a habit is new, an unbreakable cable once you have shown up day after day, and a fraying line when you slip. It runs as a web app and as an Android app on Google Play. There is no iOS app and no browser extension. Sign-in is Google-only. There is a free tier plus two paid plans, Pro and Family; the app currently ships the free tier and the paid plans are not yet available for purchase — see /pricing.md.
+> HabitForge is a habit tracker that turns your consistency into a rope you can see — a thin thread when a habit is new, thickening through string, rope and cable to a chain once you have shown up day after day, and fraying where you stopped. It runs as a web app. An Android build exists and is on Google Play's internal-testing track; it is not publicly listed, so the web app is how anyone installs it today. There is no iOS app and no browser extension. Sign-in is Google-only. There is a free tier plus two paid plans, Pro and Family; the app currently ships the free tier and the paid plans are not yet available for purchase — see /pricing.md.
 
 This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI agents an at-a-glance overview of the documentation.
 
@@ -8,7 +8,7 @@ This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI age
 
 - Habit tracking with the cue → routine → reward loop (plus craving and investment) from *The Power of Habit*
 - Daily check-ins that build streaks and points
-- A rope visualization (D3) showing each habit's strength from streak, consistency, and total check-ins — a deterministic calculation, not a machine-learning model
+- A rope visualization (D3) showing each habit's strength as a weighted score — current streak 40%, the average across your habits 30%, and how much of today is done 30% — a deterministic calculation, not a machine-learning model
 - A ten-tier forge level (Spark → Forge Master) driven by points
 - Weekly analytics and charts
 - Achievements with a celebration moment and bonus points
@@ -17,7 +17,7 @@ This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI age
 - Offline support as a Progressive Web App; check-ins made offline sync on reconnect
 - Automatic in-app updates on the Android app
 
-## What it doesn't do
+## What it does not do
 
 - No iOS app (there is no Apple Developer account); iPhone/iPad users run the web app
 - No browser extension
@@ -28,7 +28,7 @@ This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI age
 ## Key URLs
 
 - Live app: https://habitforge.aoneahsan.com
-- Google Play: not listed yet. The Android app is built but not published; the web app installs to the home screen as a PWA.
+- Google Play: not publicly listed. The Android build is on the internal-testing track only; the web app installs to the home screen as a PWA.
 - Documentation home: https://habitforge-docs.aoneahsan.com/docs
 - Get started: https://habitforge-docs.aoneahsan.com/docs/getting-started
 - Habits: https://habitforge-docs.aoneahsan.com/docs/habits

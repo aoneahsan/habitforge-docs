@@ -1,10 +1,10 @@
 # HabitForge Documentation
 
-Public documentation site for **HabitForge** — a habit tracker that turns your consistency into a rope you can see: a thin thread when a habit is new, an unbreakable cable once you've shown up day after day, and a fraying line when you slip. Available as a web app and an Android app on Google Play. There is no iOS app and no browser extension.
+Public documentation site for **HabitForge** — a habit tracker that turns your consistency into a rope you can see: a thin thread when a habit is new, thickening through string, rope and cable to a chain once you have shown up day after day, and fraying where you stopped. It runs as a web app; the Android build is on Google Play's internal-testing track and is not publicly listed. There is no iOS app and no browser extension.
 
 - **Live docs**: https://habitforge-docs.aoneahsan.com
 - **App**: https://habitforge.aoneahsan.com
-- **Google Play**: https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge
+- **Google Play**: not publicly listed yet — this line gains a link when the listing goes live
 - **Author**: [Ahsan Mahmood](https://aoneahsan.com) — [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com) — [LinkedIn](https://linkedin.com/in/aoneahsan) — [GitHub](https://github.com/aoneahsan) — [NPM](https://npmjs.com/~aoneahsan)
 - **License**: MIT
 

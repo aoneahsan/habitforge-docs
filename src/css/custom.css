@@ -1,23 +1,36 @@
 /**
- * HabitForge brand theme for Docusaurus.
+ * HabitForge brand theme for Docusaurus — EMBER / IRON.
  *
- * Brand palette comes from the main app's Radix theme + portfolio info file:
- *   primary  : #F97316 (orange-500)
- *   primary-2: #EA580C (orange-600)
- *   accent-2 : #DC2626 (red-600)  — used in habit "fire" gradient
- *   ink      : #0F172A (slate-900) for light text on dark headers
+ * 🔴 These are the PRODUCT's own tokens, not a second palette invented for the
+ * docs. Every hex below is the sRGB conversion of a value in the app's
+ * `src/styles/palette.css`, which is authored in OKLCH at hue 32 ("Ember" in
+ * ~/.claude/palettes/project-palettes.json):
  *
- * Light mode keeps neutrals warm; dark mode keeps the brand accents legible.
+ *   ember-600  #d03b23  = oklch(0.573 0.190 32)   light-mode primary
+ *   ember-500  #ef4f35  = oklch(0.646 0.200 32)   the accent on both cards
+ *   ember-400  #ff7b63  = oklch(0.732 0.166 32)   dark-mode primary
+ *   iron-950   #120c0a  = the app's darkest surface, and the OG card's ground
+ *
+ * Two things this replaced, both real defects rather than taste:
+ *
+ * 1. The site shipped an orange->RED "fire" gradient (#f97316 -> #dc2626) on
+ *    slate backgrounds, from a Radix theme the app no longer uses. The OG
+ *    share card built for this site on 2026-09-01 is ember on iron, so a
+ *    shared docs link showed an ember card that opened an orange site.
+ * 2. 🔴 The old light-mode primary #ea580c scored **3.56** against white —
+ *    below the 4.5 AA threshold, on every link on the site. ember-600 scores
+ *    **4.85**. Dark mode goes 8.57 -> 7.63, still far above the bar.
+ *    Re-measure with a relative-luminance ratio before changing either value.
  */
 
 :root {
-  --ifm-color-primary: #ea580c;
-  --ifm-color-primary-dark: #c2410c;
-  --ifm-color-primary-darker: #9a3412;
-  --ifm-color-primary-darkest: #7c2d12;
-  --ifm-color-primary-light: #f97316;
-  --ifm-color-primary-lighter: #fb923c;
-  --ifm-color-primary-lightest: #fdba74;
+  --ifm-color-primary: #d03b23;
+  --ifm-color-primary-dark: #bb3520;
+  --ifm-color-primary-darker: #a9301c;
+  --ifm-color-primary-darkest: #822718;
+  --ifm-color-primary-light: #ef4f35;
+  --ifm-color-primary-lighter: #ff7b63;
+  --ifm-color-primary-lightest: #ffad9c;
 
   --ifm-code-font-size: 95%;
   --ifm-font-family-base:
@@ -26,25 +39,28 @@
   --ifm-heading-font-family: var(--ifm-font-family-base);
   --ifm-heading-font-weight: 700;
 
-  --docusaurus-highlighted-code-line-bg: rgba(249, 115, 22, 0.12);
+  --docusaurus-highlighted-code-line-bg: rgba(239, 79, 53, 0.12);
 
-  --hf-gradient-fire: linear-gradient(135deg, #f97316 0%, #dc2626 100%);
-  --hf-gradient-soft: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  /* Ember 500 -> 700. One hue, darkening — the rope thickening, not two
+     different colours meeting. */
+  --hf-gradient-fire: linear-gradient(135deg, #ef4f35 0%, #a9301c 100%);
+  --hf-gradient-soft: linear-gradient(135deg, #fef3f1 0%, #ffe7e1 100%);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #fb923c;
-  --ifm-color-primary-dark: #f97316;
-  --ifm-color-primary-darker: #ea580c;
-  --ifm-color-primary-darkest: #c2410c;
-  --ifm-color-primary-light: #fdba74;
-  --ifm-color-primary-lighter: #fed7aa;
-  --ifm-color-primary-lightest: #ffedd5;
+  --ifm-color-primary: #ff7b63;
+  --ifm-color-primary-dark: #ef4f35;
+  --ifm-color-primary-darker: #d03b23;
+  --ifm-color-primary-darkest: #a9301c;
+  --ifm-color-primary-light: #ffad9c;
+  --ifm-color-primary-lighter: #ffcec4;
+  --ifm-color-primary-lightest: #ffe7e1;
 
-  --ifm-background-color: #0b1220;
-  --ifm-background-surface-color: #111a2e;
+  /* iron-950 / iron-900 — the app's surfaces and the OG card's ground. */
+  --ifm-background-color: #120c0a;
+  --ifm-background-surface-color: #1e1716;
 
-  --docusaurus-highlighted-code-line-bg: rgba(251, 146, 60, 0.18);
+  --docusaurus-highlighted-code-line-bg: rgba(255, 123, 99, 0.18);
 }
 
 /* Subtle entrance animation that respects reduced-motion users. */
@@ -84,17 +100,28 @@
   border-radius: 12px;
 }
 
-/* Inline call-out style for "What this does NOT do" blocks. */
+/* Inline call-out for "What this does NOT do" blocks.
+ *
+ * 🔴 Deliberately NEUTRAL iron, not red, and not the brand ember. Two reasons,
+ * and both changed when the palette moved to ember:
+ *   - red-600 #dc2626 is now within a few degrees of ember-600 #d03b23, so an
+ *     alarm-red box would read as a brand accent box — the opposite signal.
+ *   - naming what the product does not do is a plain statement in this voice,
+ *     made before anyone asks. It is not a warning, and styling it as one
+ *     tells the reader something the copy does not.
+ */
 .hf-not-this {
-  border: 1px solid rgba(220, 38, 38, 0.25);
-  background: rgba(220, 38, 38, 0.06);
+  border: 1px solid rgba(18, 12, 10, 0.16);
+  background: rgba(18, 12, 10, 0.04);
+  border-left: 3px solid rgba(18, 12, 10, 0.38);
   padding: 0.85rem 1rem;
   border-radius: 10px;
   margin: 1rem 0;
 }
 [data-theme='dark'] .hf-not-this {
-  border-color: rgba(248, 113, 113, 0.35);
-  background: rgba(248, 113, 113, 0.08);
+  border-color: rgba(224, 217, 216, 0.18);
+  background: rgba(224, 217, 216, 0.05);
+  border-left-color: rgba(224, 217, 216, 0.42);
 }
 
 /* Author byline on every doc page (rendered by a swizzled component

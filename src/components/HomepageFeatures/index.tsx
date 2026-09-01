@@ -11,61 +11,86 @@ type FeatureItem = {
   icon: ReactNode;
 };
 
-const FlameIcon = (
-  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true">
-    <path
-      fill="url(#hf-flame)"
-      d="M12 2c1.5 3 4 5 4 8a4 4 0 0 1-8 0c0-1 .5-2 1-3-2 1-4 3-4 6a7 7 0 0 0 14 0c0-5-4-8-7-11Z"
-    />
-    <defs>
-      <linearGradient id="hf-flame" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stopColor="#fb923c" />
-        <stop offset="100%" stopColor="#dc2626" />
-      </linearGradient>
-    </defs>
+/**
+ * 🔴 Every icon paints with `currentColor`. The colour comes from
+ * `.featureSvg` in styles.module.css, which reads `--ifm-color-primary`.
+ *
+ * They previously hardcoded `stroke="#ea580c"` and a `#fb923c -> #dc2626`
+ * gradient inline, so retuning the site palette in custom.css left six orange
+ * icons sitting on an ember page. Do not put a hex back in this file.
+ *
+ * Three of the six also depicted the wrong thing, which mattered more than the
+ * colour did:
+ *   - a FLAME headed the card about the ROPE. The rope is the product's motif,
+ *     and the docs OG card had already been rebuilt for exactly this reason.
+ *   - a TIMER headed check-ins, and a NOTEBOOK headed points and levels.
+ *     HabitForge has no timers and no journal; this repo's own guide says so
+ *     in as many words, and the old generic-template pages for both were
+ *     deleted in 2026-07. The icons outlived the pages.
+ */
+
+/** A braid thickening left to right: thread -> string -> rope. */
+const RopeIcon = (
+  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round">
+    <g opacity="0.45">
+      <path d="M2 12c1.4 0 1.4 3 2.8 3S6.2 12 7.6 12" strokeWidth="1.2" />
+      <path d="M7.6 12c1.6 0 1.6 3.6 3.2 3.6s1.6-3.6 3.2-3.6" strokeWidth="1.8" />
+      <path d="M14 12c1.8 0 1.8 4.2 3.6 4.2S19.4 12 21.2 12" strokeWidth="2.6" />
+    </g>
+    <path d="M2 12c1.4 0 1.4-3 2.8-3S6.2 12 7.6 12" strokeWidth="1.2" />
+    <path d="M7.6 12c1.6 0 1.6-3.6 3.2-3.6s1.6 3.6 3.2 3.6" strokeWidth="1.8" />
+    <path d="M14 12c1.8 0 1.8-4.2 3.6-4.2s1.8 4.2 3.6 4.2" strokeWidth="2.6" />
+  </svg>
+);
+
+/** A day marked done — what a check-in actually is. */
+const CheckDayIcon = (
+  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="5" width="18" height="16" rx="2.5" />
+    <path d="M8 3v4M16 3v4M3 10h18" />
+    <path d="m8.5 15.5 2.5 2.5 4.5-5" />
+  </svg>
+);
+
+/** A milestone, for the levels and achievements card. */
+const MedalIcon = (
+  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="9" r="5.5" />
+    <path d="m12 6.6 1 2 2.2.3-1.6 1.5.4 2.2-2-1-2 1 .4-2.2-1.6-1.5 2.2-.3z" />
+    <path d="M8.5 14.2 7 21l5-2.4L17 21l-1.5-6.8" />
   </svg>
 );
 
 const ChartIcon = (
-  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="#ea580c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M3 3v18h18" />
     <path d="M7 15l4-6 3 4 5-7" />
   </svg>
 );
 
-const TimerIcon = (
-  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="#ea580c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="13" r="8" />
-    <path d="M12 9v4l2 2" />
-    <path d="M9 2h6" />
+/** Other people — the community card's actual subject. */
+const PeopleIcon = (
+  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="9" cy="8" r="3.2" />
+    <path d="M3 20a6 6 0 0 1 12 0" />
+    <path d="M16.5 5.5a3.2 3.2 0 0 1 0 5.6" />
+    <path d="M18 14.4A6 6 0 0 1 21 20" />
   </svg>
 );
 
-const NotebookIcon = (
-  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="#ea580c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4 4a2 2 0 0 1 2-2h11a3 3 0 0 1 3 3v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z" />
-    <path d="M8 7h8M8 11h8M8 15h5" />
-  </svg>
-);
-
-const LayersIcon = (
-  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="#ea580c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 2 2 8l10 6 10-6Z" />
-    <path d="M2 14l10 6 10-6" />
-  </svg>
-);
-
-const ShieldIcon = (
-  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="#ea580c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 2 4 5v7c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5Z" />
-    <path d="m9 12 2 2 4-4" />
+/** A screen and a phone, for the web-and-Android card. */
+const DevicesIcon = (
+  <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="4" width="12.5" height="9.5" rx="1.5" />
+    <path d="M8.25 13.5V18M5.5 18h5.5" />
+    <rect x="16.5" y="8.5" width="5.5" height="11.5" rx="1.5" />
   </svg>
 );
 
 const FEATURES: FeatureItem[] = [
   {
     title: 'See your habits as a rope',
-    icon: FlameIcon,
+    icon: RopeIcon,
     href: '/docs/habits/rope-strength',
     description: (
       <>
@@ -77,7 +102,7 @@ const FEATURES: FeatureItem[] = [
   },
   {
     title: 'Check in, build streaks',
-    icon: TimerIcon,
+    icon: CheckDayIcon,
     href: '/docs/habits/check-ins-and-streaks',
     description: (
       <>
@@ -89,7 +114,7 @@ const FEATURES: FeatureItem[] = [
   },
   {
     title: 'Points, levels, and achievements',
-    icon: NotebookIcon,
+    icon: MedalIcon,
     href: '/docs/habits/levels-and-points',
     description: (
       <>
@@ -111,7 +136,7 @@ const FEATURES: FeatureItem[] = [
   },
   {
     title: 'An optional community',
-    icon: ShieldIcon,
+    icon: PeopleIcon,
     href: '/docs/features/community',
     description: (
       <>
@@ -122,7 +147,7 @@ const FEATURES: FeatureItem[] = [
   },
   {
     title: 'Web and Android, online or off',
-    icon: LayersIcon,
+    icon: DevicesIcon,
     href: '/docs/apps/android',
     description: (
       <>
