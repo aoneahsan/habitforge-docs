@@ -45,7 +45,7 @@ These fields are optional, but filling in a concrete **cue** and **reward** tend
 
 - **Start small.** Two habits done daily beat ten done once.
 - **Write the cue as an "after".** Anchoring a habit to an existing routine gives it a reliable trigger.
-- **Phrase the reward as identity.** "I'm someone who finishes what they start" is more durable than "get fit".
+- **Phrase the reward as identity.** "I am someone who finishes what they start" is more durable than "get fit".
 
 ## Where to next
 

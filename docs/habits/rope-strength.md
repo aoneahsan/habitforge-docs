@@ -1,7 +1,7 @@
 ---
 id: rope-strength
 title: Rope strength
-description: The rope is HabitForge's visual habit-strength meter. It grows from a thin thread to an unbreakable cable as you stay consistent, and frays when you slip. A deterministic calculation, not an ML model.
+description: The rope is HabitForge's visual habit-strength meter. It grows from a thin thread towards a chain as you stay consistent, and frays when you slip. A deterministic calculation, not an ML model.
 sidebar_label: Rope strength
 sidebar_position: 3
 last_update:
@@ -19,15 +19,15 @@ keywords:
 
 # Rope strength
 
-**The rope is HabitForge's way of showing how strong a habit is.** A brand-new habit is a thin thread; as you keep checking in, it thickens toward an unbreakable cable. Slip, and it starts to fray. The rope is drawn with D3 and updates as you check in.
+**The rope is HabitForge's way of showing how strong a habit is.** A brand-new habit is a thin thread; as you keep checking in, it thickens towards a chain. Slip, and it starts to fray. The rope is drawn with D3 and updates as you check in.
 
 ## What it measures
 
 The rope's strength is a **deterministic, client-side calculation** — not a machine-learning model and not a prediction. It combines three things:
 
-- **Current streak** — how many on-schedule days in a row.
-- **Consistency** — how reliably you check in over time.
-- **Total check-ins** — the depth of the habit's history.
+- **Current streak**, 40 per cent — how many on-schedule days in a row.
+- **Average across your habits**, 30 per cent — how the rest of your habits are running.
+- **Done today**, 30 per cent — how much of today you have already completed.
 
 Because it is deterministic, the same inputs always produce the same rope. There is no hidden scoring and nothing is guessed about you.
 

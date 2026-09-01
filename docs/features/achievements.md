@@ -23,17 +23,17 @@ keywords:
 ## How they work
 
 1. As you check in, HabitForge watches for milestones in the background.
-2. When you hit one, the achievement unlocks — with a short celebration and confetti.
+2. When you hit one, the achievement unlocks — with a short celebration naming the points it earned.
 3. Bonus points are added to your total, which can raise your [level](../habits/levels-and-points.md).
 4. Unlocked achievements are collected on your achievements page, where you can share one.
 
-You don't opt in or configure anything — achievements appear as you earn them.
+You do not opt in or configure anything — achievements appear as you earn them.
 
 ## Tips
 
 - **Consistency unlocks the most.** Many achievements are about showing up repeatedly, not doing anything extra.
-- **Share a milestone.** The share button lets you post an achievement to friends or the [community](./community.md).
-- **Let them be a surprise.** You don't need to chase achievements — they follow good habits.
+- **Share a milestone.** The share button sends an achievement to another app, or copies a link to it.
+- **Let them be a surprise.** You do not need to chase achievements — they follow good habits.
 
 ## Where to next
 

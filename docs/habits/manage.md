@@ -1,7 +1,7 @@
 ---
 id: manage
 title: Manage habits
-description: Edit a habit's details, pause it while you're away, or delete it for good. Pausing keeps your history; deleting removes the habit permanently.
+description: Edit a habit's details, pause it while you are away, or delete it for good. Pausing keeps your history; deleting removes the habit permanently.
 sidebar_label: Manage habits
 sidebar_position: 5
 last_update:
@@ -22,24 +22,24 @@ keywords:
 
 ## Edit
 
-Change a habit's name, category, type, schedule, or any of the [habit-loop fields](./create.md). Edits apply going forward and don't rewrite your past check-ins.
+Change a habit's name, category, type, schedule, or any of the [habit-loop fields](./create.md). Edits apply going forward and do not rewrite your past check-ins.
 
 ## Pause
 
-Pausing takes a habit off your daily list without losing anything. Use it when a habit doesn't apply for a while — travel, illness, a season change. Its history and points stay intact, and you can resume it any time. A paused habit isn't counted as missed while it's paused.
+Pausing takes a habit off your daily list without losing your history. Use it when a habit does not apply for a while — travel, illness, a season change. Its history and points stay intact, and you can resume it any time. A paused habit is not counted as missed while it is paused. **Resuming does start the run again from zero**, so a pause protects what you have already earned rather than the streak you were on.
 
 ## Delete
 
-Deleting removes the habit and its history permanently. This can't be undone, so pause instead if you might return to the habit later.
+Deleting removes the habit and its history permanently. This cannot be undone, so pause instead if you might return to the habit later.
 
 ## Tips
 
-- **Pause, don't delete, for a break.** You keep the streak history and can pick up where you left off.
+- **Pause, do not delete, for a break.** You keep the history and the points; the current run restarts when you resume.
 - **Edit the schedule rather than starting over.** Changing days keeps the habit's history and rope.
 - **Delete to declutter.** If a habit no longer fits your life, removing it keeps your dashboard focused.
 
 ## Where to next
 
-- [Create a habit](./create.md) — the fields you're editing.
-- [Check-ins and streaks](./check-ins-and-streaks.md) — what pausing protects.
+- [Create a habit](./create.md) — the fields you are editing.
+- [Check-ins and streaks](./check-ins-and-streaks.md) — what a pause keeps, and what it does not.
 - [Account and data](../reference/privacy-and-terms.md) — deleting your whole account.

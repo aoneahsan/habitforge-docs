@@ -19,7 +19,7 @@ keywords:
 
 # Levels and points
 
-**Points are the score you build across every habit; your level is the tier those points put you in.** Check-ins earn points, achievements add bonus points, and as your total grows you climb a ten-step forge ladder.
+**Points are the total you build across every habit; your level is the tier those points put you in.** Check-ins earn points, achievements add bonus points, and as your total grows you climb a ten-step forge ladder.
 
 ## The forge ladder
 
@@ -49,7 +49,7 @@ Early tiers come quickly so progress feels real in the first week; later tiers w
 
 - **Points reward consistency, not intensity.** Many small check-ins outpace a single burst.
 - **Achievements are a shortcut.** Unlocking one adds bonus points — see [Achievements](../features/achievements.md).
-- **The number is a nudge, not the goal.** The rope tells you how a habit is doing; the level tells you how far you've come overall.
+- **The number is a nudge, not the goal.** The rope tells you how a habit is doing; the level tells you how far you have come overall.
 
 ## Where to next
 

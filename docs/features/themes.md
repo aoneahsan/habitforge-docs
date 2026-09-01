@@ -1,8 +1,8 @@
 ---
 id: themes
-title: Themes and customizer
-description: HabitForge ships light and dark themes plus a full customizer for appearance, accent colour, radius, scaling, and font size. Your choices persist across devices.
-sidebar_label: Themes & customizer
+title: Themes and customiser
+description: HabitForge ships light and dark themes plus a full customiser for appearance, accent colour, radius, scaling, and font size. Your choices persist across devices.
+sidebar_label: Themes & customiser
 sidebar_position: 4
 last_update:
   date: 2026-07-23
@@ -17,9 +17,9 @@ keywords:
   - accent color
 ---
 
-# Themes and customizer
+# Themes and customiser
 
-**HabitForge lets you shape how the app looks across ten separate settings, from a light/dark switch to the shape of a corner.** Open the customizer from the palette icon in the header — it's on every page, at every width, and it works whether or not you're signed in.
+**HabitForge lets you shape how the app looks across ten separate settings, from a light/dark switch to the shape of a corner.** Open the customiser from the palette icon in the header — it is on every page, at every width, and it works whether or not you are signed in.
 
 ## The ten settings
 

@@ -28,7 +28,7 @@ keywords:
 3. Your streak for the habit goes up, points are added, and the [rope](./rope-strength.md) grows a little stronger.
 4. Miss a due day and the streak resets — the rope starts to fray.
 
-Streaks count consecutive on-schedule days, so a habit scheduled for weekdays isn't broken by skipping a weekend it wasn't due.
+Streaks count consecutive on-schedule days, so a habit scheduled for weekdays is not broken by skipping a weekend it was not due.
 
 ## Your longest streak is kept
 
@@ -45,8 +45,8 @@ Check-ins earn points that accumulate across all your habits. Points raise your 
 ## Tips
 
 - **Check in at the same time each day.** A fixed moment (right after your cue) makes the check-in itself a habit.
-- **Don't backfill dishonestly.** The rope is only useful when it reflects what really happened.
-- **A reset isn't a failure.** Streaks are meant to restart; the level and total points you've earned stay with you.
+- **Do not backfill dishonestly.** The rope is only useful when it reflects what really happened.
+- **A reset is not a failure.** Streaks are meant to restart; the level and total points you have earned stay with you.
 
 ## Where to next
 

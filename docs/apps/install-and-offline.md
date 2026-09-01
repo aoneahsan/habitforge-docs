@@ -35,18 +35,18 @@ HabitForge keeps working when you lose connectivity:
 
 - Your habits and recent data are cached on the device.
 - **Check-ins you make offline are queued** and sync automatically when you reconnect.
-- The header shows when you're offline so you know changes are pending.
+- The header shows when you are offline so you know changes are pending.
 
 Because sync is automatic, you rarely have to think about it — track as usual and HabitForge reconciles when the network returns.
 
 ## Tips
 
 - **Install it** so a home-screen tap is all it takes to check in.
-- **Trust the queue.** Offline check-ins aren't lost; they sync later.
+- **Trust the queue.** Offline check-ins are not lost; they sync later.
 - **On iOS, add to home screen** for a full-window, app-like experience.
 
 ## Where to next
 
 - [The Android app](./android.md) — what the native build adds, once it ships.
 - [Get started](../getting-started.md) — open the app and sign in.
-- [Themes and customizer](../features/themes.md) — set your look once, keep it everywhere.
+- [Themes and customiser](../features/themes.md) — set your look once, keep it everywhere.

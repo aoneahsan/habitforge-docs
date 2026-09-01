@@ -71,5 +71,5 @@ carrying your own week. There are no marketing emails.
 ## Where to next
 
 - [Achievements](./achievements.md) — most of what the bell announces.
-- [Themes and customizer](./themes.md) — including a Sound setting for in-app cues.
+- [Themes and customiser](./themes.md) — including a Sound setting for in-app cues.
 - [Privacy and terms](../reference/privacy-and-terms.md) — what is collected and why.

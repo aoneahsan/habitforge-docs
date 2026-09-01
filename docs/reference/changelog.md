@@ -1,7 +1,7 @@
 ---
 id: changelog
 title: Changelog
-description: What's new in HabitForge, latest first — the 1.0 rebuild with offline check-ins, scored challenges, a generous free tier and a ten-setting theme customizer, and the pre-release history before it.
+description: What is new in HabitForge, latest first — the 1.0 rebuild with offline check-ins, scored challenges, a generous free tier and a ten-setting theme customiser, and the pre-release history before it.
 sidebar_label: Changelog
 sidebar_position: 1
 last_update:
@@ -13,12 +13,12 @@ tags:
 keywords:
   - habitforge changelog
   - release notes
-  - what's new
+  - what is new
 ---
 
 # Changelog
 
-**What's new in HabitForge, latest first.** These notes mirror the app's release notes, so what you read here matches what shipped.
+**What is new in HabitForge, latest first.** These notes mirror the app's release notes, so what you read here matches what shipped.
 
 ## 1.0.0 — 2026-08-31 — the first public release
 
@@ -31,7 +31,7 @@ this is the first HabitForge release to reach a store, and it starts the version
 **HabitForge was rebuilt from the ground up.** Same idea, same rope, new foundations — a new stack, a new
 backend, and a lot of things the 1.x app could not do.
 
-- **Feature** — Habits gain real schedules, and **pauses that hold your streak** instead of breaking it.
+- **Feature** — Habits gain real schedules, and pauses that keep your history while the run starts again from zero on resume.
 - **Feature** — **Check-ins work offline.** They queue on your device and sync when you reconnect.
 - **Feature** — **Challenges are scored.** Participants are ranked against the target, ties are joint wins, and
   a challenge can be bound to a habit each person chooses for themselves.
@@ -50,7 +50,7 @@ backend, and a lot of things the 1.x app could not do.
   the one you are running now so a broken streak no longer erases what you did.
 - **Feature** — **A line on your dashboard about the people you know** — who kept what today.
 - **Feature** — **Export everything you have, or delete your account**, from inside the app.
-- **Improvement** — The theme customizer grows from a handful of options to **ten settings**, applied before
+- **Improvement** — The theme customiser grows from a handful of options to **ten settings**, applied before
   the first paint so there is no flash of the wrong theme.
 - **Improvement** — Every screen was rebuilt for keyboard and screen-reader use.
 - **Improvement** — **The household screens.** If you own a Family plan you get a roster, a seat meter, an
@@ -67,7 +67,7 @@ the public track after its on-device pass. The web app installs to your home scr
 ## 1.2.0 — 2026-07-23
 
 - **Feature** — Upload a profile photo, shown on the leaderboard and community posts.
-- **Feature** — In-app [contact form](./support.md) on the Help page, so you don't need a mail app.
+- **Feature** — In-app [contact form](./support.md) on the Help page, so you do not need a mail app.
 - **Improvement** — [Automatic in-app updates](../apps/android.md) so fixes arrive without waiting for a store update.
 - **Improvement** — Faster startup and lighter pages through code-splitting and lazy loading.
 - **Improvement** — Groundwork for more reliable error handling and analytics.
@@ -85,11 +85,11 @@ the public track after its on-device pass. The web app installs to your home scr
 
 - **Feature** — Create and track habits with the cue, routine, and reward loop.
 - **Feature** — Daily check-ins with streaks and points.
-- **Feature** — Rope-strength visualization that grows with your consistency.
+- **Feature** — Rope-strength visualisation that grows with your consistency.
 - **Feature** — Weekly analytics and charts.
 - **Feature** — Optional community: posts, comments, challenges, friends, and a leaderboard.
 - **Feature** — Achievements with celebration moments.
-- **Feature** — Light and dark themes with a theme customizer.
+- **Feature** — Light and dark themes with a theme customiser.
 - **Feature** — Offline support so tracking works without a connection.
 
 ## Where to next

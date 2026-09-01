@@ -1,7 +1,7 @@
 ---
 id: community
 title: Community
-description: HabitForge's optional community adds a feed, challenges, friends, and a leaderboard, with report and block tools for safety. It's entirely opt-in.
+description: HabitForge's optional community adds a feed, challenges, friends, and a leaderboard, with report and block tools for safety. It is entirely opt-in.
 sidebar_label: Community
 sidebar_position: 3
 last_update:
@@ -20,7 +20,7 @@ keywords:
 
 **The community is an optional, opt-in side of HabitForge for people who track better together.** You can use HabitForge entirely on your own; the community is there when you want accountability.
 
-## What's inside
+## What is inside
 
 - **Feed** — post updates, like and comment, and delete your own posts.
 - **Challenges** — create or join a shared goal over a set window. Every participant's check-ins are
@@ -51,7 +51,7 @@ You choose your profile visibility and can opt out of the leaderboard in Setting
 
 - **Join one challenge, not ten.** A single shared goal is easier to sustain.
 - **Set your visibility first.** Decide what you want public before you post.
-- **Use block freely.** It's a personal filter — the other person isn't notified.
+- **Use block freely.** It is a personal filter — the other person is not notified.
 
 ## Where to next
 

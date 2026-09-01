@@ -1,7 +1,7 @@
 ---
 id: android
 title: The Android app
-description: HabitForge on Android is a native app from Google Play with automatic in-app updates, so fixes reach you without waiting for a store release. Optional push notifications keep you on track.
+description: HabitForge on Android is a native app with over-the-air updates, so fixes reach you without waiting for a store release. It is in internal testing and not yet on Google Play. Notifications are optional.
 sidebar_label: The Android app
 sidebar_position: 2
 last_update:
@@ -31,7 +31,7 @@ The Android app updates itself in the background. When a fix or improvement ship
 
 ## Notifications
 
-Push notifications are **optional** and off unless you turn them on. When enabled, HabitForge can remind you about habits and let you know about community activity. On Android 13 and newer, the app asks for notification permission the first time you opt in — never at launch.
+Push notifications are **optional** and off unless you turn them on. When enabled, HabitForge can send you the occasional announcement. Your daily and per-habit reminders are separate: they are raised by your own device and arrive whether or not push is on. On Android 13 and newer, the app asks for notification permission the first time you opt in — never at launch.
 
 ## Signing in
 

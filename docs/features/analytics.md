@@ -20,7 +20,7 @@ keywords:
 
 **Analytics turn your check-in history into a weekly picture of how your habits are doing.** Instead of a single number, you get charts that show the shape of your consistency over time.
 
-## What you'll see
+## What you will see
 
 - **Weekly summaries** of check-ins across your habits.
 - **Trends** that make a slipping habit visible before the rope frays.
