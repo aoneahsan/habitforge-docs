@@ -1,7 +1,7 @@
 ---
 id: community
 title: Community
-description: HabitForge's community adds a board, challenges, friends, and a leaderboard, with report and block tools for safety. A new profile is visible by default and you can change that.
+description: HabitForge's community adds a board, challenges, friends and a leaderboard, with report and block tools. A new profile is visible by default; you can change it.
 sidebar_label: Community
 sidebar_position: 3
 last_update:

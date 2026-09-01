@@ -1,7 +1,7 @@
 ---
 id: changelog
 title: Changelog
-description: What is new in HabitForge, latest first — the 1.0 rebuild with offline check-ins, scored challenges, a generous free tier and a ten-setting theme customiser, and the pre-release history before it.
+description: 'What is new in HabitForge, latest first: the 1.0 rebuild with offline check-ins, scored challenges, a generous free tier, and the pre-release history before it.'
 sidebar_label: Changelog
 sidebar_position: 1
 last_update:

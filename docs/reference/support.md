@@ -1,7 +1,7 @@
 ---
 id: support
 title: Support
-description: How to get help with HabitForge — use the in-app contact form, email the author, or open a docs issue. HabitForge has a free tier plus Pro and Family plans; contributions are voluntary.
+description: 'How to get help with HabitForge: the in-app contact form, email the author, or open a docs issue. There is a free tier plus Pro and Family plans.'
 sidebar_label: Support
 sidebar_position: 3
 last_update:

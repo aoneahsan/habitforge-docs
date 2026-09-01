@@ -1,7 +1,7 @@
 ---
 id: levels-and-points
 title: Levels and points
-description: Points are earned from check-ins and achievements across all your habits. Enough points raise your HabitForge level through ten forge-themed tiers, from Spark to Forge Master.
+description: Points come from check-ins and achievements across all your habits, and enough of them raise your level through ten forge tiers, from Spark to Forge Master.
 sidebar_label: Levels & points
 sidebar_position: 4
 last_update:

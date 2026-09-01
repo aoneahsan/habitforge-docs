@@ -1,7 +1,7 @@
 ---
 id: themes
 title: Themes and customiser
-description: HabitForge ships light and dark themes plus a full customiser for appearance, accent colour, radius, scaling, and font size. Your choices persist across devices.
+description: HabitForge ships light and dark themes plus a customiser for appearance, accent colour, radius, scaling and font size. Your choices follow your account.
 sidebar_label: Themes & customiser
 sidebar_position: 4
 last_update:

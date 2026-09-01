@@ -1,7 +1,7 @@
 ---
 id: create
 title: Create a habit
-description: Create a habit in HabitForge with a name, category, type, and schedule, plus the optional cue, routine, reward, craving, and investment fields from The Power of Habit.
+description: Create a habit with a name, category, kind and schedule, plus the optional cue, routine, reward, craving and investment fields from The Power of Habit.
 sidebar_label: Create a habit
 sidebar_position: 1
 last_update:

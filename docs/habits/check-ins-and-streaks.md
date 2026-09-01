@@ -1,7 +1,7 @@
 ---
 id: check-ins-and-streaks
 title: Check-ins and streaks
-description: A check-in is how you tell HabitForge you did a habit today. Consecutive check-ins build a streak and earn points that raise your forge level, and your longest streak ever is kept even when a run breaks.
+description: A check-in tells HabitForge you did a habit today. Consecutive check-ins build a streak and earn points, and your longest streak is kept even when a run breaks.
 sidebar_label: Check-ins & streaks
 sidebar_position: 2
 last_update:

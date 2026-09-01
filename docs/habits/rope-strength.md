@@ -1,7 +1,7 @@
 ---
 id: rope-strength
 title: Rope strength
-description: The rope is HabitForge's visual habit-strength meter. It grows from a thin thread towards a chain as you stay consistent, and frays when you slip. A deterministic calculation, not an ML model.
+description: HabitForge's habit-strength meter. The rope thickens from a thread towards a chain as you keep going, and frays where you stopped. Calculated, not predicted.
 sidebar_label: Rope strength
 sidebar_position: 3
 last_update:

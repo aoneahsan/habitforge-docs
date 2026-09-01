@@ -1,7 +1,7 @@
 ---
 id: reminders-and-notifications
 title: Reminders and notifications
-description: HabitForge tells you what happened while you were away through an in-app bell, and raises reminders from your own device — one a day, and one per habit on the days it is due.
+description: 'An in-app bell tells you what happened while you were away, and your own device raises the reminders: one a day, and one per habit on the days it is due.'
 sidebar_label: Reminders and notifications
 sidebar_position: 5
 last_update:

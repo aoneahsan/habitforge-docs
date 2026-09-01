@@ -1,7 +1,7 @@
 ---
 id: android
 title: The Android app
-description: HabitForge on Android is a native app with over-the-air updates, so fixes reach you without waiting for a store release. It is in internal testing and not yet on Google Play. Notifications are optional.
+description: HabitForge on Android is a native app with over-the-air updates, so fixes reach you without a store release. It is in internal testing, not yet on Google Play.
 sidebar_label: The Android app
 sidebar_position: 2
 last_update:
