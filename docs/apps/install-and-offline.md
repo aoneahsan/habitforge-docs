@@ -5,7 +5,7 @@ description: HabitForge is a PWA — install it to your home screen from any bro
 sidebar_label: Install & offline
 sidebar_position: 1
 last_update:
-  date: 2026-07-23
+  date: 2026-09-01
   author: Ahsan Mahmood
 tags:
   - pwa

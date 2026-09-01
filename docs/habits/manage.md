@@ -5,7 +5,7 @@ description: Edit a habit's details, pause it while you are away, or delete it f
 sidebar_label: Manage habits
 sidebar_position: 5
 last_update:
-  date: 2026-07-23
+  date: 2026-09-01
   author: Ahsan Mahmood
 tags:
   - habits

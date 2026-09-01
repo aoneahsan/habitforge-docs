@@ -5,7 +5,7 @@ description: Create a habit in HabitForge with a name, category, type, and sched
 sidebar_label: Create a habit
 sidebar_position: 1
 last_update:
-  date: 2026-07-23
+  date: 2026-09-01
   author: Ahsan Mahmood
 tags:
   - habits

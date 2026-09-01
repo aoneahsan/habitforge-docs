@@ -5,7 +5,7 @@ description: The rope is HabitForge's visual habit-strength meter. It grows from
 sidebar_label: Rope strength
 sidebar_position: 3
 last_update:
-  date: 2026-07-23
+  date: 2026-09-01
   author: Ahsan Mahmood
 tags:
   - habits

@@ -5,7 +5,7 @@ description: Points are earned from check-ins and achievements across all your h
 sidebar_label: Levels & points
 sidebar_position: 4
 last_update:
-  date: 2026-07-23
+  date: 2026-09-01
   author: Ahsan Mahmood
 tags:
   - habits

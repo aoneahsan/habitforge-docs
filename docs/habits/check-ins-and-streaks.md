@@ -5,7 +5,7 @@ description: A check-in is how you tell HabitForge you did a habit today. Consec
 sidebar_label: Check-ins & streaks
 sidebar_position: 2
 last_update:
-  date: 2026-08-29
+  date: 2026-09-01
   author: Ahsan Mahmood
 tags:
   - habits

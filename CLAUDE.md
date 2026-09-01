@@ -1,6 +1,6 @@
 # HabitForge Docs — Project Guide (CLAUDE.md)
 
-**Last Updated**: 2026-08-17
+**Last Updated**: 2026-09-01
 **Mirror of `AGENTS.md`** — byte-identical except this header. Update one, update the other.
 
 Public documentation / knowledge-base site for **HabitForge** (a habit tracker that shows your consistency as a rope — web app + Android; no iOS, no browser extension). This repo is **public**; the HabitForge app source is **private**. The docs exist so users, contributors, and search/AI engines (Google, Bing, ChatGPT, Perplexity, Claude, Gemini) can discover and learn about HabitForge.
@@ -18,7 +18,7 @@ Public documentation / knowledge-base site for **HabitForge** (a habit tracker t
 
 - **Framework**: Docusaurus 3 (`@docusaurus/core` ^3.10.1), React 19, TypeScript ~6.0, Yarn 4.
 - **Search**: `@easyops-cn/docusaurus-search-local` (offline local search — no Algolia signup).
-- **Content**: 16 Markdown doc pages describing the REAL app (rewritten 2026-07-23): `intro` + `getting-started`, `habits/` ×5 (create, check-ins-and-streaks, rope-strength, levels-and-points, manage), `features/` ×4 (analytics, achievements, community, themes), `apps/` ×2 (install-and-offline, android), `reference/` ×3 (changelog, privacy-and-terms, support), plus 4 generated-index category pages. **HabitForge has NO trackers/timers/journals/browser-extension/iOS** — the old generic-template content (extension, timers, trackers, journals, productivity, mobile-iOS, etc.) was deleted 2026-07-23.
+- **Content**: 17 Markdown doc pages describing the REAL app (rewritten 2026-07-23): `intro` + `getting-started`, `habits/` ×5 (create, check-ins-and-streaks, rope-strength, levels-and-points, manage), `features/` ×5 (analytics, achievements, community, themes, reminders-and-notifications), `apps/` ×2 (install-and-offline, android), `reference/` ×3 (changelog, privacy-and-terms, support), plus 4 generated-index category pages. **HabitForge has NO trackers/timers/journals/browser-extension/iOS** — the old generic-template content (extension, timers, trackers, journals, productivity, mobile-iOS, etc.) was deleted 2026-07-23.
 - **AEO/SEO**: `robots.txt` (AI-bot allowlist + sitemap directive), `llms.txt` (llmstxt.org format), `pricing.md` (machine-readable), site-wide JSON-LD (`WebSite` + `Organization` + `Person` + `SoftwareApplication`), Docusaurus sitemap plugin. Every page carries distinct `title`/`description` + `last_update` front-matter.
 - **Deploy target**: **GitHub Pages** (public repo) on the custom domain `habitforge-docs.aoneahsan.com` via `static/CNAME` + `.github/workflows/deploy.yml` (build on push to `main`). `firebase.json` is kept only as an alternative host config.
 - **Brand**: orange→red "fire" gradient (`#F97316` → `#DC2626`), light + dark mode.

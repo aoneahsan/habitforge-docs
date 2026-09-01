@@ -5,7 +5,7 @@ description: Achievements are milestones HabitForge unlocks as you build habits 
 sidebar_label: Achievements
 sidebar_position: 2
 last_update:
-  date: 2026-07-23
+  date: 2026-09-01
   author: Ahsan Mahmood
 tags:
   - achievements

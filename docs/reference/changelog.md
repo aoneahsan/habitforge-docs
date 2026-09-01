@@ -5,7 +5,7 @@ description: What is new in HabitForge, latest first — the 1.0 rebuild with of
 sidebar_label: Changelog
 sidebar_position: 1
 last_update:
-  date: 2026-08-31
+  date: 2026-09-01
   author: Ahsan Mahmood
 tags:
   - changelog

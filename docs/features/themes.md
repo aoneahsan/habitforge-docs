@@ -5,7 +5,7 @@ description: HabitForge ships light and dark themes plus a full customiser for a
 sidebar_label: Themes & customiser
 sidebar_position: 4
 last_update:
-  date: 2026-07-23
+  date: 2026-09-01
   author: Ahsan Mahmood
 tags:
   - themes

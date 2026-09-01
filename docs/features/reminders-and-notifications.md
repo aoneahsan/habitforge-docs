@@ -5,7 +5,7 @@ description: HabitForge tells you what happened while you were away through an i
 sidebar_label: Reminders and notifications
 sidebar_position: 5
 last_update:
-  date: 2026-08-29
+  date: 2026-09-01
   author: Ahsan Mahmood
 tags:
   - notifications
