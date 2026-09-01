@@ -24,7 +24,8 @@ const DOCS_GITHUB = 'https://github.com/aoneahsan/habitforge-docs';
 
 const config: Config = {
   title: 'HabitForge Docs',
-  tagline: 'A habit tracker that turns your consistency into a rope you can watch grow stronger.',
+  tagline:
+    'A habit tracker that draws your consistency as a rope you watch thicken, with other people building theirs beside you.',
   favicon: 'img/favicon.svg',
 
   url: SITE_URL,

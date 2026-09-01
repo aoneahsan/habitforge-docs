@@ -36,7 +36,7 @@ function HomepageHero(): ReactNode {
             className="button button--secondary button--lg"
             to="/docs"
           >
-            Get started in 5 minutes
+            Read the docs
           </Link>
           <Link
             className="button button--outline button--lg"
@@ -61,7 +61,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title} — habit tracking with visual streaks`}
-      description="Official documentation for HabitForge: a habit tracker that shows your consistency as a rope, with check-in streaks, points and levels, weekly analytics, achievements, an optional community, and themes. Web and Android."
+      description="How HabitForge works, page by page: the rope and what it measures, check-ins, streaks, points and levels, the optional community, and the web and Android apps."
     >
       <HomepageHero />
       <main>

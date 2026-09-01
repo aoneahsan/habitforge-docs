@@ -1,7 +1,7 @@
 ---
 id: community
 title: Community
-description: HabitForge's optional community adds a feed, challenges, friends, and a leaderboard, with report and block tools for safety. It is entirely opt-in.
+description: HabitForge's community adds a board, challenges, friends, and a leaderboard, with report and block tools for safety. A new profile is visible by default and you can change that.
 sidebar_label: Community
 sidebar_position: 3
 last_update:
@@ -18,11 +18,11 @@ keywords:
 
 # Community
 
-**The community is an optional, opt-in side of HabitForge for people who track better together.** You can use HabitForge entirely on your own; the community is there when you want accountability.
+**The community is the side of HabitForge for people who track better together.** You can use HabitForge entirely on your own, and nothing makes you post. Being *seen*, though, is on by default: a new profile is public and appears on the leaderboard until you change it. Both controls are in Settings and are described below.
 
 ## What is inside
 
-- **Feed** — post updates, like and comment, and delete your own posts.
+- **Board** — post updates, like and comment, and delete your own posts. The app calls this the board.
 - **Challenges** — create or join a shared goal over a set window. Every participant's check-ins are
   scored against the target, standings update as people check in, and when the window closes the
   challenge names a winner. **If several people tie, they all win** — no tie-breaker invents a
@@ -43,9 +43,9 @@ quietly reopening.
 Community features include moderation you control:
 
 - **Report** any post or comment you think breaks the rules.
-- **Block** a user to remove them from your feed, comments, search, leaderboard, requests, and notifications. Blocking also ends any friendship.
+- **Block** a user to remove them from your board, comments, search, leaderboard, requests, and notifications. Blocking also ends any friendship.
 
-You choose your profile visibility and can opt out of the leaderboard in Settings, so nothing about you appears in the community unless you allow it.
+You choose your profile visibility and can take yourself off the leaderboard in Settings. Both start switched on, so this is a choice you make rather than one you are asked for: a new profile is public and ranked until you change it.
 
 ## Tips
 

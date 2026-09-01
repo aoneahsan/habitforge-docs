@@ -89,37 +89,36 @@ const DevicesIcon = (
 
 const FEATURES: FeatureItem[] = [
   {
-    title: 'See your habits as a rope',
+    title: 'Your consistency, drawn as a rope',
     icon: RopeIcon,
     href: '/docs/habits/rope-strength',
     description: (
       <>
-        Each habit is drawn as a rope that thickens from a thin thread to a cable as
-        you stay consistent, and frays when you slip. A deterministic picture — not a
-        prediction.
+        Each habit is drawn as a rope that thickens from a thin thread towards a
+        chain as you keep showing up, and frays where you stopped. A deterministic
+        picture, not a prediction.
       </>
     ),
   },
   {
-    title: 'Check in, build streaks',
+    title: 'Check in, build a streak',
     icon: CheckDayIcon,
     href: '/docs/habits/check-ins-and-streaks',
     description: (
       <>
-        Mark a habit done each day it's due. Consecutive check-ins build a streak and
-        earn points, using the cue → routine → reward loop from <em>The Power of
-        Habit</em>.
+        Mark a habit done on each day it is due. Consecutive check-ins build a streak
+        and earn points, around the cue → routine → reward loop.
       </>
     ),
   },
   {
-    title: 'Points, levels, and achievements',
+    title: 'Points, levels and achievements',
     icon: MedalIcon,
     href: '/docs/habits/levels-and-points',
     description: (
       <>
-        Points climb a ten-tier forge level from Spark to Forge Master, and
-        milestones unlock achievements with a celebration moment and bonus points.
+        Showing up earns points, and points earn ten levels from Spark to Forge
+        Master. Milestones unlock achievements, and each one is worth points.
       </>
     ),
   },
@@ -129,31 +128,32 @@ const FEATURES: FeatureItem[] = [
     href: '/docs/features/analytics',
     description: (
       <>
-        Weekly analytics turn your check-in history into D3 charts, so you can see
-        which habits are holding and where consistency is slipping.
+        Weekly analytics turn your check-in history into charts, so you can see which
+        habits are holding and where consistency is slipping.
       </>
     ),
   },
   {
-    title: 'An optional community',
+    title: 'The community, and who sees you',
     icon: PeopleIcon,
     href: '/docs/features/community',
     description: (
       <>
-        Opt in to a feed, challenges, friends, and a leaderboard — with report and
-        block tools you control. Track alone or together; it's your choice.
+        Post to a board, add friends, and join challenges scored against a target. A
+        new profile is public and on the leaderboard until you change one switch and
+        one separate choice. Neither is opt-in.
       </>
     ),
   },
   {
-    title: 'Web and Android, online or off',
+    title: 'Web now, Android in testing',
     icon: DevicesIcon,
     href: '/docs/apps/android',
     description: (
       <>
-        Use it in any browser or install the Android app from Google Play, with
-        automatic updates. As a PWA it keeps working offline and syncs when you
-        reconnect.
+        Use it in any browser, or add the web app to your home screen. It works
+        offline and syncs when you reconnect. The Android build is in internal testing
+        and not on Google Play yet.
       </>
     ),
   },

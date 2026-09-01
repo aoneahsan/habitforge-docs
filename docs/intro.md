@@ -1,48 +1,45 @@
 ---
 id: intro
 title: HabitForge documentation
-description: Official documentation for HabitForge — a habit tracker that shows your consistency as a rope you can watch grow stronger. Web app and Android.
+description: 'Official documentation for HabitForge, a habit tracker that draws your consistency as a rope: it thickens with what you keep and frays where you stopped.'
 sidebar_position: 1
 slug: /
 last_update:
-  date: 2026-07-23
+  date: 2026-09-01
   author: Ahsan Mahmood
 tags:
   - habit tracker
   - streaks
   - habitforge
-keywords:
-  - habitforge
-  - habit tracker
   - habit streak app
   - documentation
 ---
 
 # HabitForge documentation
 
-**HabitForge is a habit tracker that turns your consistency into a rope you can see** — a thin thread when a habit is new, an unbreakable cable once you have shown up day after day, and a fraying line when you slip. This site is the official documentation.
+**HabitForge is a habit tracker that draws your consistency as a rope you can see.** A new habit is a thread. Keep showing up and it thickens through string, rope and cable towards a chain; stop, and it frays where you stopped, while the rest of what you built stays.
 
-It runs as a web app today. An Android app is built and going through Google Play review; it is not on the store yet, so the links below point at the web app. There is no iOS build and no browser extension.
+It runs as a web app today. The Android build is in internal testing and not on Google Play yet. There is no iOS build and no browser extension.
 
 ## Where to start
 
-- **New here?** [Get started](./getting-started.md) covers opening the app, installing on Android, and signing in.
+- **New here?** [Get started](./getting-started.md) covers opening the app and signing in.
 - **Building your first habit?** [Create a habit](./habits/create.md) walks through the form, then [check-ins and streaks](./habits/check-ins-and-streaks.md).
-- **Curious about the rope?** [Rope strength](./habits/rope-strength.md) explains what the meter shows.
+- **Curious about the rope?** [Rope strength](./habits/rope-strength.md) explains the meter.
 
 ## What HabitForge does
 
-- **Track habits** with the cue → routine → reward loop (plus craving and investment) from *The Power of Habit*.
-- **Check in daily** to build streaks and points, and climb a ten-tier forge [level](./habits/levels-and-points.md).
-- **Watch the rope** — a live picture of each habit's strength, drawn from streak, consistency, and total check-ins.
-- **Read your week** in [analytics](./features/analytics.md), unlock [achievements](./features/achievements.md), and join an optional [community](./features/community.md).
-- **Make it yours** with [ten appearance settings](./features/themes.md) — light and dark among them — that follow your account.
-- **Keep tracking offline** — HabitForge is a PWA that queues check-ins without a connection.
+- **Track habits** you want to build, break or maintain, around the [cue → routine → reward](./habits/create.md) loop.
+- **Check in daily** for streaks and points, and climb ten [levels](./habits/levels-and-points.md) from Spark to Forge Master.
+- **Watch the rope** — each habit's strength, from your current streak (40 per cent), your habits' average (30 per cent) and today's progress (30 per cent).
+- **Read your week** in [analytics](./features/analytics.md), unlock [achievements](./features/achievements.md), and join the [community](./features/community.md).
+- **Make it yours** with [ten appearance settings](./features/themes.md), dark mode included, that follow your account.
+- **Keep tracking offline** — the web app is a PWA that queues check-ins without a connection.
 
 ## About this site
 
-- **Live app:** [habitforge.aoneahsan.com](https://habitforge.aoneahsan.com)
+- **Open the app:** [habitforge.aoneahsan.com](https://habitforge.aoneahsan.com)
 - **Docs source:** [github.com/aoneahsan/habitforge-docs](https://github.com/aoneahsan/habitforge-docs)
-- **Built by:** [Ahsan Mahmood](https://aoneahsan.com) — [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com)
+- **Built by:** [Ahsan Mahmood](https://aoneahsan.com), at [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com)
 
-The HabitForge app source is private; these docs are public so users, contributors, and search engines can find and learn about the product. There is a free tier plus Pro and Family plans — see [pricing](pathname:///pricing.md), or [support](./reference/support.md) if you want to give back.
+The app source is private; these docs are public. There is a free tier, plus Pro and Family plans; [pricing](pathname:///pricing.md) lists what each covers.
