@@ -33,13 +33,13 @@ type FeatureItem = {
 const RopeIcon = (
   <svg viewBox="0 0 24 24" className={styles.featureSvg} aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round">
     <g opacity="0.45">
-      <path d="M2 12c1.4 0 1.4 3 2.8 3S6.2 12 7.6 12" strokeWidth="1.2" />
-      <path d="M7.6 12c1.6 0 1.6 3.6 3.2 3.6s1.6-3.6 3.2-3.6" strokeWidth="1.8" />
-      <path d="M14 12c1.8 0 1.8 4.2 3.6 4.2S19.4 12 21.2 12" strokeWidth="2.6" />
+      <path d="M2 12c1.67 0 1.67 3.5 3.33 3.5s1.67-3.5 3.34-3.5" strokeWidth="1.4" />
+      <path d="M8.67 12c1.67 0 1.67 5 3.33 5s1.67-5 3.33-5" strokeWidth="2.2" />
+      <path d="M15.33 12c1.67 0 1.67 6.5 3.33 6.5s1.67-6.5 3.34-6.5" strokeWidth="3.2" />
     </g>
-    <path d="M2 12c1.4 0 1.4-3 2.8-3S6.2 12 7.6 12" strokeWidth="1.2" />
-    <path d="M7.6 12c1.6 0 1.6-3.6 3.2-3.6s1.6 3.6 3.2 3.6" strokeWidth="1.8" />
-    <path d="M14 12c1.8 0 1.8-4.2 3.6-4.2s1.8 4.2 3.6 4.2" strokeWidth="2.6" />
+    <path d="M2 12c1.67 0 1.67-3.5 3.33-3.5s1.67 3.5 3.34 3.5" strokeWidth="1.4" />
+    <path d="M8.67 12c1.67 0 1.67-5 3.33-5s1.67 5 3.33 5" strokeWidth="2.2" />
+    <path d="M15.33 12c1.67 0 1.67-6.5 3.33-6.5s1.67 6.5 3.34 6.5" strokeWidth="3.2" />
   </svg>
 );
 
