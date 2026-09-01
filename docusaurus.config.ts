@@ -194,7 +194,12 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/og-default.svg',
+    /* 🔴 A PNG, NOT THE SVG THIS NAMED UNTIL 2026-09-01. Facebook, X, LinkedIn
+       and WhatsApp do not rasterise SVG, so every share of every docs page
+       rendered with no card at all — while the tag was present and correct
+       looking, which is why nothing caught it. The master beside it is
+       `img/og-master.svg`; the PNG is its export. */
+    image: 'img/og-default.png',
     colorMode: {
       defaultMode: 'light',
       disableSwitch: false,
