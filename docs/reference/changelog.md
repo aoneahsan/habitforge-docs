@@ -5,7 +5,7 @@ description: 'What is new in HabitForge, latest first: the 1.0 rebuild with offl
 sidebar_label: Changelog
 sidebar_position: 1
 last_update:
-  date: 2026-09-01
+  date: 2026-09-03
   author: Ahsan Mahmood
 tags:
   - changelog
@@ -19,6 +19,14 @@ keywords:
 # Changelog
 
 **What is new in HabitForge, latest first.** These notes mirror the app's release notes, so what you read here matches what shipped.
+
+## Web — 2026-09-03 — promotions for the developer's other apps, and a share card for pricing
+
+Two small panels now show one of the developer's own other apps: on today's entry and under the community
+board. No advertising network is involved, HabitForge never promotes itself, and the words are edited from
+the admin's own screen. Sharing the pricing page now produces a card that names the plans. Web only: the
+Android build on internal testing is unchanged, and its store answer for ads stays "No" until a build
+carries the panels.
 
 ## 1.0.0 — 2026-08-31 — the first public release
 
