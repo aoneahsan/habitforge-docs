@@ -126,7 +126,7 @@ const config: Config = {
             name: 'HabitForge',
             url: APP_URL,
             description:
-              'HabitForge is a habit tracker that turns your consistency into a visual rope. It uses the cue-routine-reward habit loop, daily check-ins that build streaks, points and a ten-tier level, weekly analytics, achievements, an optional community, and light/dark themes. It runs on the web and on Android. There is a free tier plus Pro and Family plans; the app currently ships the free tier and the paid plans are not yet available for purchase.',
+              'HabitForge is a habit tracker that turns your consistency into a visual rope. It uses the cue-routine-reward habit loop, daily check-ins that build streaks, points and a ten-tier level, weekly analytics, achievements, an optional community, and light/dark themes. It runs on the web and on Android. There is a free plan plus Pro and Family plans, paid on the developer\'s payment page and granted to the account; there is no in-app checkout.',
             applicationCategory: 'LifestyleApplication',
             operatingSystem: 'Web, Android',
             /* 🔴 The offer describes what can be ACQUIRED today, which is the free tier —

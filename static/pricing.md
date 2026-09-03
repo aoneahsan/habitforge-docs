@@ -1,46 +1,72 @@
 # HabitForge pricing
 
-> Machine-readable pricing for AI buying agents and search systems. Last updated: 2026-08-14.
+> Machine-readable pricing for AI buying agents and search systems. Last updated: 2026-09-03.
+> The generated source of truth is the app's own file, written on every build from the plan registry the
+> app enforces: https://habitforge.aoneahsan.com/pricing.md — the numbers below match it on the date above.
 
 ## Summary
 
-HabitForge has a free tier and two paid plans, Pro and Family. The free tier is a real product rather than a
-trial: habits, check-ins, streaks, the rope visualization, levels, analytics, achievements and the community
-are all included at no cost. Pro and Family lift the free tier's limits.
+HabitForge has a free plan and two paid plans, Pro and Family. The free plan is a real product rather than a
+trial: habits, check-ins, streaks, the rope visualization, points and levels, analytics, achievements and the
+community are all included at no cost, limited by scale rather than by feature. Pro and Family lift those
+limits.
 
-**Platforms:** HabitForge runs on the web today. An Android app is built and not yet listed on Google Play.
+**Platforms:** the web app at https://habitforge.aoneahsan.com, installable as a PWA. The Android app is
+built, signed and on Google Play's internal-testing track; it is not publicly listed yet. There is no iOS app.
 
-**Availability:** the app currently ships the free tier. Pro and Family are published below as the plan set
-and are **not yet available for purchase** — this page will say so plainly when that changes.
+**Availability:** Pro and Family are available now. Payment is taken on the developer's payment page and the
+plan is then granted to the account by hand, usually within a day.
 
 ## Plans
 
-| Plan | Monthly | Yearly | Notes |
+| Plan | Monthly | Yearly | Seats | Notes |
+|---|---|---|---|---|
+| Free | $0 | $0 | 1 | The whole product, limited by scale rather than by feature. |
+| Pro | $5 | $40 | 1 | One person, with the ceilings lifted. |
+| Family | $10 | $80 | 3–6 | One payment covers a household of three to six, each member on better numbers than Pro. Below three people the tier does not apply. |
+
+## Limits
+
+| Limit | Free | Pro | Family |
 |---|---|---|---|
-| Free | $0 | $0 | The whole product, with limits on scale rather than on features. |
-| Pro | $5 | $40 | One person. The free tier's limits lifted. |
-| Family | $10 | $80 | A household of at least 3 seats, with per-member limits better than Pro's. Members inherit the household's plan. |
+| Active habits | 30 | 100 | Unlimited |
+| Challenges you create | 30 per 30 days | 100 per 30 days | Unlimited |
+| Your challenges open at once | 30 | 100 | Unlimited |
+| People in a challenge you created | 50 | 500 | Unlimited |
+| Friends | 500 | Unlimited | Unlimited |
+| Analytics history | 90 days | Full history | Full history |
+| Seats | 1 | 1 | 3–6 |
+
+- Paused and archived habits do not count towards the habit limit.
+- Joining someone else's challenge is never limited.
+- Check-ins are kept on every plan; analytics history is how far back the charts read.
+- Family is three to six people. Three is the floor, not a suggestion.
+- A tier's limits are administered from the app's admin panel, so a number above can move without a
+  release; the app's generated file is always current.
 
 ## How payment works
 
-There is no in-app checkout and no card stored with the app. Payment goes through the developer's own payment
-page, after which the plan is granted to the account:
+There is no in-app checkout and no card stored with the app. Payment goes through the developer's own
+payment page, after which the plan is granted to the account:
 
 - https://aoneahsan.com/payment?project-id=habitforge&project-identifier=com.aoneahsan.habitforge
 
-The Android app will show plan status and gate features; it never sells and never links out to a payment page,
+Every grant records the plan it falls back to and the date that happens. Cancelling stops the renewal rather
+than the period already paid for, nothing is deleted on downgrade, and payments are not refunded.
+
+The Android app shows plan status and gates features; it never sells and never links out to a payment page,
 because Google Play requires Play Billing for digital goods and this product takes payment on the web.
 
-## Included on every plan, including free
+## Included on every plan, including Free
 
-- Habits with the cue → routine → reward loop
-- Daily check-ins, streaks, points, and the ten-tier forge level
-- Rope habit-strength visualization
-- Weekly analytics and charts
-- Achievements and celebration moments
-- The optional community (feed, challenges, friends, leaderboard) with report/block moderation
-- Light and dark themes plus the theme customizer
-- Offline support (PWA) and the Android app with automatic updates
+- Habits with the cue → routine → reward loop, three kinds (build, break, maintain), schedules and pauses
+- Daily check-ins, streaks, points, and the ten-level forge ladder
+- The rope habit-strength visualization
+- Personal analytics and charts
+- Twelve achievements
+- The community: board, friends, challenges, a leaderboard you can leave, with report and block moderation
+- Ten appearance settings, dark mode included, that follow your account
+- Offline support (PWA) and the Android app with over-the-air updates
 - Account data export and deletion
 
 Nothing here is funded by selling what you record, on any plan.

@@ -14,7 +14,7 @@ This repository is **public**. The HabitForge app source itself is private; this
 
 - [Docusaurus 3](https://docusaurus.io/) (React 19, TypeScript ~6, Yarn 4)
 - Local search via [@easyops-cn/docusaurus-search-local](https://github.com/easyops-cn/docusaurus-search-local) — no Algolia signup needed
-- Sitemap, robots.txt, llms.txt, pricing.md, and site-wide JSON-LD (`WebSite`, `Organization`, `Person`, `SoftwareApplication`)
+- Sitemap, robots.txt, llms.txt, pricing.md (mirrors the app's generated <https://habitforge.aoneahsan.com/pricing.md>), a 1200×630 PNG share card, and site-wide JSON-LD (`WebSite`, `Organization`, `Person`, `SoftwareApplication`)
 - Deployed to **GitHub Pages** on a custom domain (`static/CNAME`)
 
 ## Local development
@@ -40,9 +40,7 @@ Every page carries `title`, `description`, and `last_update.date` front matter. 
 
 ## Deploying
 
-Pushes to `main` build and deploy to GitHub Pages via `.github/workflows/deploy.yml` (Node 20 → `yarn install` → `yarn build` → `actions/upload-pages-artifact` → `actions/deploy-pages`). The custom domain comes from `static/CNAME`, which Docusaurus copies into `build/`.
-
-`firebase.json` is kept as an alternative host config; the wired deploy path is GitHub Pages.
+Pushes to `main` build and deploy to GitHub Pages via `.github/workflows/deploy-pages.yml` (`yarn install` → `yarn build` → `actions/upload-pages-artifact` → `actions/deploy-pages`); `.github/workflows/ci.yml` runs the build check. The custom domain comes from `static/CNAME`, which Docusaurus copies into `build/`. There is no Firebase config in this repo — docs sites deploy to GitHub Pages only.
 
 ## About the author
 
