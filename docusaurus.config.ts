@@ -129,11 +129,16 @@ const config: Config = {
               'HabitForge is a habit tracker that turns your consistency into a visual rope. It uses the cue-routine-reward habit loop, daily check-ins that build streaks, points and a ten-tier level, weekly analytics, achievements, an optional community, and light/dark themes. It runs on the web and on Android. There is a free plan plus Pro and Family plans, paid on the developer\'s payment page and granted to the account; there is no in-app checkout.',
             applicationCategory: 'LifestyleApplication',
             operatingSystem: 'Web, Android',
-            /* 🔴 The offer describes what can be ACQUIRED today, which is the free tier —
-               so it stays at 0 until Pro and Family are purchasable. Listing an offer for
-               a plan nobody can buy is the mirror image of the claim this change removed:
-               a machine-readable price that does not match reality. Update this and
-               `static/pricing.md` in the SAME change when purchase goes live. */
+            /* 🔴 CORRECTED 2026-09-05 (RW-22): this comment used to say the offer stays
+               at 0 "until Pro and Family are purchasable" — a trigger that had already
+               fired. They ARE purchasable, off-site, and `static/pricing.md` and the
+               description above both say so.
+               The single 0 offer stays anyway, and now for the real reason: it describes
+               the free plan, which is genuinely acquirable at 0, and `isAccessibleForFree`
+               is true. Priced offers for Pro and Family are deliberately NOT listed — the
+               app's own prerenderer omits `SoftwareApplication` offers entirely because a
+               price in structured data is a purchasability claim, and these are paid on a
+               payment page and granted by hand rather than bought in a checkout. */
             offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
             author: { '@id': `${SITE_URL}/#author` },
             publisher: { '@id': `${SITE_URL}/#organization` },
@@ -184,6 +189,88 @@ const config: Config = {
   ],
 
   plugins: [
+    /**
+     * 🔴 THE CLAIM GATE — it reads the BUILT output, never the source.
+     *
+     * A docs-only push deploys through GitHub Actions without ever running the
+     * app repo's test suite, so the app-side parity test cannot protect this
+     * host on its own. This runs inside `docusaurus build`, which is what the
+     * deploy workflow executes, so a retired claim fails the build before it
+     * can reach a reader.
+     *
+     * It asserts on `outDir` rather than on `static/` because a claim can also
+     * arrive through front matter, a React page or the site-wide JSON-LD — which
+     * is exactly where the 2026-09-03 duplicate of this claim was found, in
+     * `SoftwareApplication.description`, by a sweep rather than by reading.
+     */
+    function habitforgeClaimGate() {
+      return {
+        name: 'habitforge-claim-gate',
+        async postBuild({ outDir }: { outDir: string }) {
+          const { readdirSync, readFileSync, statSync } = await import('node:fs');
+          const { join } = await import('node:path');
+          const { RETIRED_CLAIMS, PLAY_LISTING_LIVE } = await import('./src/lib/publicClaims');
+
+          const files: string[] = [];
+          const walk = (dir: string): void => {
+            for (const entry of readdirSync(dir)) {
+              const full = join(dir, entry);
+              if (statSync(full).isDirectory()) {
+                if (entry !== 'assets' && entry !== 'img') walk(full);
+              } else if (/\.(html|txt|md|json)$/.test(entry)) {
+                files.push(full);
+              }
+            }
+          };
+          walk(outDir);
+
+          // Anti-vacuity: a walk that found nothing must fail loudly rather than
+          // report a clean build. A gate silently checking zero files is worse
+          // than an absent one, because its presence is cited as coverage.
+          if (files.length < 20) {
+            throw new Error(
+              `habitforge-claim-gate: only ${files.length} built files found under ${outDir} — refusing to report a pass.`,
+            );
+          }
+
+          const found: string[] = [];
+          let notListedLines = 0;
+          for (const file of files) {
+            const text = readFileSync(file, 'utf8');
+            for (const claim of RETIRED_CLAIMS) {
+              const hit = claim.pattern.exec(text);
+              if (hit) {
+                found.push(
+                  `  ${file.slice(outDir.length + 1)}: "${hit[0]}" — ${claim.truth} (${claim.record})`,
+                );
+              }
+            }
+            if (/internal.testing|not on Google Play|not publicly listed/i.test(text)) {
+              notListedLines += 1;
+            }
+          }
+
+          if (found.length > 0) {
+            throw new Error(
+              `habitforge-claim-gate: ${found.length} retired claim(s) in the built site:\n${found.join('\n')}`,
+            );
+          }
+          if (PLAY_LISTING_LIVE && notListedLines > 0) {
+            throw new Error(
+              `habitforge-claim-gate: the Play listing is live, but ${notListedLines} built file(s) still say it is not.`,
+            );
+          }
+          if (!PLAY_LISTING_LIVE && notListedLines === 0) {
+            throw new Error(
+              'habitforge-claim-gate: no built file says the Android app is unlisted, but PLAY_LISTING_LIVE is false — either the flips ran early or this gate is reading nothing.',
+            );
+          }
+          console.log(
+            `habitforge-claim-gate: ${files.length} built files scanned, 0 retired claims, ${notListedLines} truthful "not listed" file(s).`,
+          );
+        },
+      };
+    },
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
