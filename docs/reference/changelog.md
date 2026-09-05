@@ -20,6 +20,15 @@ keywords:
 
 **What is new in HabitForge, latest first.** These notes mirror the app's release notes, so what you read here matches what shipped.
 
+## Web — 2026-09-05 — bring somebody with you: the referral programme
+
+Every member now has a link. When somebody creates an account from it and verifies their email, the member
+earns points and a badge, and a plan month once enough people have joined — the numbers are set from the
+admin's own screen rather than fixed in the app. The page shows a count and a state, never who joined, and it
+produces a link and nothing else.
+
+The person who accepts an invitation is told so on the sign-up page, and is never named to the inviter.
+
 ## Web — 2026-09-03 — promotions for the developer's other apps, and a share card for pricing
 
 Two small panels now show one of the developer's own other apps: on today's entry and under the community
