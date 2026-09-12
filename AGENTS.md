@@ -1,6 +1,6 @@
 # HabitForge Docs — Project Guide (AGENTS.md)
 
-**Last Updated**: 2026-09-03
+**Last Updated**: 2026-09-12
 **Mirror of `CLAUDE.md`** — byte-identical except this header. Update one, update the other.
 
 Public documentation / knowledge-base site for **HabitForge** (a habit tracker that shows your consistency as a rope — web app + Android; no iOS, no browser extension). This repo is **public**; the HabitForge app source is **private**. The docs exist so users, contributors, and search/AI engines (Google, Bing, ChatGPT, Perplexity, Claude, Gemini) can discover and learn about HabitForge.
@@ -24,6 +24,22 @@ Public documentation / knowledge-base site for **HabitForge** (a habit tracker t
 - **Brand**: **ember on iron** — the app's own tokens, not a second palette. Light primary `#d03b23` (ember-600), dark `#ff7b63` (ember-400), dark ground `#120c0a` (iron-950); the `--hf-gradient-fire` is now one hue darkening (ember-500→700). Changed 2026-09-01: the old orange→red gradient came from a Radix theme the app no longer uses, the OG share card built the same day is ember/iron, and the old light primary `#ea580c` scored **3.56** against white — below AA. `src/css/custom.css` carries the measurements.
 
 ---
+
+## 🔴 Two build-time gates run here, and neither is in the app's test suite
+
+1. **The claim gate** (`docusaurus.config.ts`, a `postBuild` plugin) reads the **BUILT** output against the
+   retired-claim register vendored at `src/lib/publicClaims.ts`, and **fails the build** on a claim this
+   product has retired. It exists because a docs-only push deploys through Actions **without ever running the
+   app's tests**, and the same false sentence shipped three separate times before it. Last run: 59 files
+   scanned, 0 retired claims, **16 truthful "not listed" files** — truthful only while the Play URL answers
+   404. 🔴 When the owner promotes the app, flip `PLAY_LISTING_LIVE` and let the red output drive the sweep
+   (RW-06); rehearsed with a plant, it named all 16.
+2. **The discovery feed** (`src/plugins/discoveryFeed.ts`, 2026-09-12) emits `feed.xml` in `postBuild` from
+   the docs' own `last_update.date`, newest first. It **refuses to render rather than invent**: a page with no
+   valid date, or without a title and description, throws and fails the build, and an empty feed is an error.
+   The head advertises it site-wide. `ignorePatterns` keeps `/search` and `/docs/tags` out of the sitemap —
+   the old `/tags/**` never matched, because `routeBasePath` is `/docs`, so 32 tag and search pages had been
+   submitted for months (sitemap 54 → 22).
 
 ## Build & verify (one-shot only — NEVER run dev/preview servers)
 
