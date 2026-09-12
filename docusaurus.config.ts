@@ -1,9 +1,11 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import discoveryFeed from './src/plugins/discoveryFeed';
 
 const SITE_URL = process.env.DOCS_SITE_URL ?? 'https://habitforge-docs.aoneahsan.com';
 const BASE_URL = process.env.DOCS_BASE_URL ?? '/';
+const FEED_URL = new URL('feed.xml', new URL(BASE_URL, SITE_URL)).toString();
 
 const AUTHOR = {
   name: 'Ahsan Mahmood',
@@ -63,6 +65,15 @@ const config: Config = {
   // Site-wide JSON-LD: WebSite + Organization + Person (author) + the
   // HabitForge SoftwareApplication.
   headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        type: 'application/rss+xml',
+        title: 'HabitForge documentation updates',
+        href: FEED_URL,
+      },
+    },
     {
       tagName: 'link',
       attributes: { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -180,7 +191,7 @@ const config: Config = {
         sitemap: {
           changefreq: 'weekly',
           priority: 0.7,
-          ignorePatterns: ['/tags/**'],
+          ignorePatterns: ['/search', '/docs/tags', '/docs/tags/**'],
           filename: 'sitemap.xml',
         },
         gtag: undefined,
@@ -189,6 +200,7 @@ const config: Config = {
   ],
 
   plugins: [
+    discoveryFeed,
     /**
      * 🔴 THE CLAIM GATE — it reads the BUILT output, never the source.
      *

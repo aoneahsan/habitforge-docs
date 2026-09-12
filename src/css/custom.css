@@ -123,17 +123,3 @@
   background: rgba(224, 217, 216, 0.05);
   border-left-color: rgba(224, 217, 216, 0.42);
 }
-
-/* Author byline on every doc page (rendered by a swizzled component
-   in a later batch — placeholder styling here so it doesn't shift). */
-.hf-author-byline {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-  color: var(--ifm-color-emphasis-700);
-  margin-bottom: 1.5rem;
-}
-.hf-author-byline strong {
-  color: var(--ifm-color-emphasis-900);
-}
