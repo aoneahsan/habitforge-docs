@@ -9,7 +9,7 @@ Public documentation / knowledge-base site for **HabitForge** (a habit tracker t
 - **Parent app**: https://habitforge.aoneahsan.com
 - **Repo (declared)**: https://github.com/aoneahsan/habitforge-docs (public, MIT)
 
-| Context Budget Last Verified | 2026-09-03 — CLAUDE.md ≈6.8 KB / no PENDING-TASKS.md; re-check due 2026-09-13 |
+| Context Budget Last Verified | **2026-09-13** — CLAUDE.md **8,437 B** against the 28 KB cap, and `AGENTS.md` byte-identical to it; still no `PENDING-TASKS.md`, so this repo owes the agent nothing. 🔴 The previous row said **≈6.8 KB**, which was a stale measurement rather than a stale date — the pair grew when the W24 claim gate and the `discovery-feed` plugin were recorded and nobody re-measured. Re-check due **2026-09-23** |
 |---|---|
 
 ---
