@@ -22,8 +22,8 @@ plan is then granted to the account by hand, usually within a day.
 | Plan | Monthly | Yearly | Seats | Notes |
 |---|---|---|---|---|
 | Free | $0 | $0 | 1 | The whole product, limited by scale rather than by feature. |
-| Pro | $5 | $40 | 1 | One person, with the ceilings lifted. |
-| Family | $10 | $80 | 3–6 | One payment covers a household of three to six, each member on better numbers than Pro. Below three people the tier does not apply. |
+| Pro | $9.99 | $99.90 | 1 | One person, with the ceilings lifted. |
+| Family | $8.99 a seat | $89.90 a seat | 3–6 | Priced per seat, from three seats ($26.97 a month) to six. Each member is on better numbers than Pro. Below three people the tier does not apply. |
 
 ## Limits
 
@@ -40,7 +40,8 @@ plan is then granted to the account by hand, usually within a day.
 - Paused and archived habits do not count towards the habit limit.
 - Joining someone else's challenge is never limited.
 - Check-ins are kept on every plan; analytics history is how far back the charts read.
-- Family is three to six people. Three is the floor, not a suggestion.
+- Family is three to six people, paid per seat. Three is the floor, not a suggestion.
+- All prices are in US dollars. A year costs ten months' price.
 - A tier's limits are administered from the app's admin panel, so a number above can move without a
   release; the app's generated file is always current.
 
