@@ -14,8 +14,9 @@ limits.
 **Platforms:** the web app at https://habitforge.aoneahsan.com, installable as a PWA. The Android app is
 built, signed and on Google Play's internal-testing track; it is not publicly listed yet. There is no iOS app.
 
-**Availability:** Pro and Family are available now. Payment is taken on the developer's payment page and the
-plan is then granted to the account by hand, usually within a day.
+**Availability:** Pro and Family are available now. On the web a plan is paid for by card through Polar, the
+payment provider, and starts when the payment is confirmed. A payment made another way is granted to the
+account by hand, usually within a day.
 
 ## Plans
 
@@ -47,12 +48,17 @@ plan is then granted to the account by hand, usually within a day.
 
 ## How payment works
 
-There is no in-app checkout and no card stored with the app. Payment goes through the developer's own
-payment page, after which the plan is granted to the account:
+On the web, sign in and open the plans page (https://habitforge.aoneahsan.com/pricing), choose Pro or Family
+and press Continue to payment. The card is entered on a page run by Polar, the payment provider and seller of
+record; HabitForge never sees or stores it. The plan starts when the payment is confirmed, usually within a
+minute, and renews each period until it is cancelled from the same page.
+
+A payment can also be made on the developer's own payment page, after which the plan is granted to the
+account by hand, usually within a day:
 
 - https://aoneahsan.com/payment?project-id=habitforge&project-identifier=com.aoneahsan.habitforge
 
-Every grant records the plan it falls back to and the date that happens. Cancelling stops the renewal rather
+Every plan records the plan it falls back to and the date that happens. Cancelling stops the renewal rather
 than the period already paid for, nothing is deleted on downgrade, and payments are not refunded.
 
 The Android app shows plan status and gates features; it never sells and never links out to a payment page,

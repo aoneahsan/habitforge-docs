@@ -5,7 +5,7 @@ description: 'What is new in HabitForge, latest first: the 1.0 rebuild with offl
 sidebar_label: Changelog
 sidebar_position: 1
 last_update:
-  date: 2026-09-03
+  date: 2026-10-02
   author: Ahsan Mahmood
 tags:
   - changelog
@@ -19,6 +19,14 @@ keywords:
 # Changelog
 
 **What is new in HabitForge, latest first.** These notes mirror the app's release notes, so what you read here matches what shipped.
+
+## Web — 2026-10-02 — pay for a plan by card
+
+Pro and Family can now be paid for by card on the plans page. The card is entered on a page run by Polar, the
+payment provider; the app never sees it. The plan starts when the payment is confirmed, usually within a
+minute, and the same page shows the subscription with its renewal date, a way to cancel or resume it, and,
+for Family, a way to change the number of seats. Paying another way still works and is still granted by hand.
+Web only: the Android app sells nothing.
 
 ## Web — 2026-09-05 — bring somebody with you: the referral programme
 
