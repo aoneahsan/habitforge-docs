@@ -5,7 +5,7 @@ description: 'What is new in HabitForge, latest first: the 1.0 rebuild with offl
 sidebar_label: Changelog
 sidebar_position: 1
 last_update:
-  date: 2026-10-02
+  date: 2026-10-13
   author: Ahsan Mahmood
 tags:
   - changelog
@@ -19,6 +19,15 @@ keywords:
 # Changelog
 
 **What is new in HabitForge, latest first.** These notes mirror the app's release notes, so what you read here matches what shipped.
+
+## Web — 2026-10-13 — AI drafts, a weekly read-back, and Speak
+
+A new habit can be drafted with AI: the cue, routine, reward, craving and investment, from its name. The
+dashboard reads your last seven finished days back with one suggestion, and the community board can help word a
+post you wrote. Speak listens to what you did and what you want to start, then suggests check-ins, a new habit
+or a post for you to check. Nothing is saved until you press Save. Each plan has a monthly AI allowance, and
+the levels are Spark, Pulse and Surge. Details: [AI and Speak](../features/ai-and-speak.md). The Android app's
+microphone permission arrives with its next release.
 
 ## Web — 2026-10-02 — pay for a plan by card
 
