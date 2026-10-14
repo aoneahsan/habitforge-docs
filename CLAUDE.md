@@ -1,7 +1,7 @@
-# HabitForge Docs — Project Guide (CLAUDE.md)
+# HabitForge Docs — Project Guide
 
-**Last Updated**: 2026-09-12
-**Mirror of `AGENTS.md`** — byte-identical except this header. Update one, update the other.
+**Last Updated**: 2026-10-14
+**Guide mirror:** `AGENTS.md` and `CLAUDE.md` are byte-identical. Update both together.
 
 Public documentation / knowledge-base site for **HabitForge** (a habit tracker that shows your consistency as a rope — web app + Android; no iOS, no browser extension). This repo is **public**; the HabitForge app source is **private**. The docs exist so users, contributors, and search/AI engines (Google, Bing, ChatGPT, Perplexity, Claude, Gemini) can discover and learn about HabitForge.
 
@@ -9,8 +9,13 @@ Public documentation / knowledge-base site for **HabitForge** (a habit tracker t
 - **Parent app**: https://habitforge.aoneahsan.com
 - **Repo (declared)**: https://github.com/aoneahsan/habitforge-docs (public, MIT)
 
-| Context Budget Last Verified | **2026-09-13** — CLAUDE.md **8,437 B** against the 28 KB cap, and `AGENTS.md` byte-identical to it; still no `PENDING-TASKS.md`, so this repo owes the agent nothing. 🔴 The previous row said **≈6.8 KB**, which was a stale measurement rather than a stale date — the pair grew when the W24 claim gate and the `discovery-feed` plugin were recorded and nobody re-measured. Re-check due **2026-09-23** |
+| Context budget | Value |
 |---|---|
+| Last optimized | 2026-10-14 |
+| Next routine optimization eligible | 2026-11-13 |
+| Guide bytes | 8271 B |
+| Covered subtree | Public docs repository root. |
+| Method | Rechecked Pages-only, claim-gate and feed routing; kept product claims tied to app evidence. |
 
 ---
 
