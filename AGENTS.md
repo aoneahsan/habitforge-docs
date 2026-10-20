@@ -103,3 +103,9 @@ carve-out that was **REVOKED**. No default sub-agent may be used for any work, e
 <!-- Marker kept so the fleet write stays a no-op; the prose it guarded is now the pointer table above. -->
 <!-- Global records live in ahsan-notebook/static/assets/claude-code/; ~/.claude/… symlinks into it. -->
 <!-- Owner directives 2026-07-11 / 2026-07-14; fleet-rolled 2026-07-16. -->
+
+## Stop-work Git gate
+
+<!-- RULE:stop-work-git-gate v2026-10-20 -->
+
+Before stopping, commit every legitimate change and work-progress checkpoint in this repository and each independent nested repository, fetch and merge the designated upstream, push the documented working branch, then verify an empty worktree and `0 0` ahead/behind. Never stash, discard, reset, rebase, or force-push. If synchronization is blocked, report the exact repository, branch, blocker, and next action instead of calling the work complete. The full workflow remains authoritative in `~/.claude/rules/git-workflow.md`.
