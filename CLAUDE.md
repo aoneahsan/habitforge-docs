@@ -1,6 +1,6 @@
 # HabitForge Docs — Project Guide
 
-**Last Updated**: 2026-10-14
+**Last Updated**: 2026-10-21
 **Guide mirror:** `AGENTS.md` and `CLAUDE.md` are byte-identical. Update both together.
 
 Public documentation / knowledge-base site for **HabitForge** (a habit tracker that shows your consistency as a rope — web app + Android; no iOS, no browser extension). This repo is **public**; the HabitForge app source is **private**. The docs exist so users, contributors, and search/AI engines (Google, Bing, ChatGPT, Perplexity, Claude, Gemini) can discover and learn about HabitForge.
@@ -21,7 +21,7 @@ Public documentation / knowledge-base site for **HabitForge** (a habit tracker t
 
 ## What this is
 
-- **Framework**: Docusaurus 3 (`@docusaurus/core` ^3.10.1), React 19, TypeScript ~6.0, Yarn 4.
+- **Framework**: Docusaurus 3 (`@docusaurus/core` ^3.10.2), React 19, TypeScript ~6.0, Yarn 4.
 - **Search**: `@easyops-cn/docusaurus-search-local` (offline local search — no Algolia signup).
 - **Content**: 17 Markdown doc pages describing the REAL app (rewritten 2026-07-23): `intro` + `getting-started`, `habits/` ×5 (create, check-ins-and-streaks, rope-strength, levels-and-points, manage), `features/` ×5 (analytics, achievements, community, themes, reminders-and-notifications), `apps/` ×2 (install-and-offline, android), `reference/` ×3 (changelog, privacy-and-terms, support), plus 4 generated-index category pages. **HabitForge has NO trackers/timers/journals/browser-extension/iOS** — the old generic-template content (extension, timers, trackers, journals, productivity, mobile-iOS, etc.) was deleted 2026-07-23.
 - **AEO/SEO**: `robots.txt` (AI-bot allowlist + sitemap directive), `llms.txt` (llmstxt.org format), `pricing.md` (machine-readable — 🔴 rewritten 2026-09-03: it had said the paid plans were *not yet available for purchase*, false since W2; it now mirrors the app's generated `/pricing.md` and names it as the source), site-wide JSON-LD (`WebSite` + `Organization` + `Person` + `SoftwareApplication`), Docusaurus sitemap plugin. Every page carries distinct `title`/`description` + `last_update` front-matter.
@@ -49,13 +49,17 @@ Public documentation / knowledge-base site for **HabitForge** (a habit tracker t
 ## Build & verify (one-shot only — NEVER run dev/preview servers)
 
 ```bash
-yarn install        # Yarn 4 / Berry (packageManager: yarn@4.17.1)
+yarn install        # Yarn 4 / Berry (packageManager: yarn@4.18.1)
 yarn typecheck      # tsc --noEmit
 yarn build          # docusaurus build (writes ./build)
 ```
 
 - `yarn build` is **clean** (`[SUCCESS]`, zero warnings, zero broken links). `onBrokenLinks` is `'throw'` and `onBrokenMarkdownLinks` is `'throw'` (via `markdown.hooks`) so any broken internal link fails the build. `onBrokenAnchors` stays `'warn'` (cross-page heading anchors are fragile).
 - Per workspace policy the dev server (`yarn start`) is **not** auto-run by tooling — run it yourself to preview.
+
+Fleet Pass 2 package maintenance completed 2026-10-21 on Node 24. Typecheck, production build, the claim gate,
+and controlled desktop/mobile browser checks passed; the resulting main push is the Pages deployment source.
+Do not repeat routine maintenance before 2026-11-13.
 
 ---
 
