@@ -37,6 +37,7 @@ const sidebars: SidebarsConfig = {
         'features/community',
         'features/themes',
         'features/reminders-and-notifications',
+        'features/tours-and-walkthrough',
       ],
     },
     {

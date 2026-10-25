@@ -5,7 +5,7 @@ description: 'What is new in HabitForge, latest first: the 1.0 rebuild with offl
 sidebar_label: Changelog
 sidebar_position: 1
 last_update:
-  date: 2026-10-13
+  date: 2026-10-25
   author: Ahsan Mahmood
 tags:
   - changelog
@@ -19,6 +19,13 @@ keywords:
 # Changelog
 
 **What is new in HabitForge, latest first.** These notes mirror the app's release notes, so what you read here matches what shipped.
+
+## Web — 2026-10-25 — page tours, and How HabitForge works
+
+Nine pages now have a short tour behind the signpost button in the header, and a new page,
+[How HabitForge works](https://habitforge.aoneahsan.com/how-habitforge-works), explains the whole app in six steps.
+A first visit shows one quiet line at the bottom about the Privacy Policy and the Terms of Service, which leaves by
+itself. Details: [Page tours and How HabitForge works](../features/tours-and-walkthrough.md).
 
 ## Web — 2026-10-13 — AI drafts, a weekly read-back, and Speak
 
