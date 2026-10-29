@@ -5,7 +5,7 @@ description: HabitForge ships light and dark themes plus a customiser for appear
 sidebar_label: Themes & customiser
 sidebar_position: 4
 last_update:
-  date: 2026-09-01
+  date: 2026-10-29
   author: Ahsan Mahmood
 tags:
   - themes
@@ -19,9 +19,9 @@ keywords:
 
 # Themes and customiser
 
-**HabitForge lets you shape how the app looks across ten separate settings, from a light/dark switch to the shape of a corner.** Open the customiser from the palette icon in the header — it is on every page, at every width, and it works whether or not you are signed in.
+**HabitForge lets you shape how the app looks across nine separate settings, from a light/dark switch to the shape of a corner.** Open the customiser from the palette icon in the header — it is on every page, at every width, and it works whether or not you are signed in.
 
-## The ten settings
+## The nine settings
 
 | Setting | What it changes |
 |---|---|
@@ -32,7 +32,6 @@ keywords:
 | **Text size** | Scales the type without breaking the layout. |
 | **Typeface** | The font the app is set in. |
 | **Panels** | How cards and panels are treated. |
-| **Cursor** | The pointer style on devices that have one. |
 | **Motion** | Animation, including turning it off. Your system's "reduce motion" setting is respected on its own. |
 | **Sound** | Short cues on a few actions, off by default. |
 

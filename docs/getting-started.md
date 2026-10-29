@@ -1,11 +1,11 @@
 ---
 id: getting-started
 title: Get started
-description: Open HabitForge in any browser, sign in with Google, and create your first habit. Sign-in is Google only, and the Android build is not on Google Play yet.
+description: Open HabitForge in any browser, sign in with Google, and create your first habit. Sign-in is Google only, and the Android app is on Google Play.
 sidebar_label: Get started
 sidebar_position: 2
 last_update:
-  date: 2026-09-01
+  date: 2026-10-29
   author: Ahsan Mahmood
 tags:
   - getting started
@@ -22,7 +22,7 @@ tags:
 ## Open the app
 
 - **On the web:** go to [habitforge.aoneahsan.com](https://habitforge.aoneahsan.com) in any modern browser. It works on desktop and mobile.
-- **On Android:** the native build is finished and in internal testing, so it is not on Google Play yet. Until the listing goes live, open the web app in Chrome and [add it to your home screen](./apps/install-and-offline.md) — it installs and works offline. See [The Android app](./apps/android.md) for what the native build adds.
+- **On Android:** install HabitForge from [Google Play](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge), or open the web app in Chrome and [add it to your home screen](./apps/install-and-offline.md) — it installs and works offline. See [The Android app](./apps/android.md) for what the native app adds.
 
 There is no iOS app yet. On an iPhone or iPad, use the web app in Safari and [add it to your home screen](./apps/install-and-offline.md).
 

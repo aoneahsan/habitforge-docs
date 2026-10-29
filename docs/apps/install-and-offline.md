@@ -5,7 +5,7 @@ description: HabitForge is a PWA — install it to your home screen from any bro
 sidebar_label: Install & offline
 sidebar_position: 1
 last_update:
-  date: 2026-09-01
+  date: 2026-10-29
   author: Ahsan Mahmood
 tags:
   - pwa
@@ -24,7 +24,7 @@ keywords:
 ## Install from the browser
 
 - **Desktop (Chrome, Edge):** use the install icon in the address bar, or the browser menu's "Install HabitForge".
-- **Android:** the browser offers "Add to Home screen". This is the way to run HabitForge on Android today — [the native app](./android.md) is not on Google Play yet.
+- **Android:** the browser offers "Add to Home screen". The [native app](./android.md) is on [Google Play](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge) as well.
 - **iPhone / iPad:** in Safari, tap Share → **Add to Home Screen**. This is how iOS users run HabitForge, since there is no App Store build.
 
 Once installed, HabitForge opens in its own window like any other app.

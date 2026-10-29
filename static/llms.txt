@@ -1,6 +1,6 @@
 # HabitForge
 
-> HabitForge is a habit tracker that turns your consistency into a rope you can see — a thin thread when a habit is new, thickening through string, rope and cable to a chain once you have shown up day after day, and fraying where you stopped. It runs as a web app. An Android build exists and is on Google Play's internal-testing track; it is not publicly listed, so the web app is how anyone installs it today. There is no iOS app and no browser extension. Sign-in is Google-only. There is a free plan plus two paid plans, Pro and Family, and all three are available now; payment is taken on the developer's payment page and the plan is then granted to the account by hand — see /pricing.md.
+> HabitForge is a habit tracker that turns your consistency into a rope you can see — a thin thread when a habit is new, thickening through string, rope and cable to a chain once you have shown up day after day, and fraying where you stopped. It runs as a web app. The Android app is on Google Play, and the web app also installs to the home screen. There is no iOS app and no browser extension. Sign-in is Google-only. There is a free plan plus two paid plans, Pro and Family, and all three are available now; on the web a plan is paid for by card through Polar, the payment provider, and starts when the payment is confirmed — see /pricing.md.
 
 This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI agents an at-a-glance overview of the documentation.
 
@@ -28,7 +28,7 @@ This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI age
 ## Key URLs
 
 - Live app: https://habitforge.aoneahsan.com
-- Google Play: not publicly listed. The Android build is on the internal-testing track only; the web app installs to the home screen as a PWA.
+- Google Play: https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge — the Android app. The web app also installs to the home screen as a PWA.
 - Documentation home: https://habitforge-docs.aoneahsan.com/docs
 - Get started: https://habitforge-docs.aoneahsan.com/docs/getting-started
 - Habits: https://habitforge-docs.aoneahsan.com/docs/habits
@@ -47,9 +47,9 @@ This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI age
 - Support: https://habitforge-docs.aoneahsan.com/docs/reference/support
 - Sitemap: https://habitforge-docs.aoneahsan.com/sitemap.xml
 
-## Author
+## Who builds it
 
-Built and maintained by Ahsan Mahmood — full-stack and mobile engineer.
+Built and maintained by the HabitForge team.
 
 - Portfolio: https://aoneahsan.com
 - GitHub: https://github.com/aoneahsan

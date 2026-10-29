@@ -1,11 +1,11 @@
 ---
 id: android
 title: The Android app
-description: HabitForge on Android is a native app with over-the-air updates, so fixes reach you without a store release. It is in internal testing, not yet on Google Play.
+description: HabitForge on Android is a native app with over-the-air updates, so fixes reach you without a store release. Install it from Google Play.
 sidebar_label: The Android app
 sidebar_position: 2
 last_update:
-  date: 2026-09-01
+  date: 2026-10-29
   author: Ahsan Mahmood
 tags:
   - android
@@ -19,9 +19,9 @@ keywords:
 
 # The Android app
 
-**The HabitForge Android app is built, but it is not on Google Play yet.** This page describes what the native build adds; it will gain an install link when the listing goes live.
+**The HabitForge Android app is on Google Play:** [install it from its store page](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge). This page describes what the native app adds.
 
-Until then, Android users get the full product through the web app, which installs to the home screen and works offline — see [Install and offline](./install-and-offline.md).
+The web app works on Android too: it installs to the home screen and works offline — see [Install and offline](./install-and-offline.md).
 
 There is no iOS app yet, because it needs an Apple Developer account. On iPhone or iPad, use the web app and [add it to your home screen](./install-and-offline.md).
 

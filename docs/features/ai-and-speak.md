@@ -5,7 +5,7 @@ description: HabitForge drafts a habit's loop, reads your week back, helps word 
 sidebar_label: AI and Speak
 sidebar_position: 6
 last_update:
-  date: 2026-10-13
+  date: 2026-10-29
 tags:
   - ai
   - speak
@@ -17,7 +17,7 @@ keywords:
 
 # AI and Speak
 
-Four features use AI, each sending Anthropic only what that request needs. An AI draft can be wrong. Nothing
+Four features use AI, each sending Anthropic — or OpenAI, when our Anthropic credit is used up — only what that request needs. An AI draft can be wrong. Nothing
 reaches your habits, check-ins or the community until you press Save or Post.
 
 ## What the four features do

@@ -4,7 +4,8 @@ import { join } from 'node:path';
 import type { LoadedContent } from '@docusaurus/plugin-content-docs';
 import type { AllContent, Plugin } from '@docusaurus/types';
 
-type FeedItem = {
+/** One feed entry. `/feed.xml` and the `/feed` page both read this list, so they cannot disagree. */
+export type FeedItem = {
   title: string;
   description: string;
   permalink: string;
@@ -36,7 +37,14 @@ export default function discoveryFeed(): Plugin {
   };
 }
 
-function docsFeedItems(allContent: AllContent): FeedItem[] {
+/**
+ * Every listed doc as a feed entry, newest `last_update.date` first.
+ *
+ * @param allContent - every plugin's loaded content
+ * @returns the entries `/feed.xml` and the `/feed` page both show
+ * @throws when a doc has no valid date, title or description
+ */
+export function docsFeedItems(allContent: AllContent): FeedItem[] {
   const instances = allContent['docusaurus-plugin-content-docs'] ?? {};
   const items = Object.values(instances).flatMap((raw) => {
     const content = raw as LoadedContent;
@@ -61,7 +69,9 @@ function docsFeedItems(allContent: AllContent): FeedItem[] {
         return [{
           title: doc.title,
           description: doc.description,
-          permalink: doc.permalink,
+          // A doc with `slug: /` gets the permalink `/docs/`, which 404s on this host (trailingSlash: false serves
+          // `/docs`). Use the address the page is really served at, as sitemap.xml does.
+          permalink: doc.permalink.length > 1 ? doc.permalink.replace(/\/+$/, '') : doc.permalink,
           updatedAt,
         }];
       }),

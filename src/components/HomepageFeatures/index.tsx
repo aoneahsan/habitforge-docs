@@ -152,8 +152,7 @@ const FEATURES: FeatureItem[] = [
     description: (
       <>
         Use it in any browser, or add the web app to your home screen. It works
-        offline and syncs when you reconnect. The Android build is in internal testing
-        and not on Google Play yet.
+        offline and syncs when you reconnect. The Android app is on Google Play.
       </>
     ),
   },

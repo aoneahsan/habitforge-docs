@@ -5,7 +5,7 @@ description: 'Official documentation for HabitForge, a habit tracker that draws 
 sidebar_position: 1
 slug: /
 last_update:
-  date: 2026-09-01
+  date: 2026-10-29
   author: Ahsan Mahmood
 tags:
   - habit tracker
@@ -19,7 +19,7 @@ tags:
 
 **HabitForge is a habit tracker that draws your consistency as a rope you can see.** A new habit is a thread. Keep showing up and it thickens through string, rope and cable towards a chain; stop, and it frays where you stopped, while the rest of what you built stays.
 
-It runs as a web app today. The Android build is in internal testing and not on Google Play yet. There is no iOS build and no browser extension.
+It runs as a web app and as an [Android app on Google Play](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge). There is no iOS build and no browser extension.
 
 ## Where to start
 
@@ -40,6 +40,6 @@ It runs as a web app today. The Android build is in internal testing and not on 
 
 - **Open the app:** [habitforge.aoneahsan.com](https://habitforge.aoneahsan.com)
 - **Docs source:** [github.com/aoneahsan/habitforge-docs](https://github.com/aoneahsan/habitforge-docs)
-- **Built by:** [Ahsan Mahmood](https://aoneahsan.com), at [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com)
+- **Built by:** [the HabitForge team](https://aoneahsan.com), at [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com)
 
 The app source is private; these docs are public. There is a free tier, plus Pro and Family plans; [pricing](pathname:///pricing.md) lists what each covers.

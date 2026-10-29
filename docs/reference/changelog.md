@@ -5,7 +5,7 @@ description: 'What is new in HabitForge, latest first: the 1.0 rebuild with offl
 sidebar_label: Changelog
 sidebar_position: 1
 last_update:
-  date: 2026-10-25
+  date: 2026-10-29
   author: Ahsan Mahmood
 tags:
   - changelog
@@ -19,6 +19,11 @@ keywords:
 # Changelog
 
 **What is new in HabitForge, latest first.** These notes mirror the app's release notes, so what you read here matches what shipped.
+
+## Docs — 2026-10-29 — HabitForge on Google Play
+
+The Android app is on [Google Play](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge), and these pages now say so. The appearance panel lists nine
+choices: the pointer is the browser's own again.
 
 ## Web — 2026-10-25 — page tours, and How HabitForge works
 
@@ -58,7 +63,7 @@ The person who accepts an invitation is told so on the sign-up page, and is neve
 Two small panels now show one of the developer's own other apps: on today's entry and under the community
 board. No advertising network is involved, HabitForge never promotes itself, and the words are edited from
 the admin's own screen. Sharing the pricing page now produces a card that names the plans. Web only: the
-Android build on internal testing is unchanged, and its store answer for ads stays "No" until a build
+Android build of that day was unchanged, and its store answer for ads stays "No" until a build
 carries the panels.
 
 ## 1.0.0 — 2026-08-31 — the first public release
@@ -102,8 +107,8 @@ backend, and a lot of things the 1.x app could not do.
 - **Improvement** — Every link that leaves HabitForge opens in a new tab.
 - **Removed** — Profile photos. Profiles now carry a handle and a display name.
 
-**Android:** the native app is built, signed and **uploaded to Google Play internal testing**; it reaches
-the public track after its on-device pass. The web app installs to your home screen in the meantime.
+**Android:** the native app is built, signed and **uploaded to Google Play** for testing, the first
+step before the public track. The web app installs to your home screen in the meantime.
 
 ## 1.2.0 — 2026-07-23
 

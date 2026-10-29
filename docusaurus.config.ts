@@ -137,8 +137,8 @@ const config: Config = {
             name: 'HabitForge',
             url: APP_URL,
             description:
-              'HabitForge is a habit tracker that turns your consistency into a visual rope. It uses the cue-routine-reward habit loop, daily check-ins that build streaks, points and a ten-tier level, weekly analytics, achievements, an optional community, and light/dark themes. It runs on the web and on Android. There is a free plan plus Pro and Family plans, paid on the developer\'s payment page and granted to the account; there is no in-app checkout.',
-            applicationCategory: 'LifestyleApplication',
+              'HabitForge is a habit tracker that turns your consistency into a visual rope. It uses the cue-routine-reward habit loop, daily check-ins that build streaks, points and a ten-tier level, weekly analytics, achievements, an optional community, and light/dark themes. It runs on the web and on Android. There is a free plan plus Pro and Family plans; on the web a plan is paid for by card through Polar, the payment provider, and starts when the payment is confirmed.',
+            applicationCategory: 'ProductivityApplication',
             operatingSystem: 'Web, Android',
             /* 🔴 CORRECTED 2026-09-05 (RW-22): this comment used to say the offer stays
                at 0 "until Pro and Family are purchasable" — a trigger that had already
@@ -147,9 +147,10 @@ const config: Config = {
                The single 0 offer stays anyway, and now for the real reason: it describes
                the free plan, which is genuinely acquirable at 0, and `isAccessibleForFree`
                is true. Priced offers for Pro and Family are deliberately NOT listed — the
-               app's own prerenderer omits `SoftwareApplication` offers entirely because a
-               price in structured data is a purchasability claim, and these are paid on a
-               payment page and granted by hand rather than bought in a checkout. */
+               app's own prerenderer omits `SoftwareApplication` offers entirely, and the two
+               surfaces keep one shape. (Until 2026-10-29 this said the plans were "paid on a
+               payment page and granted by hand rather than bought in a checkout" — false since
+               card payments through Polar went live on 2026-10-02.) */
             offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
             author: { '@id': `${SITE_URL}/#author` },
             publisher: { '@id': `${SITE_URL}/#organization` },
@@ -180,7 +181,7 @@ const config: Config = {
             'MANUAL-TASKS.md',
           ],
           editUrl: `${DOCS_GITHUB}/tree/main/`,
-          showLastUpdateAuthor: true,
+          showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           breadcrumbs: true,
         },
@@ -189,10 +190,20 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
         sitemap: {
-          changefreq: 'weekly',
-          priority: 0.7,
+          // Google ignores changefreq and priority, so neither is emitted.
+          changefreq: null,
+          priority: null,
+          // 'date' writes YYYY-MM-DD. Whatever date Docusaurus finds (git, for the home page) is replaced below:
+          // every <lastmod> comes from the docs' own last_update.date.
+          lastmod: 'date',
           ignorePatterns: ['/search', '/docs/tags', '/docs/tags/**'],
           filename: 'sitemap.xml',
+          // One date source for every URL (plugins/site-pages.ts): a doc its own date, a page that lists others the
+          // newest of what it lists. An undated URL fails the build.
+          createSitemapItems: async ({ defaultCreateSitemapItems, ...params }) =>
+            (require('./plugins/site-pages') as typeof import('./plugins/site-pages')).withLastmod(
+              await defaultCreateSitemapItems(params),
+            ),
         },
         gtag: undefined,
       } satisfies Preset.Options,
@@ -201,6 +212,8 @@ const config: Config = {
 
   plugins: [
     discoveryFeed,
+    // /sitemap and /feed as readable pages, and the dates sitemap.xml carries (plugins/site-pages.ts).
+    (require('./plugins/site-pages') as typeof import('./plugins/site-pages')).default,
     /**
      * 🔴 THE CLAIM GATE — it reads the BUILT output, never the source.
      *
@@ -221,7 +234,7 @@ const config: Config = {
         async postBuild({ outDir }: { outDir: string }) {
           const { readdirSync, readFileSync, statSync } = await import('node:fs');
           const { join } = await import('node:path');
-          const { RETIRED_CLAIMS, PLAY_LISTING_LIVE } = await import('./src/lib/publicClaims');
+          const { RETIRED_CLAIMS, PLAY_LISTING_LIVE, NOT_LISTED_PATTERN } = await import('./src/lib/publicClaims');
 
           const files: string[] = [];
           const walk = (dir: string): void => {
@@ -257,7 +270,7 @@ const config: Config = {
                 );
               }
             }
-            if (/internal.testing|not on Google Play|not publicly listed/i.test(text)) {
+            if (NOT_LISTED_PATTERN.test(text)) {
               notListedLines += 1;
             }
           }
@@ -342,6 +355,8 @@ const config: Config = {
             { label: 'Features', to: '/docs/features' },
             { label: 'Apps & offline', to: '/docs/apps' },
             { label: 'Changelog', to: '/docs/reference/changelog' },
+            { label: 'Sitemap', to: '/sitemap' },
+            { label: 'Feed', to: '/feed' },
           ],
         },
         {
@@ -354,9 +369,9 @@ const config: Config = {
           ],
         },
         {
-          title: 'Built by Ahsan Mahmood',
+          title: 'Built by the HabitForge team',
           items: [
-            { label: 'Portfolio — aoneahsan.com', href: AUTHOR.url },
+            { label: 'The team — aoneahsan.com', href: AUTHOR.url },
             { label: 'LinkedIn', href: AUTHOR.linkedin },
             { label: 'GitHub', href: AUTHOR.github },
             { label: 'NPM packages', href: AUTHOR.npm },
@@ -365,7 +380,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Ahsan Mahmood · HabitForge · MIT licensed docs.`,
+      copyright: `Copyright © ${new Date().getFullYear()} HabitForge · MIT licensed docs.`,
     },
     prism: {
       theme: prismThemes.github,

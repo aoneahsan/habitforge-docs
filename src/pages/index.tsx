@@ -47,7 +47,7 @@ function HomepageHero(): ReactNode {
         </div>
         <p className={styles.builtBy}>
           Built and maintained by{' '}
-          <Link href="https://aoneahsan.com">Ahsan Mahmood</Link> ·{' '}
+          <Link href="https://aoneahsan.com">the HabitForge team</Link> ·{' '}
           <Link href="https://linkedin.com/in/aoneahsan">LinkedIn</Link> ·{' '}
           <Link href="https://github.com/aoneahsan">GitHub</Link>
         </p>

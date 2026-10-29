@@ -1,6 +1,6 @@
 # HabitForge pricing
 
-> Machine-readable pricing for AI buying agents and search systems. Last updated: 2026-10-13.
+> Machine-readable pricing for AI buying agents and search systems. Last updated: 2026-10-29.
 > The generated source of truth is the app's own file, written on every build from the plan registry the
 > app enforces: https://habitforge.aoneahsan.com/pricing.md — the numbers below match it on the date above.
 
@@ -12,11 +12,10 @@ community are all included at no cost, limited by scale rather than by feature. 
 limits.
 
 **Platforms:** the web app at https://habitforge.aoneahsan.com, installable as a PWA. The Android app is
-built, signed and on Google Play's internal-testing track; it is not publicly listed yet. There is no iOS app.
+on Google Play (https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge). There is no iOS app.
 
 **Availability:** Pro and Family are available now. On the web a plan is paid for by card through Polar, the
-payment provider, and starts when the payment is confirmed. A payment made another way is granted to the
-account by hand, usually within a day.
+payment provider, and starts when the payment is confirmed.
 
 ## Plans
 
@@ -61,11 +60,6 @@ On the web, sign in and open the plans page (https://habitforge.aoneahsan.com/pr
 and press Continue to payment. The card is entered on a page run by Polar, the payment provider and seller of
 record; HabitForge never sees or stores it. The plan starts when the payment is confirmed, usually within a
 minute, and renews each period until it is cancelled from the same page.
-
-A payment can also be made on the developer's own payment page, after which the plan is granted to the
-account by hand, usually within a day:
-
-- https://aoneahsan.com/payment?project-id=habitforge&project-identifier=com.aoneahsan.habitforge
 
 Every plan records the plan it falls back to and the date that happens. Cancelling stops the renewal rather
 than the period already paid for, and nothing is deleted on downgrade.

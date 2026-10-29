@@ -5,7 +5,7 @@ description: 'How to get help with HabitForge: the in-app contact form, email th
 sidebar_label: Support
 sidebar_position: 3
 last_update:
-  date: 2026-07-23
+  date: 2026-10-29
   author: Ahsan Mahmood
 tags:
   - support
@@ -29,7 +29,7 @@ keywords:
 
 ## Support the project
 
-HabitForge is built and maintained by [Ahsan Mahmood](https://aoneahsan.com). It has a free tier that is a
+HabitForge is built and maintained by [the HabitForge team](https://aoneahsan.com). It has a free tier that is a
 real product rather than a trial, plus Pro and Family plans that lift its limits — see
 [pricing](pathname:///pricing.md). If it helps you and you want to give back, you can contribute here:
 
@@ -37,9 +37,9 @@ real product rather than a trial, plus Pro and Family plans that lift its limits
 
 A contribution is voluntary and separate from a plan; it unlocks nothing on its own.
 
-## About the author
+## About the team
 
-Built by **Ahsan Mahmood**, a full-stack and mobile engineer.
+Built by **the HabitForge team**.
 
 - Portfolio: [aoneahsan.com](https://aoneahsan.com)
 - GitHub: [github.com/aoneahsan](https://github.com/aoneahsan)

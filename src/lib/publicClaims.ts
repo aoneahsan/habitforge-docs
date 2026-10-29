@@ -19,12 +19,15 @@ export type RetiredClaim = {
   readonly record: string;
 };
 
-export const PLAY_LISTING_LIVE = false;
+export const PLAY_LISTING_LIVE = true;
+
+/** A sentence saying the app is not on Google Play — true only while `PLAY_LISTING_LIVE` is false. */
+export const NOT_LISTED_PATTERN = /internal.testing|not on Google Play|not publicly listed/i;
 
 export const RETIRED_CLAIMS: readonly RetiredClaim[] = [
   {
     pattern: /not yet available for purchase/i,
-    truth: 'Pro and Family are available now; on the web a card payment through Polar starts the plan, and a payment made another way is granted by hand.',
+    truth: 'Pro and Family are available now; on the web a card payment through Polar starts the plan.',
     record: 'RW-08 (2026-09-03), RW-22 (2026-09-05)',
   },
   {
