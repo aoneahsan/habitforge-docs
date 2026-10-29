@@ -20,10 +20,13 @@ keywords:
 
 **What is new in HabitForge, latest first.** These notes mirror the app's release notes, so what you read here matches what shipped.
 
-## Docs — 2026-10-29 — HabitForge on Google Play
+## Web — 2026-10-29 — card only, a clearer privacy policy, and HabitForge on Google Play
 
-The Android app is on [Google Play](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge), and these pages now say so. The appearance panel lists nine
-choices: the pointer is the browser's own again.
+Plans are paid for by card on the plans page; the other way to pay is gone. The privacy policy now names
+OpenAI, which writes the AI drafts when our Anthropic credit is used up. A keyboard shows where it is on every
+control again, the help page speaks for the HabitForge team, and the feed lists the latest releases. The
+Android app is on [Google Play](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge), and
+these pages now say so. The appearance panel lists nine choices: the pointer is the browser's own again.
 
 ## Web — 2026-10-25 — page tours, and How HabitForge works
 
