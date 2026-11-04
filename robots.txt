@@ -1,0 +1,72 @@
+# HabitForge documentation — robots.txt
+# Records this site's crawler policy and points crawlers to the XML sitemap.
+# Access permits discovery; it does not guarantee indexing or inclusion.
+#
+# Last updated: 2026-09-09.
+
+# --- Traditional search engines --------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# --- AI service crawlers (allowed by project policy) -----------------------
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# --- SEO scrapers (no traffic value, blocked) ------------------------------
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# --- Default ---------------------------------------------------------------
+
+User-agent: *
+Allow: /
+
+Sitemap: https://habitforge-docs.aoneahsan.com/sitemap.xml

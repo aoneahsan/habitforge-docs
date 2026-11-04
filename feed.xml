@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HabitForge Docs</title>
+    <link>https://habitforge-docs.aoneahsan.com/</link>
+    <description><![CDATA[A habit tracker that draws your consistency as a rope you watch thicken, with other people building theirs beside you.]]></description>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://habitforge-docs.aoneahsan.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HabitForge documentation</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Official documentation for HabitForge, a habit tracker that draws your consistency as a rope: it thickens with what you keep and frays where you stopped.]]></description>
+    </item>
+    <item>
+      <title>The Android app</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/apps/android</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/apps/android</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[HabitForge on Android is a native app with over-the-air updates, so fixes reach you without a store release. Install it from Google Play.]]></description>
+    </item>
+    <item>
+      <title>Install and offline</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/apps/install-and-offline</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/apps/install-and-offline</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[HabitForge is a PWA — install it to your home screen from any browser and keep checking in offline. Check-ins made without a connection sync when you reconnect.]]></description>
+    </item>
+    <item>
+      <title>AI and Speak</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/features/ai-and-speak</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/features/ai-and-speak</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[HabitForge drafts a habit's loop, reads your week back, helps word a post, and turns what you say into suggested check-ins, habits and posts. Nothing is saved until you press Save.]]></description>
+    </item>
+    <item>
+      <title>Themes and customiser</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/features/themes</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/features/themes</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[HabitForge ships light and dark themes plus a customiser for appearance, accent colour, radius, scaling and font size. Your choices follow your account.]]></description>
+    </item>
+    <item>
+      <title>Get started</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/getting-started</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/getting-started</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Open HabitForge in any browser, sign in with Google, and create your first habit. Sign-in is Google only, and the Android app is on Google Play.]]></description>
+    </item>
+    <item>
+      <title>Changelog</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/reference/changelog</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/reference/changelog</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[What is new in HabitForge, latest first: the 1.0 rebuild with offline check-ins, scored challenges, a generous free tier, and the pre-release history before it.]]></description>
+    </item>
+    <item>
+      <title>Support</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/reference/support</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/reference/support</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[How to get help with HabitForge: the in-app contact form, email the author, or open a docs issue. There is a free tier plus Pro and Family plans.]]></description>
+    </item>
+    <item>
+      <title>Page tours and How HabitForge works</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/features/tours-and-walkthrough</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/features/tours-and-walkthrough</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Every main HabitForge page has a short tour behind the signpost button in the header, and the How HabitForge works page explains the whole app in six steps.]]></description>
+    </item>
+    <item>
+      <title>Achievements</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/features/achievements</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/features/achievements</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Achievements are milestones HabitForge unlocks as you build habits — streaks, points, and consistency goals — each with a celebration moment and bonus points.]]></description>
+    </item>
+    <item>
+      <title>Analytics</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/features/analytics</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/features/analytics</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[HabitForge's analytics turn your check-in history into weekly charts, so you can see which habits are holding and where consistency is slipping.]]></description>
+    </item>
+    <item>
+      <title>Community</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/features/community</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/features/community</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[HabitForge's community adds a board, challenges, friends and a leaderboard, with report and block tools. A new profile is visible by default; you can change it.]]></description>
+    </item>
+    <item>
+      <title>Reminders and notifications</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/features/reminders-and-notifications</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/features/reminders-and-notifications</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An in-app bell tells you what happened while you were away, and your own device raises the reminders: one a day, and one per habit on the days it is due.]]></description>
+    </item>
+    <item>
+      <title>Check-ins and streaks</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/habits/check-ins-and-streaks</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/habits/check-ins-and-streaks</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A check-in tells HabitForge you did a habit today. Consecutive check-ins build a streak and earn points, and your longest streak is kept even when a run breaks.]]></description>
+    </item>
+    <item>
+      <title>Create a habit</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/habits/create</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/habits/create</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Create a habit with a name, category, kind and schedule, plus the optional cue, routine, reward, craving and investment fields from The Power of Habit.]]></description>
+    </item>
+    <item>
+      <title>Levels and points</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/habits/levels-and-points</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/habits/levels-and-points</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Points come from check-ins and achievements across all your habits, and enough of them raise your level through ten forge tiers, from Spark to Forge Master.]]></description>
+    </item>
+    <item>
+      <title>Manage habits</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/habits/manage</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/habits/manage</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Edit a habit's details, pause it while you are away, or delete it for good. Pausing keeps your history; deleting removes the habit permanently.]]></description>
+    </item>
+    <item>
+      <title>Rope strength</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/habits/rope-strength</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/habits/rope-strength</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[HabitForge's habit-strength meter. The rope thickens from a thread towards a chain as you keep going, and frays where you stopped. Calculated, not predicted.]]></description>
+    </item>
+    <item>
+      <title>Privacy and terms</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/reference/privacy-and-terms</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/reference/privacy-and-terms</guid>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Where to read HabitForge's privacy policy and terms, how sign-in and data work, and how to export or delete your account. Sign-in is Google-only.]]></description>
+    </item>
+  </channel>
+</rss>
