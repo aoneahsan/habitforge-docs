@@ -1,11 +1,25 @@
 {
-  "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
-    "baseUrl": ".",
-    // @docusaurus/tsconfig (the extended base) still requires baseUrl for
-    // @site/* path resolution, which TS6 deprecates. Until Docusaurus migrates,
-    // silence the deprecation rather than break framework path resolution.
-    "ignoreDeprecations": "6.0"
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "noEmit": true,
+    "paths": {
+      "@site/*": [
+        "./*"
+      ]
+    },
+    "skipLibCheck": true
   },
-  "exclude": [".docusaurus", "build"]
+  "exclude": [
+    ".docusaurus",
+    "build"
+  ]
 }
