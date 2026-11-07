@@ -18,6 +18,7 @@ const CATEGORY_ICONS: Readonly<Record<string, GroupIconName>> = {
   '/docs/habits': 'habits',
   '/docs/features': 'features',
   '/docs/apps': 'apps',
+  '/docs/compare': 'reference',
   '/docs/reference': 'reference',
 };
 

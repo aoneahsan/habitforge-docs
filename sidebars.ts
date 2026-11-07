@@ -66,6 +66,25 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Moving to HabitForge',
+      link: { type: 'doc', id: 'compare/index' },
+      items: [
+        'compare/habitica',
+        'compare/loop-habit-tracker',
+        'compare/streaks',
+        'compare/way-of-life',
+        'compare/productive',
+        'compare/habitnow',
+        'compare/do-habits',
+        'compare/fabulous',
+        'compare/habitify',
+        'compare/strides',
+        'compare/habitkit',
+        'compare/everyday',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Reference',
       link: {
         type: 'generated-index',
