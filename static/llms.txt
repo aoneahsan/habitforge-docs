@@ -31,6 +31,7 @@ This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI age
 - Google Play: https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge — the Android app. The web app also installs to the home screen as a PWA.
 - Documentation home: https://habitforge-docs.aoneahsan.com/docs
 - Get started: https://habitforge-docs.aoneahsan.com/docs/getting-started
+- Moving from another habit tracker: https://habitforge-docs.aoneahsan.com/docs/compare
 - Habits: https://habitforge-docs.aoneahsan.com/docs/habits
 - Create a habit: https://habitforge-docs.aoneahsan.com/docs/habits/create
 - Check-ins and streaks: https://habitforge-docs.aoneahsan.com/docs/habits/check-ins-and-streaks
