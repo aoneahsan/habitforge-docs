@@ -1,7 +1,7 @@
 ---
 id: loop-habit-tracker
 title: Moving from Loop Habit Tracker to HabitForge
-description: "Moving from Loop Habit Tracker to HabitForge: what to take with you, how to add your habits by hand, what does not come across, and the dated price and feature table."
+description: "Moving from Loop Habit Tracker to HabitForge: you trade a no-account app for a Google sign-in. Keep the CSV, re-add your habits, and see where the rope and Loop’s score agree."
 sidebar_label: From Loop Habit Tracker
 last_update:
   date: 2026-11-07
@@ -18,31 +18,26 @@ import { Facts } from '@site/src/components/RivalFacts';
 
 # Moving from Loop Habit Tracker to HabitForge
 
-**Loop is a free, open-source Android tracker with no account. HabitForge needs a Google sign-in and keeps your records on our servers, so this is the biggest change to weigh first.**
+**Loop is a free, open-source Android tracker with no account. HabitForge needs a Google sign-in and keeps your records on our servers. Weigh that first, because everything else is smaller.**
 
-## Should you move at all?
+## The account question
 
-If you moved to Loop because your data never leaves your phone and there is no account, stay there. HabitForge cannot offer that.
+If you chose Loop because your data never leaves your phone, stay. HabitForge cannot offer that, and it is not open source.
 
-Also check [what HabitForge does not do](./index.md#what-habitforge-does-not-do). HabitForge has no iOS app, no home screen widgets and no health sync, and nothing guides you through replacing one habit with another.
+If you want the same idea, that a missed day does not wipe out the days you kept, on the web as well as Android, with other people beside you and the cue, routine and reward written down, it is worth a try. [What HabitForge does not do](./index.md#what-habitforge-does-not-do) lists the gaps, widgets among them.
 
-## The move, step by step
+## Bringing your habits
 
-HabitForge has no importer, so this is done by hand.
-
-1. **Get your list out.** In Loop, export your habits to a CSV spreadsheet and keep the file. HabitForge cannot read it, but it is your record of the old numbers and a list to work from.
-2. **Sign in.** Open HabitForge and [sign in with Google](../getting-started.md). There is no password to set.
-3. **Add your habits.** Add each habit by hand from that list. Loop's habit score and the rope are close cousins: both keep what you kept after a missed day, so the idea will feel familiar. [Create a habit](../habits/create.md) has every field.
-4. **Write the loop on the ones that matter.** Add the cue, routine and reward to two or three habits first. The rest can stay as a name until you need more.
-5. **Set up what surrounds them.** Loop has home screen widgets and HabitForge does not. Set a [daily reminder](../features/reminders-and-notifications.md) instead, and [install the app](../apps/android.md) so it is one tap away.
-6. **Keep both for a week.** Your old numbers stay in Loop Habit Tracker. In HabitForge every rope [starts as a thread](../habits/rope-strength.md) on your first check-in, and that first week is when it looks thinnest.
-
-## The facts, side by side
+1. **Export the CSV from Loop and keep it somewhere safe.** HabitForge cannot read it. It is your old record and your list.
+2. **[Sign in with Google](../getting-started.md).** This is the step Loop never asked of you.
+3. **Re-add each habit from the CSV.** [Create a habit](../habits/create.md). Loop’s habit score and the rope are close cousins: both keep what you kept after a missed day.
+4. **Replace the widget with a reminder.** HabitForge has no home screen widget. Set a [daily reminder](../features/reminders-and-notifications.md) and [install the Android app](../apps/android.md) so it is one tap away.
+5. **Leave Loop installed.** Its score took months to build, and your rope [starts as a thread](../habits/rope-strength.md). Compare them after a few weeks, not after one.
 
 <Facts slug="loop-habit-tracker" />
 
-## Where to next
+## Next
 
-- [Check-ins and streaks](../habits/check-ins-and-streaks.md): what a day counts as here.
-- [All the guides](./index.md): the other apps we have written this for.
-- [Loop Habit Tracker beside HabitForge](https://habitforge.aoneahsan.com/compare/loop-habit-tracker): the same facts, on the comparison page.
+- [Check-ins and streaks](../habits/check-ins-and-streaks.md): how a missed day is handled here.
+- [Loop Habit Tracker beside HabitForge](https://habitforge.aoneahsan.com/compare/loop-habit-tracker).
+- [All the guides](./index.md).

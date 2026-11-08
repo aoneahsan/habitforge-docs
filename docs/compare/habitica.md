@@ -1,7 +1,7 @@
 ---
 id: habitica
 title: Moving from Habitica to HabitForge
-description: "Moving from Habitica to HabitForge: what to take with you, how to add your habits by hand, what does not come across, and the dated price and feature table."
+description: "Moving from Habitica to HabitForge: your party, gear and quests stay behind. Which habits to bring, how to sort them into build, break and maintain, and the dated facts."
 sidebar_label: From Habitica
 last_update:
   date: 2026-11-07
@@ -18,31 +18,28 @@ import { Facts } from '@site/src/components/RivalFacts';
 
 # Moving from Habitica to HabitForge
 
-**Habitica turns tasks into a role-playing game with an avatar, a party and quests. HabitForge has none of that: there is one rope per habit, and it gets thicker as you keep going.**
+**Habitica turns your tasks into a retro role-playing game: an avatar to dress, a party, quests and monsters. HabitForge has none of that. There is one rope per habit, and it thickens while you keep going.**
 
-## Should you move at all?
+## Is the game the point?
 
-If the avatar, the gear and the quests are why you keep going, stay. Nothing here replaces them, and Habitica's source is open while ours is not.
+Stay if the game is why it works. Nothing here replaces the avatar or the quests, and Habitica’s source is open while ours is not. Its Group Plan is also priced per group; ours is per seat.
 
-Also check [what HabitForge does not do](./index.md#what-habitforge-does-not-do). HabitForge has no iOS app, no home screen widgets and no health sync, and nothing guides you through replacing one habit with another.
+Come over if you have started to notice that you look after the character more than the habit. You get cue, routine and reward written on each habit, and a rope that shows how strong it is. Before you decide, read [what HabitForge does not do](./index.md#what-habitforge-does-not-do): no iOS app, no widgets, no health sync.
 
-## The move, step by step
+## Bringing your habits
 
-HabitForge has no importer, so this is done by hand.
+Nothing imports. The pages we read do not mention a Habitica export, so the list is yours to write.
 
-1. **Get your list out.** Open Habitica and write down the habits you actually still do. Its pages we read do not mention an export, so a plain list on paper is enough. Leave out anything you only kept for the rewards.
-2. **Sign in.** Open HabitForge and [sign in with Google](../getting-started.md). There is no password to set.
-3. **Add your habits.** Add each one as a new habit. Pick **build** for something to start, **break** for something to stop, **maintain** for something you already do. [Create a habit](../habits/create.md) has every field.
-4. **Write the loop on the ones that matter.** Add the cue, routine and reward to two or three habits first. The rest can stay as a name until you need more.
-5. **Set up what surrounds them.** Your party does not come with you. [Friends and challenges](../features/community.md) are where the people are here.
-6. **Keep both for a week.** Your old numbers stay in Habitica. In HabitForge every rope [starts as a thread](../habits/rope-strength.md) on your first check-in, and that first week is when it looks thinnest.
-
-## The facts, side by side
+1. **Go through your Habitica dailies and habits with a pen.** Cross out anything you only kept for the gold or the drops.
+2. **[Sign in with Google](../getting-started.md).** No password, no character creation.
+3. **Sort what is left into three.** Something to start is **build**. Something you want to stop is **break**. Something you already do every day is **maintain**. [Create a habit](../habits/create.md) has every field.
+4. **Bring your party, if they will come.** They need their own accounts. Then [friends and challenges](../features/community.md) are where you meet; a challenge is the nearest thing to a quest, without the boss.
+5. **Expect the first few days to feel quiet.** There is no damage when you miss and no loot when you keep. Your rope [starts as a thread](../habits/rope-strength.md) and that is all that changes.
 
 <Facts slug="habitica" />
 
-## Where to next
+## Next
 
-- [Check-ins and streaks](../habits/check-ins-and-streaks.md): what a day counts as here.
-- [All the guides](./index.md): the other apps we have written this for.
-- [Habitica beside HabitForge](https://habitforge.aoneahsan.com/compare/habitica): the same facts, on the comparison page.
+- [Check-ins and streaks](../habits/check-ins-and-streaks.md), for what one day counts as.
+- [Habitica beside HabitForge](https://habitforge.aoneahsan.com/compare/habitica) has the same facts with the case for each side.
+- [Every other guide](./index.md).
