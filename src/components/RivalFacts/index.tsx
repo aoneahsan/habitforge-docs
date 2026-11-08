@@ -63,8 +63,11 @@ function rivalOf(slug: string): Rival {
   return rival;
 }
 
-/** The guide's dated fact table: prices with plan names, then every feature row. */
-export function Facts({ slug }: { slug: string }): ReactNode {
+/**
+ * The guide's dated fact table: prices with plan names, then the feature rows. `hideNotStated` drops
+ * the rows the rival's pages did not state; the guide then says once which those were.
+ */
+export function Facts({ slug, hideNotStated = false }: { slug: string; hideNotStated?: boolean }): ReactNode {
   const rival = rivalOf(slug);
   return (
     <>
@@ -109,6 +112,7 @@ export function Facts({ slug }: { slug: string }): ReactNode {
         <tbody>
           {data.features.map(({ key, label }) => {
             const fact = rival.features[key];
+            if (hideNotStated && fact.status === 'not-stated') return null;
             return (
               <tr key={key}>
                 <th scope="row">{label}</th>

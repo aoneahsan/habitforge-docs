@@ -36,7 +36,9 @@ Come over if the week-long trial left you wanting a plan that stays free, a web 
 6. **Recreate a guided challenge as a community one.** You or a friend sets it up in [the community](../features/community.md); nobody guides it.
 7. **Read the rope, not a chain.** Each one [starts as a thread](../habits/rope-strength.md) and thickens as you keep going.
 
-<Facts slug="productive" />
+Productive’s pages also do not say whether a habit carries its cue, routine and reward, whether a missed day keeps the days before it, or whether it tracks habits you want to stop or has a web app, an Android app, offline check-ins, AI help, a household plan, widgets, health sync or open source code, so those rows are left out of the table along with the export.
+
+<Facts slug="productive" hideNotStated />
 
 ## Next
 

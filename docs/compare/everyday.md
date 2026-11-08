@@ -35,7 +35,9 @@ If three free habits is not enough, the free plan here holds 30. You also get th
 5. **Get ready for your first miss to look different.** A chain goes back to nothing when it breaks. The rope [frays and keeps what you kept](../habits/rope-strength.md).
 6. **Keep the extension for a week** while the rope is still a thread.
 
-<Facts slug="everyday" />
+everyday’s pages also do not say whether a habit carries its cue, routine and reward or keeps the days before a miss, or whether it tracks habits you want to stop or has friends or a feed, offline check-ins, AI help, a household plan, widgets, health sync or open source code, so those rows are left out of the table along with the export.
+
+<Facts slug="everyday" hideNotStated />
 
 ## Next
 

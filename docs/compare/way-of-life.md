@@ -35,7 +35,9 @@ Come over if the notes have turned into the useful part. Here the trigger lives 
 5. **Set a [daily reminder](../features/reminders-and-notifications.md).** It stands in for the widgets, Siri and Shortcuts you had on Apple devices.
 6. **Do not compare colours with ropes in week one.** Your rope [starts as a thread](../habits/rope-strength.md); your Way of Life chart has years behind it.
 
-<Facts slug="way-of-life" />
+Way of Life’s pages do not say whether a habit carries its cue, routine and reward, whether a missed day keeps the days before it, or whether it has pausing, friends or challenges, a web app, offline check-ins, AI help, a household plan, health sync or open source code, so those rows are left out of the table.
+
+<Facts slug="way-of-life" hideNotStated />
 
 ## Next
 

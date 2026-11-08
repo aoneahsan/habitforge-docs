@@ -35,7 +35,9 @@ If habits are the whole job, HabitForge gives each one a cue, routine and reward
 5. **[Install the Android app](../apps/android.md) and set a [daily reminder](../features/reminders-and-notifications.md).** It is the nearest thing to the widget you had.
 6. **Give it two weeks before you uninstall HabitNow.** Every rope [starts as a thread](../habits/rope-strength.md).
 
-<Facts slug="habitnow" />
+HabitNow’s pages do not say whether a habit carries its cue, routine and reward, whether a missed day keeps the days before it, or whether it tracks habits you want to stop or has pausing, a web app, an iOS app, offline check-ins, AI help, a household plan, health sync or open source code, so those rows are left out of the table.
+
+<Facts slug="habitnow" hideNotStated />
 
 ## Next
 

@@ -36,7 +36,9 @@ Come over if three free habits is too few (the free plan here holds 30), or you 
 6. **Pick one reminder time for the day,** since there is one.
 7. **Keep Habitify for a week.** Your rope [starts as a thread](../habits/rope-strength.md).
 
-<Facts slug="habitify" />
+Habitify’s pages also do not say whether a habit carries its cue, routine and reward, shows more than a streak number, or keeps the days before a miss, or whether it tracks habits you want to stop or has offline check-ins, AI help, a household plan, widgets or open source code, so those rows are left out of the table along with the export.
+
+<Facts slug="habitify" hideNotStated />
 
 ## Next
 

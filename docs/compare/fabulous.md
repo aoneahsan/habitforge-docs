@@ -35,7 +35,9 @@ Come over if you want a tracker, not a coach: your own habits, each with its cue
 5. **Find people, not a coach.** The [community](../features/community.md) is others tracking beside you. None of them is there to guide you.
 6. **Give the rope a week.** It [starts as a thread](../habits/rope-strength.md).
 
-<Facts slug="fabulous" />
+Its pages also do not say whether a habit carries its cue, routine and reward, shows more than a streak number, or keeps the days before a miss, or whether it tracks habits you want to stop or has pausing, reminders, a web app, offline check-ins, AI help, a household plan, widgets, health sync or open source code, so those rows are left out of the table along with the export.
+
+<Facts slug="fabulous" hideNotStated />
 
 ## Next
 
