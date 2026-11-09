@@ -65,6 +65,7 @@ const config: Config = {
   // Site-wide JSON-LD: WebSite + Organization + Person (author) + the
   // HabitForge SoftwareApplication.
   headTags: [
+    { tagName: 'meta', attributes: { name: 'yandex-verification', content: 'bfb02722189028cf' } },
     {
       tagName: 'link',
       attributes: {
