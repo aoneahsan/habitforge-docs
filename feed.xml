@@ -5,8 +5,50 @@
     <link>https://habitforge-docs.aoneahsan.com/</link>
     <description><![CDATA[A habit tracker that draws your consistency as a rope you watch thicken, with other people building theirs beside you.]]></description>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://habitforge-docs.aoneahsan.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>White-label and licensing</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/white-label</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/white-label</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Run HabitForge under your own name. We host it on your domain with your name and colours, on the web and Android; the source can also be bought outright.]]></description>
+    </item>
+    <item>
+      <title>What a white-label licence delivers</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/white-label/delivered</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/white-label/delivered</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[What the web and mobile platforms of a HabitForge licence include, what stays with us, and what a source buyout hands over.]]></description>
+    </item>
+    <item>
+      <title>White-label questions</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/white-label/faq</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/white-label/faq</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[What buyers ask first about licensing HabitForge, from source code and exclusivity to domains, store accounts and members' data.]]></description>
+    </item>
+    <item>
+      <title>Setting up your white-label copy</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/white-label/setup</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/white-label/setup</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[The steps from paying for a HabitForge licence to your copy going live on your own domain with your name, logo and colours.]]></description>
+    </item>
+    <item>
+      <title>Updates and renewals for a HabitForge licence</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/white-label/updates</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/white-label/updates</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[What counts as an update, the six months included with every licence and buyout, and how renewing by licence key works.]]></description>
+    </item>
+    <item>
+      <title>Verify a HabitForge licence</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/white-label/verify</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/white-label/verify</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Every licensed HabitForge copy serves a licence file. Check a licence by its key or by the domain the copy runs on.]]></description>
+    </item>
     <item>
       <title>Moving to HabitForge</title>
       <link>https://habitforge-docs.aoneahsan.com/docs/compare</link>
