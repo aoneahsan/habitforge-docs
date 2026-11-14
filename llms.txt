@@ -32,7 +32,7 @@ This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI age
 - Documentation home: https://habitforge-docs.aoneahsan.com/docs
 - Get started: https://habitforge-docs.aoneahsan.com/docs/getting-started
 - Moving from another habit tracker: https://habitforge-docs.aoneahsan.com/docs/compare
-- White-label & licensing: https://habitforge-docs.aoneahsan.com/docs/white-label — run HabitForge under your own name; prices on https://habitforge.aoneahsan.com/white-label/pricing
+- White-label & licensing: https://habitforge-docs.aoneahsan.com/docs/white-label — run HabitForge under your own name, or buy the source (plus a 7% royalty on gross revenue, quarterly, for as long as it earns); paid by Wise transfer; prices on https://habitforge.aoneahsan.com/white-label/pricing
 - What a licence delivers: https://habitforge-docs.aoneahsan.com/docs/white-label/delivered
 - Verify a licence: https://habitforge-docs.aoneahsan.com/docs/white-label/verify
 - Habits: https://habitforge-docs.aoneahsan.com/docs/habits

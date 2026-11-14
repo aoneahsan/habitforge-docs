@@ -91,7 +91,9 @@ Nothing here is funded by selling what you record, on any plan.
 ## White-label licences and the source buyout
 
 Businesses and groups can license HabitForge to run under their own name, per platform (the web app, and the
-Android and iOS app), or buy the source outright. Every amount, and the total for a selection, is read from
+Android and iOS app), or buy the source outright, which also carries a 7% royalty on HabitForge's gross
+revenue (excluding sales tax/VAT), paid quarterly with a revenue statement for as long as it earns, including
+after a resale. Licences are paid by Wise bank transfer. Every amount, and the total for a selection, is read from
 our licensing service on https://habitforge.aoneahsan.com/white-label/pricing, and the app's generated
 https://habitforge.aoneahsan.com/pricing.md carries the same section. What a licence delivers:
 https://habitforge-docs.aoneahsan.com/docs/white-label
