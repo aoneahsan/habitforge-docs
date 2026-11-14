@@ -4,7 +4,7 @@ title: White-label questions
 description: What buyers ask first about licensing HabitForge, from source code and exclusivity to domains, store accounts and members' data.
 sidebar_label: Questions
 last_update:
-  date: 2026-11-13
+  date: 2026-11-14
   author: Ahsan Mahmood
 tags:
   - white-label
@@ -22,6 +22,14 @@ No. A licence is a hosted copy that we run. The code changes hands only with a [
 ## Can someone else license HabitForge too?
 
 Yes, until somebody buys the source. After a buyout we stop selling it, and licences sold before then keep their terms.
+
+## Is there anything to pay after a buyout?
+
+Yes, a royalty: 7% of the gross revenue HabitForge earns, not counting sales tax or VAT you collect, paid every quarter with a revenue statement for as long as it earns revenue, including after a resale.
+
+## How do I pay?
+
+By bank transfer to our Wise account. The payment page shows the details and asks for the transfer reference. Once we confirm the transfer, the licence key arrives by email.
 
 ## What happens when the six months of updates end?
 

@@ -5,7 +5,7 @@ description: Run HabitForge under your own name. We host it on your domain with 
 sidebar_label: Overview
 slug: /white-label
 last_update:
-  date: 2026-11-13
+  date: 2026-11-14
   author: Ahsan Mahmood
 tags:
   - white-label
@@ -27,7 +27,7 @@ Prices and the total for the platforms you pick are on [the white-label pricing 
 ## Two ways to pay
 
 - **A licence**, priced per platform: the web app, the Android and iOS app, or both. Two platforms together cost less than two bought apart. We may license HabitForge to other buyers until somebody buys it outright.
-- **A buyout**: every repository that builds HabitForge handed over, with six months of updates. After that we sell it to nobody else.
+- **A buyout**: every repository that builds HabitForge handed over, with six months of updates. After that we sell it to nobody else, and a 7% royalty on its gross revenue is paid to us quarterly for as long as it earns.
 
 Changes made only for your copy are [custom work](https://habitforge.aoneahsan.com/white-label/custom-work), quoted and paid separately.
 

@@ -4,7 +4,7 @@ title: What a white-label licence delivers
 description: What the web and mobile platforms of a HabitForge licence include, what stays with us, and what a source buyout hands over.
 sidebar_label: What is delivered
 last_update:
-  date: 2026-11-13
+  date: 2026-11-14
   author: Ahsan Mahmood
 tags:
   - white-label
@@ -39,3 +39,5 @@ A buyout hands over the source code of every repository that builds the platform
 - **The help site**: this documentation, ready to publish on your own domain.
 
 It comes with six months of updates. From then on HabitForge is off sale to everyone else; anyone who licensed it before you keeps their terms.
+
+A buyout also carries a royalty: you pay us 7% of the gross revenue HabitForge earns, not counting sales tax or VAT you collect, every quarter with a revenue statement. It runs for as long as HabitForge earns revenue, and it is still owed after a resale. The [licence terms](https://habitforge.aoneahsan.com/white-label/license-terms#lt-buyout) say the same.

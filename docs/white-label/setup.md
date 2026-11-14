@@ -4,7 +4,7 @@ title: Setting up your white-label copy
 description: The steps from paying for a HabitForge licence to your copy going live on your own domain with your name, logo and colours.
 sidebar_label: Setting up your copy
 last_update:
-  date: 2026-11-13
+  date: 2026-11-14
   author: Ahsan Mahmood
 tags:
   - white-label
@@ -15,7 +15,7 @@ keywords:
 
 # Setting up your copy
 
-**Nothing is set up until the payment is confirmed.** The licence is issued then, and its key and certificate arrive at the email you gave at checkout. The page you land on after paying reads the order once; the email is what counts.
+**Nothing is set up until we confirm your payment.** You pay by bank transfer to our Wise account and send the transfer reference from the payment page. The licence is issued once we confirm it, and its key and certificate arrive at the email you gave with your order. The page you land on after paying reads the order once; the email is what counts.
 
 ## 1. Your brand
 
