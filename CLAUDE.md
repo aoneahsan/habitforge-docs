@@ -1,6 +1,9 @@
 # HabitForge Docs — Project Guide
 
 **Last Updated**: 2026-10-21
+
+<!-- fleet:node-26-13-1 v1 --> Node 26.13.1 LTS (.nvmrc), packages latest — 2026-11-16
+
 **Guide mirror:** `AGENTS.md` and `CLAUDE.md` are byte-identical. Update both together.
 
 Public documentation / knowledge-base site for **HabitForge** (a habit tracker that shows your consistency as a rope — web app + Android; no iOS, no browser extension). This repo is **public**; the HabitForge app source is **private**. The docs exist so users, contributors, and search/AI engines (Google, Bing, ChatGPT, Perplexity, Claude, Gemini) can discover and learn about HabitForge.
