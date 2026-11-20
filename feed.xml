@@ -5,8 +5,64 @@
     <link>https://habitforge-docs.aoneahsan.com/</link>
     <description><![CDATA[A habit tracker that draws your consistency as a rope you watch thicken, with other people building theirs beside you.]]></description>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://habitforge-docs.aoneahsan.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HabitForge for Developers: API, MCP, Webhooks and Two-Step</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/developers</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/developers</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Use HabitForge from a script, an AI assistant, another app or your calendar: one API, one assistant connection, signed webhooks, and two-step sign-in to guard it all.]]></description>
+    </item>
+    <item>
+      <title>The HabitForge API: Base Address, OpenAPI and Pagination</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/developers/api</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/developers/api</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[The HabitForge REST API: its base address, the OpenAPI 3.1 file that lists every route and field, cursor pagination and the error shape.]]></description>
+    </item>
+    <item>
+      <title>HabitForge Access Keys: Scopes, Expiry and Rate Limits</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/developers/authentication</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/developers/authentication</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Make a HabitForge access key, choose what it may read, change or delete, see it again within ten minutes of signing in, and keep inside the rate limits.]]></description>
+    </item>
+    <item>
+      <title>Your HabitForge Habits and Challenges in Any Calendar App</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/developers/calendar-feed</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/developers/calendar-feed</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Subscribe Google Calendar, Outlook or Apple Calendar to your HabitForge habit days and challenge dates with a read-only calendar feed, and stop it whenever you like.]]></description>
+    </item>
+    <item>
+      <title>HabitForge Developer Changelog: API, MCP and Webhooks</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/developers/changelog</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/developers/changelog</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Every change to the HabitForge API, MCP connection, webhooks, calendar feed and two-step sign-in, newest first, so a script that worked last month still works.]]></description>
+    </item>
+    <item>
+      <title>Connect Claude, ChatGPT, Claude Code or Cursor to HabitForge</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/developers/mcp</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/developers/mcp</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Connect an AI assistant to HabitForge through MCP: the address, the steps for Claude, ChatGPT, Claude Code and Cursor, what the consent page asks, and how removals are confirmed.]]></description>
+    </item>
+    <item>
+      <title>Two-Step Sign-In for Your HabitForge Account</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/developers/two-step-sign-in</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/developers/two-step-sign-in</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Turn on two-step sign-in for HabitForge with an authenticator app: recovery codes, remembering a browser for seven days, where a code is asked for, and what to do when the phone is lost.]]></description>
+    </item>
+    <item>
+      <title>HabitForge Webhooks: Events, Signatures and Retries</title>
+      <link>https://habitforge-docs.aoneahsan.com/docs/developers/webhooks</link>
+      <guid isPermaLink="true">https://habitforge-docs.aoneahsan.com/docs/developers/webhooks</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Have HabitForge post to your server when a habit, check-in, pause or achievement changes: the events, the Standard Webhooks signature, retries and how to test.]]></description>
+    </item>
     <item>
       <title>White-label and licensing</title>
       <link>https://habitforge-docs.aoneahsan.com/docs/white-label</link>
