@@ -97,6 +97,20 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Developers',
+      link: { type: 'doc', id: 'developers/index' },
+      items: [
+        'developers/authentication',
+        'developers/api',
+        'developers/mcp',
+        'developers/webhooks',
+        'developers/calendar-feed',
+        'developers/two-step-sign-in',
+        'developers/changelog',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Reference',
       link: {
         type: 'generated-index',
