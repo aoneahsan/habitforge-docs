@@ -2,6 +2,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import discoveryFeed from './src/plugins/discoveryFeed';
+import { OTHER_PLATFORMS, platformHref } from './src/data/platforms';
 
 const SITE_URL = process.env.DOCS_SITE_URL ?? 'https://habitforge-docs.aoneahsan.com';
 const BASE_URL = process.env.DOCS_BASE_URL ?? '/';
@@ -16,10 +17,9 @@ const AUTHOR = {
   npm: 'https://npmjs.com/~aoneahsan',
 } as const;
 
-const APP_URL = 'https://habitforge.aoneahsan.com';
-/* The Play listing does not exist yet — the Android build is finished but unpublished
-   (rebuild decision OD-02). Nothing here may link to it: a navbar and footer entry put a
-   dead store link on EVERY page of the site. Restore both when the listing goes live. */
+/* Every released surface comes from src/data/platforms.ts. The Play listing went live after the rebuild's OD-02
+   (on the owner's developer page, checked 2026-11-20), so the navbar and footer link it again. */
+const APP_URL = platformHref('web');
 const SUPPORT_URL =
   'https://aoneahsan.com/payment?project-id=habitforge&project-identifier=com.aoneahsan.habitforge';
 const DOCS_GITHUB = 'https://github.com/aoneahsan/habitforge-docs';
@@ -343,13 +343,28 @@ const config: Config = {
         { to: '/docs/getting-started', label: 'Get started', position: 'left' },
         { to: '/docs/habits', label: 'Habits', position: 'left' },
         { to: '/docs/features/community', label: 'Community', position: 'left' },
-        { href: APP_URL, label: 'Open the app ↗', position: 'right' },
+        {
+          type: 'dropdown',
+          label: 'Get HabitForge',
+          position: 'right',
+          items: [
+            ...OTHER_PLATFORMS.map((platform) => ({ label: platform.name, href: platform.href })),
+            { label: 'All apps', to: '/apps' },
+          ],
+        },
         { href: DOCS_GITHUB, label: 'GitHub', position: 'right' },
       ],
     },
     footer: {
       style: 'dark',
       links: [
+        {
+          title: 'Get HabitForge',
+          items: [
+            ...OTHER_PLATFORMS.map((platform) => ({ label: platform.name, href: platform.href })),
+            { label: 'All apps', to: '/apps' },
+          ],
+        },
         {
           title: 'Documentation',
           items: [
@@ -365,7 +380,6 @@ const config: Config = {
         {
           title: 'HabitForge',
           items: [
-            { label: 'Open the web app', href: APP_URL },
             { label: 'Privacy & terms', to: '/docs/reference/privacy-and-terms' },
             { label: 'Support', to: '/docs/reference/support' },
             { label: 'Docs source on GitHub', href: DOCS_GITHUB },

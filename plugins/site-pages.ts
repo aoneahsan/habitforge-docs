@@ -12,6 +12,7 @@
 import type { LoadedContent as DocsContent } from '@docusaurus/plugin-content-docs';
 import type { AllContent, LoadContext, Plugin } from '@docusaurus/types';
 import { docsFeedItems } from '../src/plugins/discoveryFeed';
+import { APPS_LASTMOD } from '../src/data/platforms';
 
 /** One page as its `/sitemap` card shows it. */
 export interface SitePage {
@@ -184,6 +185,7 @@ export function withLastmod<Item extends { readonly url: string; readonly lastmo
   return items.map((item) => {
     const pathname = new URL(item.url).pathname;
     const lastmod =
+      (pathname === `${siteBase}/apps` ? APPS_LASTMOD : undefined) ??
       datedPages.get(pathname) ??
       (listsEverything.has(pathname) ? newest(() => true) : newest((doc) => doc.startsWith(`${pathname}/`)));
     if (lastmod === undefined) {

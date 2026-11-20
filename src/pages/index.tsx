@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
+import { OTHER_PLATFORMS, PRIMARY_PLATFORM } from '@site/src/data/platforms';
 import styles from './index.module.css';
 
 function HomepageHero(): ReactNode {
@@ -38,13 +39,17 @@ function HomepageHero(): ReactNode {
           >
             Read the docs
           </Link>
-          <Link
-            className="button button--outline button--lg"
-            href="https://habitforge.aoneahsan.com"
-          >
+          <Link className="button button--outline button--lg" href={PRIMARY_PLATFORM.href}>
             Open the app ↗
           </Link>
         </div>
+        <p className={styles.also}>
+          <span>Also on</span>
+          {OTHER_PLATFORMS.filter((platform) => !platform.primary).map((platform) => (
+            <Link key={platform.id} href={platform.href}>{platform.name}</Link>
+          ))}
+          <Link to="/apps">All apps →</Link>
+        </p>
         <p className={styles.builtBy}>
           Built and maintained by{' '}
           <Link href="https://aoneahsan.com">the HabitForge team</Link> ·{' '}

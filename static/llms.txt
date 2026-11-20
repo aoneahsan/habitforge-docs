@@ -4,6 +4,13 @@
 
 This file follows the [llmstxt.org](https://llmstxt.org) format and gives AI agents an at-a-glance overview of the documentation.
 
+
+## Get HabitForge
+
+- [All apps](https://habitforge-docs.aoneahsan.com/apps): every released surface of HabitForge.
+- [HabitForge web app](https://habitforge.aoneahsan.com)
+- [Google Play](https://play.google.com/store/apps/details?id=com.aoneahsan.habitforge)
+
 ## What HabitForge does
 
 - Habit tracking with the cue → routine → reward loop (plus craving and investment) from *The Power of Habit*
