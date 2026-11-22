@@ -1,6 +1,7 @@
 import { writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
+import type { BlogContent } from '@docusaurus/plugin-content-blog';
 import type { LoadedContent } from '@docusaurus/plugin-content-docs';
 import type { AllContent, Plugin } from '@docusaurus/types';
 
@@ -17,7 +18,7 @@ export default function discoveryFeed(): Plugin {
   return {
     name: 'discovery-feed',
     allContentLoaded({ allContent }) {
-      items = docsFeedItems(allContent);
+      items = siteFeedItems(allContent);
       if (items.length === 0) {
         throw new Error('discovery-feed: no dated documentation pages were found');
       }
@@ -77,6 +78,43 @@ export function docsFeedItems(allContent: AllContent): FeedItem[] {
       }),
     );
   });
+  return sortNewestFirst(items);
+}
+
+/**
+ * The blog posts the blog plugin loaded, each dated by the day it was published (its `date` front matter, never git).
+ * Drafts are already gone from a production build; an unlisted post stays out, as it does from the blog's own lists.
+ * Empty while the blog is off (no post in blog/ yet).
+ *
+ * @param allContent - every plugin's loaded content
+ * @returns one entry per listed post, newest first
+ */
+export function blogFeedItems(allContent: AllContent): FeedItem[] {
+  const instances = (allContent['docusaurus-plugin-content-blog'] ?? {}) as Record<string, BlogContent | undefined>;
+  const items = Object.values(instances)
+    .flatMap((content) => content?.blogPosts ?? [])
+    .filter((post) => !post.metadata.unlisted)
+    .flatMap(({ metadata }) => {
+      const updatedAt = parseDate(metadata.date);
+      return updatedAt
+        ? [{ title: metadata.title, description: metadata.description, permalink: metadata.permalink, updatedAt }]
+        : [];
+    });
+  return sortNewestFirst(items);
+}
+
+/**
+ * Every entry the site lists: the docs and, once the blog has any, its posts, newest first. `/feed.xml`, the `/feed`
+ * page and the dates in `sitemap.xml` (plugins/site-pages.ts) all read this one list.
+ *
+ * @param allContent - every plugin's loaded content
+ * @returns docs and posts together
+ */
+export function siteFeedItems(allContent: AllContent): FeedItem[] {
+  return sortNewestFirst([...docsFeedItems(allContent), ...blogFeedItems(allContent)]);
+}
+
+function sortNewestFirst(items: FeedItem[]): FeedItem[] {
   return items.sort(
     (left, right) =>
       right.updatedAt.getTime() - left.updatedAt.getTime() ||

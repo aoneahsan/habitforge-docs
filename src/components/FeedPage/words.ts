@@ -5,18 +5,31 @@ import { translate } from '@docusaurus/Translate';
  * no edit here. "Updated {updated_date}" lives in the page itself, because its date is a `<time>` element. The
  * sitemap page reads the title and meta description for the feed's own card.
  *
+ * @param withPosts - whether the blog has posts, which then share the list with the docs pages
  * @returns the page's words
  */
-export function feedWords() {
+export function feedWords(withPosts = false) {
   return {
     title: translate({ id: 'docs.feed.title', message: 'Feed' }),
     metaDescription: translate({
       id: 'docs.feed.meta.description',
       message: 'Every HabitForge docs page, newest change first, with the RSS link for your feed-reader app.',
     }),
+    ...(withPosts && {
+      metaDescription: translate({
+        id: 'docs.feed.meta.description.with_posts',
+        message: 'Every HabitForge docs page and blog post, newest first, with the RSS link for your feed-reader app.',
+      }),
+    }),
     intro: translate({
       id: 'docs.feed.intro',
       message: 'Every HabitForge docs page, with the day its words last changed, newest first.',
+    }),
+    ...(withPosts && {
+      intro: translate({
+        id: 'docs.feed.intro.with_posts',
+        message: 'Every HabitForge docs page, with the day its words last changed, and every blog post on the day it was published, newest first.',
+      }),
     }),
     rssHeading: translate({ id: 'docs.feed.rss.heading', message: 'Follow by RSS' }),
     rssBody: translate({

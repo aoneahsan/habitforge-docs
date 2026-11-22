@@ -28,7 +28,7 @@ Public documentation / knowledge-base site for **HabitForge** (a habit tracker t
 - **Search**: `@easyops-cn/docusaurus-search-local` (offline local search — no Algolia signup).
 - **Content**: 17 Markdown doc pages describing the REAL app (rewritten 2026-07-23): `intro` + `getting-started`, `habits/` ×5 (create, check-ins-and-streaks, rope-strength, levels-and-points, manage), `features/` ×5 (analytics, achievements, community, themes, reminders-and-notifications), `apps/` ×2 (install-and-offline, android), `reference/` ×3 (changelog, privacy-and-terms, support), plus 4 generated-index category pages. **HabitForge has NO trackers/timers/journals/browser-extension/iOS** — the old generic-template content (extension, timers, trackers, journals, productivity, mobile-iOS, etc.) was deleted 2026-07-23.
 - **AEO/SEO**: `robots.txt` (AI-bot allowlist + sitemap directive), `llms.txt` (llmstxt.org format), `pricing.md` (machine-readable — 🔴 rewritten 2026-09-03: it had said the paid plans were *not yet available for purchase*, false since W2; it now mirrors the app's generated `/pricing.md` and names it as the source), site-wide JSON-LD (`WebSite` + `Organization` + `Person` + `SoftwareApplication`), Docusaurus sitemap plugin. Every page carries distinct `title`/`description` + `last_update` front-matter.
-- **Deploy target**: **GitHub Pages** (public repo) on the custom domain `habitforge-docs.aoneahsan.com` via `static/CNAME` + `.github/workflows/deploy-pages.yml` (build on push to `main`; `ci.yml` is the build check). There is no Firebase config in this repo.
+- **Deploy target**: **GitHub Pages** (public repo) on the custom domain `habitforge-docs.aoneahsan.com` via `static/CNAME`, served from the `gh-pages` branch: build locally, then publish `build/` there by hand as a commit named `Deploy <main hash>: <what changed>` (last: `3af6471`, 2026-11-20). No GitHub Actions workflow since 2026-10-31 (`09c6c4c`). There is no Firebase config in this repo.
 - **Brand**: **ember on iron** — the app's own tokens, not a second palette. Light primary `#d03b23` (ember-600), dark `#ff7b63` (ember-400), dark ground `#120c0a` (iron-950); the `--hf-gradient-fire` is now one hue darkening (ember-500→700). Changed 2026-09-01: the old orange→red gradient came from a Radix theme the app no longer uses, the OG share card built the same day is ember/iron, and the old light primary `#ea580c` scored **3.56** against white — below AA. `src/css/custom.css` carries the measurements.
 
 ---
@@ -37,7 +37,7 @@ Public documentation / knowledge-base site for **HabitForge** (a habit tracker t
 
 1. **The claim gate** (`docusaurus.config.ts`, a `postBuild` plugin) reads the **BUILT** output against the
    retired-claim register vendored at `src/lib/publicClaims.ts`, and **fails the build** on a claim this
-   product has retired. It exists because a docs-only push deploys through Actions **without ever running the
+   product has retired. It exists because a docs-only deploy publishes this site **without ever running the
    app's tests**, and the same false sentence shipped three separate times before it. Last run: 59 files
    scanned, 0 retired claims, **16 truthful "not listed" files** — truthful only while the Play URL answers
    404. 🔴 When the owner promotes the app, flip `PLAY_LISTING_LIVE` and let the red output drive the sweep
@@ -61,7 +61,7 @@ yarn build          # docusaurus build (writes ./build)
 - Per workspace policy the dev server (`yarn start`) is **not** auto-run by tooling — run it yourself to preview.
 
 Fleet Pass 2 package maintenance completed 2026-10-21 on Node 24. Typecheck, production build, the claim gate,
-and controlled desktop/mobile browser checks passed; the resulting main push is the Pages deployment source.
+and controlled desktop/mobile browser checks passed; the build that passed was then published to `gh-pages`.
 Do not repeat routine maintenance before 2026-11-13.
 
 ---
@@ -102,6 +102,7 @@ carve-out that was **REVOKED**. No default sub-agent may be used for any work, e
 
 ## Notes
 
+- **Blog:** `blog/` holds the team's posts, one `.md` each (front matter: `slug`, `title`, `description`, `authors: [team]`, `image`, `date`; `{/* truncate */}` after the opening line), each image in `static/img/social/`. Empty, the blog stays off; the first post turns on the blog, its RSS and Atom feeds, its search index, its dated sitemap entries (a post is dated by its own `date`, never git), its place on `/sitemap`, `/feed` and `/feed.xml`, and the Blog links. The words live in `src/data/blog.ts` (2026-11-22).
 - Identifiers for app stores / Capacitor app id / npm: **N/A** for this docs site (those belong to the parent HabitForge app, not the docs).
 - Sitemap is regenerated on every `yarn build` (46 URLs as of 2026-07-23).
 - Editing docs: every page needs `title`, `description`, and `last_update.date` front-matter. Keep pages **brief and honest** (definition-first opening sentence, a few internal links) — the docs-are-a-footnote rule applies; do not pad to a fixed word count.

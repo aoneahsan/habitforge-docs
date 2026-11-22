@@ -9,9 +9,10 @@
  * - `withLastmod` dates every sitemap URL from the docs' own `last_update.date` front matter (never git, never the
  *   build day). A page that lists others takes the newest date of what it lists, and an undated URL fails the build.
  */
+import type { BlogContent } from '@docusaurus/plugin-content-blog';
 import type { LoadedContent as DocsContent } from '@docusaurus/plugin-content-docs';
 import type { AllContent, LoadContext, Plugin } from '@docusaurus/types';
-import { docsFeedItems } from '../src/plugins/discoveryFeed';
+import { blogFeedItems, siteFeedItems } from '../src/plugins/discoveryFeed';
 import { APPS_LASTMOD } from '../src/data/platforms';
 
 /** One page as its `/sitemap` card shows it. */
@@ -36,8 +37,10 @@ export type SiteGroup =
 export interface SitePagesData {
   readonly home: SitePage;
   readonly groups: readonly SiteGroup[];
-  /** Every listed doc, newest change first: the `/feed.xml` list. */
+  /** Every listed doc and blog post, newest change first: the `/feed.xml` list. */
   readonly entries: readonly SiteEntry[];
+  /** How many of the entries are blog posts: none until the first post is published. */
+  readonly posts: number;
 }
 
 type DocsVersion = DocsContent['loadedVersions'][number];
@@ -129,6 +132,22 @@ function docsGroups(version: DocsVersion): SiteGroup[] {
 }
 
 /**
+ * The blog as one `/sitemap` group, led by the blog's own page: empty until the blog has a post. Its title and
+ * description are the blog plugin's (`blogTitle`, `blogDescription` in docusaurus.config.ts), so they have one source.
+ *
+ * @param allContent - every plugin's loaded content
+ * @returns no group, or the Blog group
+ */
+function blogGroup(allContent: AllContent): SiteGroup[] {
+  const blog = allContent['docusaurus-plugin-content-blog']?.['default'] as BlogContent | undefined;
+  const posts = blogFeedItems(allContent);
+  if (blog === undefined || posts.length === 0) return [];
+  const index: SitePage = { permalink: `${siteBase}/blog`, title: blog.blogTitle, description: blog.blogDescription, tags: [] };
+  const pages = posts.map((post) => ({ permalink: post.permalink, title: post.title, description: post.description, tags: [] }));
+  return [{ kind: 'category', key: index.permalink, label: 'Blog', pages: [index, ...pages] }];
+}
+
+/**
  * Collects what both pages draw.
  *
  * @param allContent - every plugin's loaded content
@@ -142,7 +161,7 @@ function collect(allContent: AllContent, context: LoadContext): SitePagesData {
     throw new Error('site-pages: /sitemap and /feed list the docs, so the docs plugin (id "default") must be on.');
   }
   const version = docs.loadedVersions.find((loaded) => loaded.isLast) ?? docs.loadedVersions[0];
-  const entries = docsFeedItems(allContent).map((item) => ({
+  const entries = siteFeedItems(allContent).map((item) => ({
     permalink: item.permalink,
     title: item.title,
     description: item.description,
@@ -156,8 +175,9 @@ function collect(allContent: AllContent, context: LoadContext): SitePagesData {
       description: context.siteConfig.tagline,
       tags: [],
     },
-    groups: version === undefined ? [] : docsGroups(version),
+    groups: [...(version === undefined ? [] : docsGroups(version)), ...blogGroup(allContent)],
     entries,
+    posts: blogFeedItems(allContent).length,
   };
 }
 

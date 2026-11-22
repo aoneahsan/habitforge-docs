@@ -5,9 +5,10 @@ import { translate } from '@docusaurus/Translate';
  * and no edit here. Count messages are one plural message each (`one|other`). A category group's heading is the
  * category's own sidebar label.
  *
+ * @param withPosts - whether the blog has posts, which feed.xml then carries beside the docs pages
  * @returns the page's words
  */
-export function sitemapWords() {
+export function sitemapWords(withPosts = false) {
   return {
     title: translate({ id: 'docs.sitemap.title', message: 'Sitemap' }),
     metaDescription: translate({
@@ -29,10 +30,15 @@ export function sitemapWords() {
     },
     feedXml: {
       label: translate({ id: 'docs.sitemap.file.feed_xml.label', message: 'feed.xml' }),
-      hint: translate({
-        id: 'docs.sitemap.file.feed_xml.hint',
-        message: 'Changed docs pages, newest first, for your feed-reader app.',
-      }),
+      hint: withPosts
+        ? translate({
+            id: 'docs.sitemap.file.feed_xml.hint.with_posts',
+            message: 'Changed docs pages and blog posts, newest first, for your feed-reader app.',
+          })
+        : translate({
+            id: 'docs.sitemap.file.feed_xml.hint',
+            message: 'Changed docs pages, newest first, for your feed-reader app.',
+          }),
     },
     llms: {
       label: translate({ id: 'docs.sitemap.file.llms.label', message: 'llms.txt' }),

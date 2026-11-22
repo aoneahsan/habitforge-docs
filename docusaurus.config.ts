@@ -1,12 +1,23 @@
+import { existsSync, readdirSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import discoveryFeed from './src/plugins/discoveryFeed';
+import { BLOG_DESCRIPTION, BLOG_PATH, BLOG_TITLE } from './src/data/blog';
 import { OTHER_PLATFORMS, platformHref } from './src/data/platforms';
 
 const SITE_URL = process.env.DOCS_SITE_URL ?? 'https://habitforge-docs.aoneahsan.com';
 const BASE_URL = process.env.DOCS_BASE_URL ?? '/';
 const FEED_URL = new URL('feed.xml', new URL(BASE_URL, SITE_URL)).toString();
+
+/**
+ * Whether blog/ holds a post yet. Until it does, the blog stays off: an empty blog page would sit in sitemap.xml with
+ * nothing on it, and a Blog link would point at it. The first post added to blog/ turns on the blog, its RSS and Atom
+ * feeds, its search index, its dated sitemap entries, its place on /sitemap, /feed and /feed.xml, and the Blog links.
+ */
+const BLOG_DIR = fileURLToPath(new URL('./blog', import.meta.url));
+const HAS_POSTS = existsSync(BLOG_DIR) && readdirSync(BLOG_DIR).some((name) => /\.mdx?$/.test(name));
 
 const AUTHOR = {
   name: 'Ahsan Mahmood',
@@ -188,7 +199,31 @@ const config: Config = {
           showLastUpdateTime: true,
           breadcrumbs: true,
         },
-        blog: false,
+        blog: HAS_POSTS && {
+          path: 'blog',
+          routeBasePath: BLOG_PATH.slice(1),
+          blogTitle: BLOG_TITLE,
+          blogDescription: BLOG_DESCRIPTION,
+          blogSidebarTitle: 'Recent posts',
+          blogSidebarCount: 10,
+          postsPerPage: 10,
+          showReadingTime: false,
+          // A post is dated by its own front matter (date), like a doc by its last_update.date: never git, never the build.
+          showLastUpdateTime: false,
+          showLastUpdateAuthor: false,
+          // Every author and tag is defined once, in blog/authors.yml (and blog/tags.yml when a post uses one).
+          onInlineAuthors: 'throw',
+          onInlineTags: 'throw',
+          onUntruncatedBlogPosts: 'throw',
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+            title: BLOG_TITLE,
+            description: BLOG_DESCRIPTION,
+            copyright: 'Made by the HabitForge team.',
+            language: 'en-GB',
+          },
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -199,7 +234,8 @@ const config: Config = {
           // 'date' writes YYYY-MM-DD. Whatever date Docusaurus finds (git, for the home page) is replaced below:
           // every <lastmod> comes from the docs' own last_update.date.
           lastmod: 'date',
-          ignorePatterns: ['/search', '/docs/tags', '/docs/tags/**'],
+          // The blog's tag, author, archive and later list pages only repeat its posts; each post is listed once.
+          ignorePatterns: ['/search', '/docs/tags', '/docs/tags/**', '/blog/tags/**', '/blog/authors/**', '/blog/archive', '/blog/page/**'],
           filename: 'sitemap.xml',
           // One date source for every URL (plugins/site-pages.ts): a doc its own date, a page that lists others the
           // newest of what it lists. An undated URL fails the build.
@@ -220,11 +256,11 @@ const config: Config = {
     /**
      * 🔴 THE CLAIM GATE — it reads the BUILT output, never the source.
      *
-     * A docs-only push deploys through GitHub Actions without ever running the
-     * app repo's test suite, so the app-side parity test cannot protect this
-     * host on its own. This runs inside `docusaurus build`, which is what the
-     * deploy workflow executes, so a retired claim fails the build before it
-     * can reach a reader.
+     * A docs-only deploy publishes this site without ever running the app
+     * repo's test suite, so the app-side parity test cannot protect this host
+     * on its own. This runs inside `docusaurus build`, which every deploy runs
+     * first (build locally, then publish build/ to gh-pages; no Actions since
+     * 2026-10-31), so a retired claim fails the build before it can reach a reader.
      *
      * It asserts on `outDir` rather than on `static/` because a claim can also
      * arrive through front matter, a React page or the site-wide JSON-LD — which
@@ -306,7 +342,8 @@ const config: Config = {
         language: ['en'],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
-        indexBlog: false,
+        indexBlog: HAS_POSTS,
+        blogRouteBasePath: BLOG_PATH,
         docsRouteBasePath: '/',
       },
     ],
@@ -343,6 +380,7 @@ const config: Config = {
         { to: '/docs/getting-started', label: 'Get started', position: 'left' },
         { to: '/docs/habits', label: 'Habits', position: 'left' },
         { to: '/docs/features/community', label: 'Community', position: 'left' },
+        ...(HAS_POSTS ? [{ to: BLOG_PATH, label: 'Blog', position: 'left' as const }] : []),
         {
           type: 'dropdown',
           label: 'Get HabitForge',
@@ -373,6 +411,7 @@ const config: Config = {
             { label: 'Features', to: '/docs/features' },
             { label: 'Apps & offline', to: '/docs/apps' },
             { label: 'Changelog', to: '/docs/reference/changelog' },
+            ...(HAS_POSTS ? [{ label: 'Blog', to: BLOG_PATH }] : []),
             { label: 'Sitemap', to: '/sitemap' },
             { label: 'Feed', to: '/feed' },
           ],
