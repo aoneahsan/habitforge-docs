@@ -9,11 +9,32 @@
  * - `withLastmod` dates every sitemap URL from the docs' own `last_update.date` front matter (never git, never the
  *   build day). A page that lists others takes the newest date of what it lists, and an undated URL fails the build.
  */
+import { readdirSync, readFileSync } from 'node:fs';
+import { join, relative, sep } from 'node:path';
 import type { BlogContent } from '@docusaurus/plugin-content-blog';
 import type { LoadedContent as DocsContent } from '@docusaurus/plugin-content-docs';
 import type { AllContent, LoadContext, Plugin } from '@docusaurus/types';
 import { blogFeedItems, siteFeedItems } from '../src/plugins/discoveryFeed';
 import { APPS_LASTMOD } from '../src/data/platforms';
+
+/**
+ * Docusaurus writes every route module's path into the client bundle, so the absolute path createData returns
+ * would publish this machine's folders and give each machine different chunk names. addRoute gets the alias.
+ */
+function generatedModule(generatedFilesDir: string, file: string): string {
+  return `@generated/${relative(generatedFilesDir, file).split(sep).join('/')}`;
+}
+
+/** Fails the build when any client bundle still carries this site's absolute path. */
+function assertNoLocalPaths(outDir: string, siteDir: string): void {
+  const jsDir = join(outDir, 'assets', 'js');
+  const forms = [siteDir.split(sep).join('/'), siteDir.split(sep).join('\\\\')];
+  for (const file of readdirSync(jsDir).filter((name) => name.endsWith('.js'))) {
+    const text = readFileSync(join(jsDir, file), 'utf8');
+    const found = forms.find((form) => text.includes(form));
+    if (found) throw new Error(`${file} carries the local path ${found}: pass createData paths to addRoute through generatedModule()`);
+  }
+}
 
 /** One page as its `/sitemap` card shows it. */
 export interface SitePage {
@@ -229,7 +250,7 @@ export default function sitePages(context: LoadContext): Plugin {
       const data = collect(allContent, context);
       datedPages.clear();
       for (const entry of data.entries) datedPages.set(entry.permalink, entry.date);
-      const site = await actions.createData('site-pages.json', JSON.stringify(data));
+      const site = generatedModule(context.generatedFilesDir, await actions.createData('site-pages.json', JSON.stringify(data)));
       actions.addRoute({
         path: `${siteBase}/sitemap`,
         component: '@site/src/components/SitemapPage',
@@ -242,6 +263,9 @@ export default function sitePages(context: LoadContext): Plugin {
         exact: true,
         modules: { site },
       });
+    },
+    async postBuild({ outDir }) {
+      assertNoLocalPaths(outDir, context.siteDir);
     },
   };
 }
