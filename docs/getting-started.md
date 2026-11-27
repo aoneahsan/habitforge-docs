@@ -7,7 +7,7 @@ sidebar_position: 2
 last_update:
   date: 2026-10-29
   author: Ahsan Mahmood
-tags:
+topics:
   - getting started
   - sign in
   - habitforge sign in

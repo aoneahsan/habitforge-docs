@@ -6,7 +6,7 @@ sidebar_label: Setting up your copy
 last_update:
   date: 2026-11-14
   author: Ahsan Mahmood
-tags:
+topics:
   - white-label
 keywords:
   - white label setup

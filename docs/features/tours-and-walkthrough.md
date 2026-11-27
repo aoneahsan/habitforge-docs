@@ -7,7 +7,7 @@ sidebar_position: 6
 last_update:
   date: 2026-10-25
   author: The HabitForge team
-tags:
+topics:
   - tours
   - getting-started
 keywords:

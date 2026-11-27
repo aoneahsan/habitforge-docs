@@ -7,7 +7,7 @@ sidebar_label: AI assistants (MCP)
 last_update:
   date: 2026-11-20
   author: Ahsan Mahmood
-tags:
+topics:
   - developers
 ---
 

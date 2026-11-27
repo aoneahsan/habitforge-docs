@@ -6,7 +6,7 @@ sidebar_label: AI and Speak
 sidebar_position: 6
 last_update:
   date: 2026-10-29
-tags:
+topics:
   - ai
   - speak
 keywords:

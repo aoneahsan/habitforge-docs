@@ -6,7 +6,7 @@ sidebar_label: From Do Habits
 last_update:
   date: 2026-11-07
   author: Ahsan Mahmood
-tags:
+topics:
   - moving to habitforge
 keywords:
   - Do Habits alternative

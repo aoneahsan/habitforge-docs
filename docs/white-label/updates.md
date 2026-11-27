@@ -6,7 +6,7 @@ sidebar_label: Updates and renewals
 last_update:
   date: 2026-11-13
   author: Ahsan Mahmood
-tags:
+topics:
   - white-label
 keywords:
   - habitforge licence renewal

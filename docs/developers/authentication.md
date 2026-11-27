@@ -7,7 +7,7 @@ sidebar_label: Access keys
 last_update:
   date: 2026-11-20
   author: Ahsan Mahmood
-tags:
+topics:
   - developers
 ---
 

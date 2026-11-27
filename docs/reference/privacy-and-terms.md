@@ -7,7 +7,7 @@ sidebar_position: 2
 last_update:
   date: 2026-07-23
   author: Ahsan Mahmood
-tags:
+topics:
   - privacy
   - terms
 keywords:

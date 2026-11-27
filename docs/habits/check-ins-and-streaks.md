@@ -7,7 +7,7 @@ sidebar_position: 2
 last_update:
   date: 2026-09-01
   author: Ahsan Mahmood
-tags:
+topics:
   - habits
   - streaks
 keywords:

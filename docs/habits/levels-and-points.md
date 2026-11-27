@@ -7,7 +7,7 @@ sidebar_position: 4
 last_update:
   date: 2026-09-01
   author: Ahsan Mahmood
-tags:
+topics:
   - habits
   - levels
 keywords:

@@ -7,7 +7,7 @@ sidebar_position: 4
 last_update:
   date: 2026-10-29
   author: Ahsan Mahmood
-tags:
+topics:
   - themes
   - customization
 keywords:

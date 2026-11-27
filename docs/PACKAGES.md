@@ -10,6 +10,7 @@ Upgraded with `npx -y npm-check-updates -u`, latest stable. This file is exclude
 |---|---|---|---|
 | `@docusaurus/core`, `plugin-content-docs`, `plugin-sitemap`, `preset-classic`, `theme-common` | ^3.10.2 | runtime | The site generator, docs, sitemap and theme |
 | `@easyops-cn/docusaurus-search-local` | ^0.55.3 | runtime | Offline search, no third-party service |
+| `@docusaurus/plugin-client-redirects` | ^3.10.2 | runtime | Retired `/docs/tags/*` addresses redirect to real pages (habitforge-docs#2, 2026-11-27) |
 | `@mdx-js/react` | ^3.1.1 | runtime | MDX rendering |
 | `clsx` | ^2.1.1 | runtime | Class names in the custom components |
 | `prism-react-renderer` | ^2.4.1 | runtime | Code highlighting |

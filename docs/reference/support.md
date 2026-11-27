@@ -7,7 +7,7 @@ sidebar_position: 3
 last_update:
   date: 2026-10-29
   author: Ahsan Mahmood
-tags:
+topics:
   - support
   - help
 keywords:

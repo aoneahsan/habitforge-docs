@@ -18,7 +18,8 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "NODE_OPTIONS=--no-experimental-webstorage docusaurus build",
+    "build": "NODE_OPTIONS=--no-experimental-webstorage docusaurus build && yarn seo:contract",
+    "seo:contract": "node plugins/seo-contract.mts",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -29,6 +30,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.2",
+    "@docusaurus/plugin-client-redirects": "^3.10.2",
     "@docusaurus/plugin-content-docs": "^3.10.2",
     "@docusaurus/plugin-sitemap": "^3.10.2",
     "@docusaurus/preset-classic": "^3.10.2",

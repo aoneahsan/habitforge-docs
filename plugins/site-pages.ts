@@ -86,7 +86,8 @@ function docPage(doc: DocMetadata): SitePage {
     permalink: doc.permalink,
     title: doc.title,
     description: doc.description,
-    tags: doc.tags.map((tag) => tag.label),
+    // Topics are front matter, not tag routes: the /docs/tags/* pages were retired (habitforge-docs#2, SA-P32).
+    tags: topicsOf(doc.frontMatter),
   };
 }
 
@@ -211,6 +212,28 @@ function collect(allContent: AllContent, context: LoadContext): SitePagesData {
  * @returns the same entries, each with a lastmod (`YYYY-MM-DD`)
  * @throws when the site-pages plugin has not run, or naming the URL that is still undated
  */
+/**
+ * A pathname without its trailing slash (`/` stays `/`): under `trailingSlash: true` permalinks and sitemap URLs end
+ * in `/`, and the date lookups compare routes in this one form (habitforge-docs#2).
+ *
+ * @param pathname - a pathname or permalink
+ * @returns the same route, slashless
+ */
+/**
+ * A doc's topic labels from its `topics:` front matter.
+ *
+ * @param frontMatter - the doc's front matter
+ * @returns the labels, empty when it has none
+ */
+function topicsOf(frontMatter: object): string[] {
+  const topics = (frontMatter as {topics?: unknown}).topics;
+  return Array.isArray(topics) ? topics.map(String) : [];
+}
+
+export function routeKey(pathname: string): string {
+  return pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname;
+}
+
 export function withLastmod<Item extends { readonly url: string; readonly lastmod?: string | null }>(
   items: readonly Item[],
 ): Item[] {
@@ -224,7 +247,7 @@ export function withLastmod<Item extends { readonly url: string; readonly lastmo
   const listsEverything = new Set([`${siteBase}/`, `${siteBase}/sitemap`, `${siteBase}/feed`]);
 
   return items.map((item) => {
-    const pathname = new URL(item.url).pathname;
+    const pathname = routeKey(new URL(item.url).pathname);
     const lastmod =
       (pathname === `${siteBase}/apps` ? APPS_LASTMOD : undefined) ??
       datedPages.get(pathname) ??
@@ -249,7 +272,7 @@ export default function sitePages(context: LoadContext): Plugin {
     async allContentLoaded({ allContent, actions }) {
       const data = collect(allContent, context);
       datedPages.clear();
-      for (const entry of data.entries) datedPages.set(entry.permalink, entry.date);
+      for (const entry of data.entries) datedPages.set(routeKey(entry.permalink), entry.date);
       const site = generatedModule(context.generatedFilesDir, await actions.createData('site-pages.json', JSON.stringify(data)));
       actions.addRoute({
         path: `${siteBase}/sitemap`,

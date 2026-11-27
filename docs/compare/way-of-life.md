@@ -6,7 +6,7 @@ sidebar_label: From Way of Life
 last_update:
   date: 2026-11-07
   author: Ahsan Mahmood
-tags:
+topics:
   - moving to habitforge
 keywords:
   - Way of Life alternative

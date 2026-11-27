@@ -4,6 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import discoveryFeed from './src/plugins/discoveryFeed';
+import { seoRedirects } from './plugins/seo-redirects.mts';
 import { BLOG_DESCRIPTION, BLOG_PATH, BLOG_TITLE } from './src/data/blog';
 import { OTHER_PLATFORMS, platformHref } from './src/data/platforms';
 
@@ -43,7 +44,9 @@ const config: Config = {
 
   url: SITE_URL,
   baseUrl: BASE_URL,
-  trailingSlash: false,
+  // Every page is `<route>/index.html`: GitHub Pages then 301s `/x` to `/x/`. With `false` it served `x.html` and
+  // 404ed every slashed link (`/docs/`, habitforge-docs#2, SA-P26).
+  trailingSlash: true,
 
   organizationName: 'aoneahsan',
   projectName: 'habitforge-docs',
@@ -191,6 +194,8 @@ const config: Config = {
             '**/*.test.{js,jsx,ts,tsx}',
             '**/__tests__/**',
             'MANUAL-TASKS.md',
+            // docs/search-consoles/ is the fleet's fixed-path record of search-console work, never a page.
+            'search-consoles/**',
             // docs/PACKAGES.md is the fleet's fixed-path dependency record, never a published page.
             'PACKAGES.md',
           ],
@@ -235,7 +240,8 @@ const config: Config = {
           // every <lastmod> comes from the docs' own last_update.date.
           lastmod: 'date',
           // The blog's tag, author, archive and later list pages only repeat its posts; each post is listed once.
-          ignorePatterns: ['/search', '/docs/tags', '/docs/tags/**', '/blog/tags/**', '/blog/authors/**', '/blog/archive', '/blog/page/**'],
+          // Slashed forms too: under `trailingSlash: true` routes end in `/`.
+          ignorePatterns: ['/search', '/search/', '/docs/tags', '/docs/tags/', '/docs/tags/**', '/blog/tags/**', '/blog/authors/**', '/blog/archive', '/blog/archive/', '/blog/page/**'],
           filename: 'sitemap.xml',
           // One date source for every URL (plugins/site-pages.ts): a doc its own date, a page that lists others the
           // newest of what it lists. An undated URL fails the build.
@@ -251,6 +257,8 @@ const config: Config = {
 
   plugins: [
     discoveryFeed,
+    // The retired /docs/tags/* pages lead to real pages; plugins/seo-contract.mts re-checks every one after the build.
+    ['@docusaurus/plugin-client-redirects', { redirects: seoRedirects(fileURLToPath(new URL('.', import.meta.url))) }],
     // /sitemap and /feed as readable pages, and the dates sitemap.xml carries (plugins/site-pages.ts).
     (require('./plugins/site-pages') as typeof import('./plugins/site-pages')).default,
     /**
