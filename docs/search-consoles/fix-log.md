@@ -7,7 +7,8 @@ Fixed path in every repo (`aoneahsan-cccs-search-issue-remediation`). Newest fir
 
 Status: the trailing-slash boxes and box 1 fixed; box 2 Pending. `yarn build` (zero warnings) ends with
 `yarn seo:contract` (`plugins/seo-contract.mts`), which failed on a planted noindex on `/docs/` and then passed.
-Rendered `/docs/` at 1440. Live proof is added after publishing.
+Rendered `/docs/` at 1440. Live-verified, google-pending (commit `153d72d`, gh-pages `48bac95`, IndexNow 200): `/docs` → 301
+`/docs/` → 200; `/docs/tags/habits/` → refresh `/sitemap/`; 0 unslashed URLs in `sitemap.xml`.
 
 | Box | SA | What was wrong (evidence) | Root fix (file) | Contract | Live proof |
 |---|---|---|---|---|---|
